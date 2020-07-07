@@ -1,0 +1,5 @@
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\DAL\bin\Debug\DAL.dll
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\DAL\bin\Debug\DAL.pdb
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\DAL\obj\Debug\DAL.dll
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\DAL\obj\Debug\DAL.pdb

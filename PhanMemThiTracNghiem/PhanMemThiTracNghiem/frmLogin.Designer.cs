@@ -164,11 +164,12 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.flowLayoutPanel3, 1, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 217);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(393, 80);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(414, 80);
             this.tableLayoutPanel3.TabIndex = 10;
             // 
             // flowLayoutPanel3
@@ -176,7 +177,7 @@
             this.flowLayoutPanel3.Controls.Add(this.button1);
             this.flowLayoutPanel3.Controls.Add(this.button2);
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(74, 3);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(85, 3);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(244, 74);
             this.flowLayoutPanel3.TabIndex = 9;

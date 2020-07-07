@@ -1,0 +1,5 @@
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\BLL\bin\Debug\BLL.dll
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\BLL\bin\Debug\BLL.pdb
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\BLL\obj\Debug\BLL.dll
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\BLL\obj\Debug\BLL.pdb
