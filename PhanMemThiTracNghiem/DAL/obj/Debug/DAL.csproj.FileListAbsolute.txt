@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\DAL\bin\Debug\DAL.dll
 E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\DAL\bin\Debug\DAL.pdb
 E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\DAL\obj\Debug\DAL.dll
 E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\DAL\obj\Debug\DAL.pdb
+=======
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\DAL\bin\Debug\DAL.dll
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\DAL\bin\Debug\DAL.pdb
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\DAL\obj\Debug\DAL.dll
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\DAL\obj\Debug\DAL.pdb
+>>>>>>> 4394e481669e7ce41175ffa2d65dd90d341159b7

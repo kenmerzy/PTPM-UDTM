@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\bin\Debug\PhanMemThiTracNghiem.exe.config
 E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\bin\Debug\PhanMemThiTracNghiem.exe
 E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\bin\Debug\PhanMemThiTracNghiem.pdb
@@ -16,3 +17,20 @@ E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\obj\Debug\PhanMemT
 E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\obj\Debug\PhanMemThiTracNghiem.frmDangNhap.resources
 E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\bin\Debug\ThuvienDLLChoDoAn.dll
 E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\bin\Debug\ThuvienDLLChoDoAn.pdb
+=======
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\bin\Debug\PhanMemThiTracNghiem.exe.config
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\bin\Debug\PhanMemThiTracNghiem.exe
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\bin\Debug\PhanMemThiTracNghiem.pdb
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\bin\Debug\ComponentFactory.Krypton.Design.pdb
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\bin\Debug\ComponentFactory.Krypton.Docking.pdb
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\obj\Debug\PhanMemThiTracNghiem.frmLogin.resources
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\obj\Debug\PhanMemThiTracNghiem.Properties.Resources.resources
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\obj\Debug\GUI.csproj.GenerateResource.Cache
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\obj\Debug\PhanMemThiTracNghiem.exe
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\PhanMemThiTracNghiem\obj\Debug\PhanMemThiTracNghiem.pdb
+>>>>>>> 4394e481669e7ce41175ffa2d65dd90d341159b7

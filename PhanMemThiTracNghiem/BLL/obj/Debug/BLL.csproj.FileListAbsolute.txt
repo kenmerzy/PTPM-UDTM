@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\BLL\bin\Debug\BLL.dll
 E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\BLL\bin\Debug\BLL.pdb
 E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\BLL\obj\Debug\BLL.dll
 E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\BLL\obj\Debug\BLL.pdb
+=======
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\BLL\bin\Debug\BLL.dll
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\BLL\bin\Debug\BLL.pdb
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\BLL\obj\Debug\BLL.dll
+D:\github\PTPM-UDTM\PhanMemThiTracNghiem\BLL\obj\Debug\BLL.pdb
+>>>>>>> 4394e481669e7ce41175ffa2d65dd90d341159b7
