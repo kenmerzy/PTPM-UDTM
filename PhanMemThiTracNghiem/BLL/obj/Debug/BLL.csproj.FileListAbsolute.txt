@@ -1,0 +1,4 @@
+E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\BLL\bin\Debug\BLL.dll
+E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\BLL\bin\Debug\BLL.pdb
+E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\BLL\obj\Debug\BLL.dll
+E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\BLL\obj\Debug\BLL.pdb

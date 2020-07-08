@@ -1,0 +1,4 @@
+E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\DAL\bin\Debug\DAL.dll
+E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\DAL\bin\Debug\DAL.pdb
+E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\DAL\obj\Debug\DAL.dll
+E:\GitHub\PTPM-UDTM\PhanMemThiTracNghiem\DAL\obj\Debug\DAL.pdb
