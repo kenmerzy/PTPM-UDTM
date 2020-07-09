@@ -31,7 +31,6 @@
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -49,12 +48,13 @@
             this.kryptonTextBox4 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.lblQuayVeDangNhap = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel1
@@ -100,17 +100,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(585, 114);
             this.tableLayoutPanel2.TabIndex = 10;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::GUI.Properties.Resources.icons8_pencil_80;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(240, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(104, 108);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // tableLayoutPanel3
             // 
@@ -281,13 +270,24 @@
             // 
             this.lblQuayVeDangNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblQuayVeDangNhap.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblQuayVeDangNhap.Location = new System.Drawing.Point(130, 596);
+            this.lblQuayVeDangNhap.Location = new System.Drawing.Point(150, 596);
             this.lblQuayVeDangNhap.Name = "lblQuayVeDangNhap";
-            this.lblQuayVeDangNhap.Size = new System.Drawing.Size(331, 24);
+            this.lblQuayVeDangNhap.Size = new System.Drawing.Size(290, 24);
             this.lblQuayVeDangNhap.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
             this.lblQuayVeDangNhap.TabIndex = 9;
-            this.lblQuayVeDangNhap.Values.Text = "Bạn đã có tài khoản? Quay về trang đăng nhập";
+            this.lblQuayVeDangNhap.Values.Text = "Bạn đã có tài khoản? Quay lại đăng nhập";
             this.lblQuayVeDangNhap.Click += new System.EventHandler(this.lblQuayVeDangNhap_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::GUI.Properties.Resources.icons8_pencil_80;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(240, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(104, 108);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // frmDangKy
             // 
@@ -304,9 +304,9 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
