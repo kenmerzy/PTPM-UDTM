@@ -1,0 +1,4 @@
+E:\DoAnPTPM\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.dll
+E:\DoAnPTPM\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.pdb
+E:\DoAnPTPM\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.dll
+E:\DoAnPTPM\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.pdb
