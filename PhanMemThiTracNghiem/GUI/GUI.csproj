@@ -53,6 +53,9 @@
     <Reference Include="ComponentFactory.Krypton.Workspace">
       <HintPath>..\..\..\PhatTrienPhanMem\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
     </Reference>
+    <Reference Include="KryptonHintTextBox">
+      <HintPath>..\..\DLL\KryptonHintTextBox.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Messaging" />
@@ -87,14 +90,38 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTaiKhoan.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="frmTaiKhoan.Designer.cs">
-      <DependentUpon>frmTaiKhoan.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="usrctrDeThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrctrDeThi.Designer.cs">
+      <DependentUpon>usrctrDeThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usrctrRightInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrctrRightInfo.Designer.cs">
+      <DependentUpon>usrctrRightInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usrctrSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrctrSearch.Designer.cs">
+      <DependentUpon>usrctrSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usrctrThanhVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrctrThanhVien.Designer.cs">
+      <DependentUpon>usrctrThanhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usrctrXepHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrctrXepHang.Designer.cs">
+      <DependentUpon>usrctrXepHang.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmDangKy.resx">
       <DependentUpon>frmDangKy.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,9 +130,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTaiKhoan.resx">
-      <DependentUpon>frmTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,6 +141,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="usrctrDeThi.resx">
+      <DependentUpon>usrctrDeThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrctrRightInfo.resx">
+      <DependentUpon>usrctrRightInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrctrSearch.resx">
+      <DependentUpon>usrctrSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrctrThanhVien.resx">
+      <DependentUpon>usrctrThanhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrctrXepHang.resx">
+      <DependentUpon>usrctrXepHang.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -183,6 +222,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-todo-list-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clock-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-heart-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clock-15 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-heart-15 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-abc-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-male-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-male-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-male-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-male-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-enter-24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

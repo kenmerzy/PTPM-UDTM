@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace BLL_DAL
 {
-    public class Class1
+    public class DeThiBLL_DAL
     {
+        public DeThiBLL_DAL()
+        {
+ 
+        }
     }
 }

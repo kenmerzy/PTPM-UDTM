@@ -50,4 +50,9 @@ E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.frmDangNhap.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.frmMain.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.Properties.Resources.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
-E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.frmTaiKhoan.resources
+E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\bin\Debug\KryptonHintTextBox.dll
+E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrDeThi.resources
+E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrRightInfo.resources
+E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrSearch.resources
+E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrThanhVien.resources
+E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrXepHang.resources
