@@ -56,3 +56,4 @@ E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrRightInfo.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrSearch.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrThanhVien.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrXepHang.resources
+E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrThi.resources

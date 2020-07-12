@@ -23,18 +23,19 @@ namespace GUI
         {
             
 
-            usrctrDeThi dt = new usrctrDeThi();
-            dt.Dock = DockStyle.Top;
-            flowLayoutLeft.Controls.Add(dt);
-            flowLayoutLeft.SetFlowBreak(dt, true);
+           
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            usrctrDeThi dt = new usrctrDeThi();
+            dt.Dock = DockStyle.Top;
+            flowLayoutLeft.Controls.Add(dt);
+            flowLayoutLeft.SetFlowBreak(dt, true);
+
             usrctrSearch us = new usrctrSearch();
             us.Dock = DockStyle.Top;
-            flowLayoutRight.Controls.Add(us);
-            flowLayoutRight.SetFlowBreak(us, true);
+            tableLayoutPanel4.Controls.Add(us);
 
            
 
@@ -51,6 +52,20 @@ namespace GUI
 
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+            tableLayoutPanel2.Controls.Clear();            
+            usrctrThi th = new usrctrThi();            
+            tableLayoutPanel2.Controls.Add(th);
+            th.Dock = DockStyle.Fill;
+            tableLayoutPanel2.SetColumnSpan(th, 2);
+            
+           
+
+        }
+
 
      
 
