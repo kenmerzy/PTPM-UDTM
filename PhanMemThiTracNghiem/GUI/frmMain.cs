@@ -56,11 +56,17 @@ namespace GUI
         private void button1_Click_1(object sender, EventArgs e)
         {
 
-            tableLayoutPanel2.Controls.Clear();            
-            usrctrThi th = new usrctrThi();            
+            tableLayoutPanel2.Controls.Clear();
+            usrctrThi th = new usrctrThi();
             tableLayoutPanel2.Controls.Add(th);
             th.Dock = DockStyle.Fill;
             tableLayoutPanel2.SetColumnSpan(th, 2);
+
+            //Button btn = new Button();
+            //btn.Text = "Buttonnnnn";
+            //tableLayoutPanel2.Controls.Add(btn);
+            //btn.Dock = DockStyle.Fill;
+            //tableLayoutPanel2.SetColumnSpan(btn, 2);
             
            
 

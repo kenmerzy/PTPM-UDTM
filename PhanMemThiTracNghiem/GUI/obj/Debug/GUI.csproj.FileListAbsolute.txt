@@ -44,7 +44,6 @@ E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\bin\Debug\ComponentFactory.Krypton.Ribbon.
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\bin\Debug\ThuvienDLLChoDoAn.pdb
-E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.frmDangKy.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.frmDangNhap.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.frmMain.resources
@@ -57,3 +56,4 @@ E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrSearch.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrThanhVien.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrXepHang.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrThi.resources
+E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache

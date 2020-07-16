@@ -16,5 +16,20 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+
+        private void btnSearch_MouseLeave(object sender, EventArgs e)
+        {
+            btnSearch.BackColor = Color.CornflowerBlue;
+        }
+
+        private void btnSearch_MouseEnter(object sender, EventArgs e)
+        {
+            btnSearch.BackColor = Color.Goldenrod;
+        }
+
+
+
+
     }
 }
