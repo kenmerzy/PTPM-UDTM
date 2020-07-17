@@ -186,7 +186,8 @@
             // 
             // kryptonLabel5
             // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(87, 3);
+            this.kryptonLabel5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.kryptonLabel5.Location = new System.Drawing.Point(87, 10);
             this.kryptonLabel5.Name = "kryptonLabel5";
             this.kryptonLabel5.Size = new System.Drawing.Size(81, 24);
             this.kryptonLabel5.TabIndex = 1;
@@ -260,9 +261,9 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox4.Image = global::GUI.Properties.Resources.icons8_enter_24;
-            this.pictureBox4.Location = new System.Drawing.Point(51, 3);
+            this.pictureBox4.Location = new System.Drawing.Point(51, 7);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(30, 30);
             this.pictureBox4.TabIndex = 0;
