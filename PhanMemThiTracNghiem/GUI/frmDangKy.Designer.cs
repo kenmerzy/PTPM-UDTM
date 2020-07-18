@@ -31,6 +31,7 @@
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -39,22 +40,21 @@
             this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel6 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel7 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonDateTimePicker1 = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
-            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox5 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonNumberBox1 = new ThuvienDLLChoDoAn.KryptonNumberBox();
-            this.kryptonTextBox4 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.dateTimePickerNgaySinh = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.txtHoTen = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txtTenTaiKhoan = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txtMatKhau = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txtEmail = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txtSDT = new ThuvienDLLChoDoAn.KryptonNumberBox();
+            this.txtXacNhanMatKhau = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.btnDangKy = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.lblQuayVeDangNhap = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonPanel1
@@ -73,7 +73,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.kryptonButton1, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnDangKy, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.lblQuayVeDangNhap, 0, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -101,6 +101,17 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(585, 114);
             this.tableLayoutPanel2.TabIndex = 10;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::GUI.Properties.Resources.icons8_pencil_80;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(240, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(104, 108);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 3;
@@ -114,13 +125,13 @@
             this.tableLayoutPanel3.Controls.Add(this.kryptonLabel5, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.kryptonLabel6, 0, 5);
             this.tableLayoutPanel3.Controls.Add(this.kryptonLabel7, 0, 6);
-            this.tableLayoutPanel3.Controls.Add(this.kryptonDateTimePicker1, 1, 6);
-            this.tableLayoutPanel3.Controls.Add(this.kryptonTextBox1, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.kryptonTextBox2, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.kryptonTextBox3, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.kryptonTextBox5, 1, 4);
-            this.tableLayoutPanel3.Controls.Add(this.kryptonNumberBox1, 1, 5);
-            this.tableLayoutPanel3.Controls.Add(this.kryptonTextBox4, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.dateTimePickerNgaySinh, 1, 6);
+            this.tableLayoutPanel3.Controls.Add(this.txtHoTen, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.txtTenTaiKhoan, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.txtMatKhau, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.txtEmail, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.txtSDT, 1, 5);
+            this.tableLayoutPanel3.Controls.Add(this.txtXacNhanMatKhau, 1, 3);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 123);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -205,66 +216,66 @@
             this.kryptonLabel7.TabIndex = 2;
             this.kryptonLabel7.Values.Text = "Ngày sinh";
             // 
-            // kryptonDateTimePicker1
+            // dateTimePickerNgaySinh
             // 
-            this.kryptonDateTimePicker1.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.BreadCrumb;
-            this.kryptonDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.kryptonDateTimePicker1.Location = new System.Drawing.Point(183, 339);
-            this.kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
-            this.kryptonDateTimePicker1.Size = new System.Drawing.Size(215, 25);
-            this.kryptonDateTimePicker1.TabIndex = 6;
+            this.dateTimePickerNgaySinh.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.BreadCrumb;
+            this.dateTimePickerNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerNgaySinh.Location = new System.Drawing.Point(183, 339);
+            this.dateTimePickerNgaySinh.Name = "dateTimePickerNgaySinh";
+            this.dateTimePickerNgaySinh.Size = new System.Drawing.Size(215, 25);
+            this.dateTimePickerNgaySinh.TabIndex = 6;
             // 
-            // kryptonTextBox1
+            // txtHoTen
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(183, 3);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(215, 24);
-            this.kryptonTextBox1.TabIndex = 0;
+            this.txtHoTen.Location = new System.Drawing.Point(183, 3);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Size = new System.Drawing.Size(215, 24);
+            this.txtHoTen.TabIndex = 0;
             // 
-            // kryptonTextBox2
+            // txtTenTaiKhoan
             // 
-            this.kryptonTextBox2.Location = new System.Drawing.Point(183, 59);
-            this.kryptonTextBox2.Name = "kryptonTextBox2";
-            this.kryptonTextBox2.Size = new System.Drawing.Size(215, 24);
-            this.kryptonTextBox2.TabIndex = 1;
+            this.txtTenTaiKhoan.Location = new System.Drawing.Point(183, 59);
+            this.txtTenTaiKhoan.Name = "txtTenTaiKhoan";
+            this.txtTenTaiKhoan.Size = new System.Drawing.Size(215, 24);
+            this.txtTenTaiKhoan.TabIndex = 1;
             // 
-            // kryptonTextBox3
+            // txtMatKhau
             // 
-            this.kryptonTextBox3.Location = new System.Drawing.Point(183, 115);
-            this.kryptonTextBox3.Name = "kryptonTextBox3";
-            this.kryptonTextBox3.Size = new System.Drawing.Size(215, 24);
-            this.kryptonTextBox3.TabIndex = 2;
+            this.txtMatKhau.Location = new System.Drawing.Point(183, 115);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.Size = new System.Drawing.Size(215, 24);
+            this.txtMatKhau.TabIndex = 2;
             // 
-            // kryptonTextBox5
+            // txtEmail
             // 
-            this.kryptonTextBox5.Location = new System.Drawing.Point(183, 227);
-            this.kryptonTextBox5.Name = "kryptonTextBox5";
-            this.kryptonTextBox5.Size = new System.Drawing.Size(215, 24);
-            this.kryptonTextBox5.TabIndex = 4;
+            this.txtEmail.Location = new System.Drawing.Point(183, 227);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(215, 24);
+            this.txtEmail.TabIndex = 4;
             // 
-            // kryptonNumberBox1
+            // txtSDT
             // 
-            this.kryptonNumberBox1.Location = new System.Drawing.Point(183, 283);
-            this.kryptonNumberBox1.MaxLength = 10;
-            this.kryptonNumberBox1.Name = "kryptonNumberBox1";
-            this.kryptonNumberBox1.Size = new System.Drawing.Size(215, 24);
-            this.kryptonNumberBox1.TabIndex = 5;
+            this.txtSDT.Location = new System.Drawing.Point(183, 283);
+            this.txtSDT.MaxLength = 10;
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(215, 24);
+            this.txtSDT.TabIndex = 5;
             // 
-            // kryptonTextBox4
+            // txtXacNhanMatKhau
             // 
-            this.kryptonTextBox4.Location = new System.Drawing.Point(183, 171);
-            this.kryptonTextBox4.Name = "kryptonTextBox4";
-            this.kryptonTextBox4.Size = new System.Drawing.Size(215, 24);
-            this.kryptonTextBox4.TabIndex = 3;
+            this.txtXacNhanMatKhau.Location = new System.Drawing.Point(183, 171);
+            this.txtXacNhanMatKhau.Name = "txtXacNhanMatKhau";
+            this.txtXacNhanMatKhau.Size = new System.Drawing.Size(215, 24);
+            this.txtXacNhanMatKhau.TabIndex = 3;
             // 
-            // kryptonButton1
+            // btnDangKy
             // 
-            this.kryptonButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.kryptonButton1.Location = new System.Drawing.Point(237, 534);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(117, 39);
-            this.kryptonButton1.TabIndex = 8;
-            this.kryptonButton1.Values.Text = "Đăng ký";
+            this.btnDangKy.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnDangKy.Location = new System.Drawing.Point(237, 534);
+            this.btnDangKy.Name = "btnDangKy";
+            this.btnDangKy.Size = new System.Drawing.Size(117, 39);
+            this.btnDangKy.TabIndex = 8;
+            this.btnDangKy.Values.Text = "Đăng ký";
             // 
             // lblQuayVeDangNhap
             // 
@@ -277,17 +288,6 @@
             this.lblQuayVeDangNhap.TabIndex = 9;
             this.lblQuayVeDangNhap.Values.Text = "Bạn đã có tài khoản? Quay lại đăng nhập";
             this.lblQuayVeDangNhap.Click += new System.EventHandler(this.lblQuayVeDangNhap_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::GUI.Properties.Resources.icons8_pencil_80;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(240, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(104, 108);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // frmDangKy
             // 
@@ -304,9 +304,9 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -323,14 +323,14 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel5;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel6;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel7;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox5;
-        private ThuvienDLLChoDoAn.KryptonNumberBox kryptonNumberBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
+        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker dateTimePickerNgaySinh;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtHoTen;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtTenTaiKhoan;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtMatKhau;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtXacNhanMatKhau;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtEmail;
+        private ThuvienDLLChoDoAn.KryptonNumberBox txtSDT;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnDangKy;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel lblQuayVeDangNhap;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox1;

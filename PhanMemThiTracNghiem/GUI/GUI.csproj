@@ -122,6 +122,12 @@
     <Compile Include="usrctrThi.Designer.cs">
       <DependentUpon>usrctrThi.cs</DependentUpon>
     </Compile>
+    <Compile Include="usrctrTrangThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrctrTrangThi.Designer.cs">
+      <DependentUpon>usrctrTrangThi.cs</DependentUpon>
+    </Compile>
     <Compile Include="usrctrXepHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -161,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="usrctrThi.resx">
       <DependentUpon>usrctrThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrctrTrangThi.resx">
+      <DependentUpon>usrctrTrangThi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usrctrXepHang.resx">
       <DependentUpon>usrctrXepHang.cs</DependentUpon>

@@ -29,12 +29,15 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.usrctrSearch1 = new GUI.usrctrSearch();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 429F));
+            this.tableLayoutPanel1.Controls.Add(this.usrctrSearch1, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -48,6 +51,13 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(429, 1200);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // usrctrSearch1
+            // 
+            this.usrctrSearch1.Location = new System.Drawing.Point(3, 283);
+            this.usrctrSearch1.Name = "usrctrSearch1";
+            this.usrctrSearch1.Size = new System.Drawing.Size(8, 8);
+            this.usrctrSearch1.TabIndex = 0;
+            // 
             // usrctrRightInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -55,6 +65,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "usrctrRightInfo";
             this.Size = new System.Drawing.Size(429, 1200);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -62,5 +73,6 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private usrctrSearch usrctrSearch1;
     }
 }

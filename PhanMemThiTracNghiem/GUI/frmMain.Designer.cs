@@ -99,7 +99,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 470F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel2.Controls.Add(this.flowLayoutLeft, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.flowLayoutRight, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -116,14 +116,14 @@
             this.flowLayoutLeft.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutLeft.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutLeft.Name = "flowLayoutLeft";
-            this.flowLayoutLeft.Size = new System.Drawing.Size(442, 507);
+            this.flowLayoutLeft.Size = new System.Drawing.Size(412, 507);
             this.flowLayoutLeft.TabIndex = 0;
             // 
             // flowLayoutRight
             // 
             this.flowLayoutRight.AutoScroll = true;
             this.flowLayoutRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutRight.Location = new System.Drawing.Point(451, 3);
+            this.flowLayoutRight.Location = new System.Drawing.Point(421, 3);
             this.flowLayoutRight.Name = "flowLayoutRight";
             this.flowLayoutRight.Size = new System.Drawing.Size(464, 507);
             this.flowLayoutRight.TabIndex = 1;
@@ -133,7 +133,7 @@
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 470F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 122);
@@ -148,7 +148,7 @@
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(451, 3);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(421, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
