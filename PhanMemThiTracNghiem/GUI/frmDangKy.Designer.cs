@@ -47,8 +47,14 @@
             this.txtEmail = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtSDT = new ThuvienDLLChoDoAn.KryptonNumberBox();
             this.txtXacNhanMatKhau = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.lblLoiHoTen = new System.Windows.Forms.Label();
+            this.lblLoiMatKhau = new System.Windows.Forms.Label();
+            this.lblLoiXacNhanMatKhau = new System.Windows.Forms.Label();
+            this.lblLoiEmail = new System.Windows.Forms.Label();
+            this.lblLoiTenTaiKhoan = new System.Windows.Forms.Label();
             this.btnDangKy = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.lblQuayVeDangNhap = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.lblLoiSoDienThoai = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -132,6 +138,12 @@
             this.tableLayoutPanel3.Controls.Add(this.txtEmail, 1, 4);
             this.tableLayoutPanel3.Controls.Add(this.txtSDT, 1, 5);
             this.tableLayoutPanel3.Controls.Add(this.txtXacNhanMatKhau, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.lblLoiHoTen, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.lblLoiMatKhau, 2, 2);
+            this.tableLayoutPanel3.Controls.Add(this.lblLoiXacNhanMatKhau, 2, 3);
+            this.tableLayoutPanel3.Controls.Add(this.lblLoiEmail, 2, 4);
+            this.tableLayoutPanel3.Controls.Add(this.lblLoiSoDienThoai, 2, 5);
+            this.tableLayoutPanel3.Controls.Add(this.lblLoiTenTaiKhoan, 2, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 123);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -231,6 +243,7 @@
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(215, 24);
             this.txtHoTen.TabIndex = 0;
+            this.txtHoTen.TextChanged += new System.EventHandler(this.txtHoTen_TextChanged);
             // 
             // txtTenTaiKhoan
             // 
@@ -252,6 +265,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(215, 24);
             this.txtEmail.TabIndex = 4;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // txtSDT
             // 
@@ -268,6 +282,56 @@
             this.txtXacNhanMatKhau.Size = new System.Drawing.Size(215, 24);
             this.txtXacNhanMatKhau.TabIndex = 3;
             // 
+            // lblLoiHoTen
+            // 
+            this.lblLoiHoTen.AutoSize = true;
+            this.lblLoiHoTen.Location = new System.Drawing.Point(426, 7);
+            this.lblLoiHoTen.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
+            this.lblLoiHoTen.Name = "lblLoiHoTen";
+            this.lblLoiHoTen.Size = new System.Drawing.Size(0, 17);
+            this.lblLoiHoTen.TabIndex = 7;
+            this.lblLoiHoTen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLoiMatKhau
+            // 
+            this.lblLoiMatKhau.AutoSize = true;
+            this.lblLoiMatKhau.Location = new System.Drawing.Point(426, 119);
+            this.lblLoiMatKhau.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
+            this.lblLoiMatKhau.Name = "lblLoiMatKhau";
+            this.lblLoiMatKhau.Size = new System.Drawing.Size(0, 17);
+            this.lblLoiMatKhau.TabIndex = 7;
+            this.lblLoiMatKhau.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLoiXacNhanMatKhau
+            // 
+            this.lblLoiXacNhanMatKhau.AutoSize = true;
+            this.lblLoiXacNhanMatKhau.Location = new System.Drawing.Point(426, 175);
+            this.lblLoiXacNhanMatKhau.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
+            this.lblLoiXacNhanMatKhau.Name = "lblLoiXacNhanMatKhau";
+            this.lblLoiXacNhanMatKhau.Size = new System.Drawing.Size(0, 17);
+            this.lblLoiXacNhanMatKhau.TabIndex = 7;
+            this.lblLoiXacNhanMatKhau.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLoiEmail
+            // 
+            this.lblLoiEmail.AutoSize = true;
+            this.lblLoiEmail.Location = new System.Drawing.Point(426, 231);
+            this.lblLoiEmail.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
+            this.lblLoiEmail.Name = "lblLoiEmail";
+            this.lblLoiEmail.Size = new System.Drawing.Size(0, 17);
+            this.lblLoiEmail.TabIndex = 7;
+            this.lblLoiEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLoiTenTaiKhoan
+            // 
+            this.lblLoiTenTaiKhoan.AutoSize = true;
+            this.lblLoiTenTaiKhoan.Location = new System.Drawing.Point(426, 63);
+            this.lblLoiTenTaiKhoan.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
+            this.lblLoiTenTaiKhoan.Name = "lblLoiTenTaiKhoan";
+            this.lblLoiTenTaiKhoan.Size = new System.Drawing.Size(0, 17);
+            this.lblLoiTenTaiKhoan.TabIndex = 7;
+            this.lblLoiTenTaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // btnDangKy
             // 
             this.btnDangKy.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -276,6 +340,7 @@
             this.btnDangKy.Size = new System.Drawing.Size(117, 39);
             this.btnDangKy.TabIndex = 8;
             this.btnDangKy.Values.Text = "Đăng ký";
+            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
             // 
             // lblQuayVeDangNhap
             // 
@@ -288,6 +353,16 @@
             this.lblQuayVeDangNhap.TabIndex = 9;
             this.lblQuayVeDangNhap.Values.Text = "Bạn đã có tài khoản? Quay lại đăng nhập";
             this.lblQuayVeDangNhap.Click += new System.EventHandler(this.lblQuayVeDangNhap_Click);
+            // 
+            // lblLoiSoDienThoai
+            // 
+            this.lblLoiSoDienThoai.AutoSize = true;
+            this.lblLoiSoDienThoai.Location = new System.Drawing.Point(426, 287);
+            this.lblLoiSoDienThoai.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
+            this.lblLoiSoDienThoai.Name = "lblLoiSoDienThoai";
+            this.lblLoiSoDienThoai.Size = new System.Drawing.Size(0, 17);
+            this.lblLoiSoDienThoai.TabIndex = 7;
+            this.lblLoiSoDienThoai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmDangKy
             // 
@@ -334,6 +409,12 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel lblQuayVeDangNhap;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblLoiHoTen;
+        private System.Windows.Forms.Label lblLoiMatKhau;
+        private System.Windows.Forms.Label lblLoiXacNhanMatKhau;
+        private System.Windows.Forms.Label lblLoiEmail;
+        private System.Windows.Forms.Label lblLoiTenTaiKhoan;
+        private System.Windows.Forms.Label lblLoiSoDienThoai;
 
 
 

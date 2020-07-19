@@ -77,5 +77,11 @@ D:\DAPT\PhanMemThiTracNghiem\GUI\bin\Debug\KryptonHintTextBox.dll
 D:\DAPT\PhanMemThiTracNghiem\GUI\bin\Debug\BLL_DAL.pdb
 D:\DAPT\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.exe
 D:\DAPT\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.pdb
-D:\DAPT\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
 D:\DAPT\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrThanhVienChuaDangNhap.resources
+D:\DAPT\PhanMemThiTracNghiem\GUI\bin\Debug\ComponentFactory.Krypton.Design.dll
+D:\DAPT\PhanMemThiTracNghiem\GUI\bin\Debug\ComponentFactory.Krypton.Docking.dll
+D:\DAPT\PhanMemThiTracNghiem\GUI\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+D:\DAPT\PhanMemThiTracNghiem\GUI\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+D:\DAPT\PhanMemThiTracNghiem\GUI\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+D:\DAPT\PhanMemThiTracNghiem\GUI\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+D:\DAPT\PhanMemThiTracNghiem\GUI\bin\Debug\ThuvienDLLChoDoAn.dll

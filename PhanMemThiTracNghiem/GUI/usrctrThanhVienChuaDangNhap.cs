@@ -16,5 +16,13 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void btnThietLapLai_Click(object sender, EventArgs e)
+        {
+            txtTenDangNhap.Text = "";
+            txtMatKhau.Text = "";
+            txtTenDangNhap.Focus();
+        }
+
     }
 }
