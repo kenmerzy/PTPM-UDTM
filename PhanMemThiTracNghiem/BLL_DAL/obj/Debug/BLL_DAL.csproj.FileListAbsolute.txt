@@ -7,3 +7,8 @@ E:\PTPM-UDTM\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.pdb
 E:\PTPM-UDTM\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.csprojResolveAssemblyReference.cache
 E:\PTPM-UDTM\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.dll
 E:\PTPM-UDTM\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.pdb
+D:\DAPT\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.dll.config
+D:\DAPT\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.dll
+D:\DAPT\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.pdb
+D:\DAPT\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.dll
+D:\DAPT\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.pdb

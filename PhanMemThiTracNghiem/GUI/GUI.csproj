@@ -116,6 +116,12 @@
     <Compile Include="usrctrThanhVien.Designer.cs">
       <DependentUpon>usrctrThanhVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="usrctrThanhVienChuaDangNhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrctrThanhVienChuaDangNhap.Designer.cs">
+      <DependentUpon>usrctrThanhVienChuaDangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="usrctrThi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="usrctrThanhVien.resx">
       <DependentUpon>usrctrThanhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrctrThanhVienChuaDangNhap.resx">
+      <DependentUpon>usrctrThanhVienChuaDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usrctrThi.resx">
       <DependentUpon>usrctrThi.cs</DependentUpon>
@@ -282,6 +291,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-search-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiaLy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\english.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LichSu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VatLy.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

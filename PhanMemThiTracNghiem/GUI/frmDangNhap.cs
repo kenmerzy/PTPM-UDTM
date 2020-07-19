@@ -27,5 +27,10 @@ namespace GUI
             frmDangKy dk = new frmDangKy();
             dk.ShowDialog();
         }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
