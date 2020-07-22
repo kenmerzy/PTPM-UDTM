@@ -16,6 +16,13 @@ namespace GUI
         {
             InitializeComponent();
         }
+        public usrctrTrangThi(string soCau, int thoiGianLamBai)
+        {
+            InitializeComponent();
+            lbltxtSoCau.Text = soCau;
+            lbltxtThoiGian.Text = thoiGianLamBai.ToString()+" phút";
+        }
+
 
      
 

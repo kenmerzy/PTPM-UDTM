@@ -40,8 +40,6 @@ E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrRightInfo.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrSearch.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrThanhVien.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrXepHang.resources
-E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrThi.resources
-E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
 D:\DAPT\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.frmDangKy.resources
 D:\DAPT\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.frmDangNhap.resources
 D:\DAPT\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.frmMain.resources
@@ -93,3 +91,6 @@ E:\PhatTrienPhanMem\ThiTracNghiem\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrX
 E:\PhatTrienPhanMem\ThiTracNghiem\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrThanhVienChuaDangNhap.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrTrangThi.resources
+E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrThongTinBaiThi.resources
+E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrHuongDanLamBaics.resources
+E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache

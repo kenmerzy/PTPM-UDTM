@@ -13,6 +13,8 @@ namespace GUI
     public partial class usrctrDeThi : UserControl
     {
         TableLayoutPanel layoutThi;
+        string tsc = null;
+        int tglb = 0;
         frmMain ma;
         public usrctrDeThi()
         {
@@ -25,16 +27,18 @@ namespace GUI
             //Image image = Image.FromFile("D:\\DAPT\\PhanMemThiTracNghiem\\GUI\\Resources");
             lblMoTa.Text = moTa;
             lblSoCau.Text =  tongSoCau +"  "+"Câu hỏi";
-            lblThoiGianLamBai.Text = thoiGianLamBai +" "+"Phút" ;
+            lblThoiGianLamBai.Text = thoiGianLamBai.ToString() +" "+"phút" ;
             lblThoiGianMoDe.Text = thoiGianMoDe;
             layoutThi = layoutT;
+            tglb = int.Parse(thoiGianLamBai);  
+            tsc = tongSoCau;
             //pictureHinhAnh.Image = image;          
         }
 
         private void lblMonThi_Click(object sender, EventArgs e)
         {
             layoutThi.Controls.Clear();
-            usrctrTrangThi th = new usrctrTrangThi();
+            usrctrTrangThi th = new usrctrTrangThi(tsc,tglb);
             layoutThi.Controls.Add(th);
             th.Dock = DockStyle.Fill;
             layoutThi.SetColumnSpan(th, 2);

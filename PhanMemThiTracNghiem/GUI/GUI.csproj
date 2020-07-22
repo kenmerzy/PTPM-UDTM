@@ -100,11 +100,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="usrctrCauHoiVaDapAn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrctrCauHoiVaDapAn.Designer.cs">
+      <DependentUpon>usrctrCauHoiVaDapAn.cs</DependentUpon>
+    </Compile>
     <Compile Include="usrctrDeThi.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="usrctrDeThi.Designer.cs">
       <DependentUpon>usrctrDeThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usrctrKetQuaThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrctrKetQuaThi.Designer.cs">
+      <DependentUpon>usrctrKetQuaThi.cs</DependentUpon>
     </Compile>
     <Compile Include="usrctrRightInfo.cs">
       <SubType>UserControl</SubType>
@@ -129,12 +141,6 @@
     </Compile>
     <Compile Include="usrctrThanhVienChuaDangNhap.Designer.cs">
       <DependentUpon>usrctrThanhVienChuaDangNhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="usrctrThi.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="usrctrThi.Designer.cs">
-      <DependentUpon>usrctrThi.cs</DependentUpon>
     </Compile>
     <Compile Include="usrctrTrangThi.cs">
       <SubType>UserControl</SubType>
@@ -167,8 +173,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="usrctrCauHoiVaDapAn.resx">
+      <DependentUpon>usrctrCauHoiVaDapAn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="usrctrDeThi.resx">
       <DependentUpon>usrctrDeThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrctrKetQuaThi.resx">
+      <DependentUpon>usrctrKetQuaThi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usrctrRightInfo.resx">
       <DependentUpon>usrctrRightInfo.cs</DependentUpon>
@@ -181,9 +193,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="usrctrThanhVienChuaDangNhap.resx">
       <DependentUpon>usrctrThanhVienChuaDangNhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="usrctrThi.resx">
-      <DependentUpon>usrctrThi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usrctrTrangThi.resx">
       <DependentUpon>usrctrTrangThi.cs</DependentUpon>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class usrctrThi : UserControl
+    public partial class usrctrCauHoiVaDapAn : UserControl
     {
-        public usrctrThi()
+        public usrctrCauHoiVaDapAn()
         {
             InitializeComponent();
         }
