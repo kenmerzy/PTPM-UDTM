@@ -22,7 +22,12 @@ namespace BLL_DAL
            List<KyThi> asList =  dethis.ToList<KyThi>();
            return asList;
         }
-
+        public List<DapAn> getDapan(int mach)
+        {
+            var dapans = from da in qldt.DapAns where da.MaCauHoi == mach select da;
+            List<DapAn> daList = dapans.ToList<DapAn>();
+            return daList;
+        }
 
     }
 }

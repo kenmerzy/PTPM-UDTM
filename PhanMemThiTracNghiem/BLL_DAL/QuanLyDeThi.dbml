@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ThiTracNghiem" Class="QuanLyDeThiDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-R57SVSA\SQLEXPRESS;Initial Catalog=ThiTracNghiem;Integrated Security=True" SettingsObjectName="BLL_DAL.Properties.Settings" SettingsPropertyName="ThiTracNghiemConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-UKDQP37H\SQLEXPRESS;Initial Catalog=ThiTracNghiem;Integrated Security=True" SettingsObjectName="BLL_DAL.Properties.Settings" SettingsPropertyName="ThiTracNghiemConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.CauHoi" Member="CauHois">
     <Type Name="CauHoi">
       <Column Name="MaCauHoi" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -61,8 +61,8 @@
       <Column Name="MaMon" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="TenKyThi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="ThoiGianLamBai" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ThoiGianMoDe" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="ThoiGianDongDe" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ThoiGianMoDe" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="ThoiGianDongDe" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
       <Column Name="TongSoCau" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="TiLeDe" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="TiLeKho" Type="System.Int32" DbType="Int" CanBeNull="true" />
@@ -70,7 +70,6 @@
       <Column Name="MatKhau" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="MaKhoi" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
       <Column Name="MoTa" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="Hinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="KyThi_KetQua" Member="KetQuas" ThisKey="MaKyThi" OtherKey="MaKyThi" Type="KetQua" />
       <Association Name="KyThi_LuuKyThi" Member="LuuKyThis" ThisKey="MaKyThi" OtherKey="MaKyThi" Type="LuuKyThi" />
       <Association Name="MonThi_KyThi" Member="MonThi" ThisKey="MaMon" OtherKey="MaMon" Type="MonThi" IsForeignKey="true" />

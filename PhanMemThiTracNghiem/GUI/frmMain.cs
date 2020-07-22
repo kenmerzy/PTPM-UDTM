@@ -32,14 +32,12 @@ namespace GUI
         private void frmMain_Load(object sender, EventArgs e)
         {
             getDeThi();
+
             usrctrSearch us = new usrctrSearch();
             us.Dock = DockStyle.Top;
             tableLayoutPanel4.Controls.Add(us);
             
-
-           
-
-            usrctrThanhVien u = new usrctrThanhVien();
+            usrctrThanhVienChuaDangNhap u = new usrctrThanhVienChuaDangNhap();
             u.Dock = DockStyle.Top;
             flowLayoutRight.Controls.Add(u);
             flowLayoutRight.SetFlowBreak(u, true);
@@ -81,6 +79,8 @@ namespace GUI
                 {
                     usrctrDeThi dt = new usrctrDeThi(kt[i].TenKyThi, kt[i].MoTa, kt[i].TongSoCau.ToString()
                     , kt[i].ThoiGianLamBai.ToString(), kt[i].ThoiGianMoDe.ToString());
+                   
+                    dt.Dock = DockStyle.Top; 
                     flowLayoutLeft.Controls.Add(dt);
                     flowLayoutLeft.SetFlowBreak(dt, true);
                 }
@@ -89,9 +89,6 @@ namespace GUI
             {
                 MessageBox.Show("FAIL");
             }
-            
-            
-            
         }
 
 

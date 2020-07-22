@@ -12,3 +12,8 @@ D:\DAPT\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.dll
 D:\DAPT\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.pdb
 D:\DAPT\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.dll
 D:\DAPT\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.pdb
+E:\PhatTrienPhanMem\ThiTracNghiem\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.dll
+E:\PhatTrienPhanMem\ThiTracNghiem\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.dll.config
+E:\PhatTrienPhanMem\ThiTracNghiem\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.dll
+E:\PhatTrienPhanMem\ThiTracNghiem\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.pdb
+E:\PhatTrienPhanMem\ThiTracNghiem\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.pdb

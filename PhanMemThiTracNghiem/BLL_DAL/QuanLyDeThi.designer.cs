@@ -1332,8 +1332,6 @@ namespace BLL_DAL
 		
 		private string _MoTa;
 		
-		private string _Hinh;
-		
 		private EntitySet<KetQua> _KetQuas;
 		
 		private EntitySet<LuuKyThi> _LuuKyThis;
@@ -1370,8 +1368,6 @@ namespace BLL_DAL
     partial void OnMaKhoiChanged();
     partial void OnMoTaChanging(string value);
     partial void OnMoTaChanged();
-    partial void OnHinhChanging(string value);
-    partial void OnHinhChanged();
     #endregion
 		
 		public KyThi()
@@ -1466,7 +1462,7 @@ namespace BLL_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThoiGianMoDe", DbType="DateTime")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThoiGianMoDe", DbType="SmallDateTime")]
 		public System.Nullable<System.DateTime> ThoiGianMoDe
 		{
 			get
@@ -1486,7 +1482,7 @@ namespace BLL_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThoiGianDongDe", DbType="DateTime")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThoiGianDongDe", DbType="SmallDateTime")]
 		public System.Nullable<System.DateTime> ThoiGianDongDe
 		{
 			get
@@ -1642,26 +1638,6 @@ namespace BLL_DAL
 					this._MoTa = value;
 					this.SendPropertyChanged("MoTa");
 					this.OnMoTaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Hinh", DbType="NVarChar(50)")]
-		public string Hinh
-		{
-			get
-			{
-				return this._Hinh;
-			}
-			set
-			{
-				if ((this._Hinh != value))
-				{
-					this.OnHinhChanging(value);
-					this.SendPropertyChanging();
-					this._Hinh = value;
-					this.SendPropertyChanged("Hinh");
-					this.OnHinhChanged();
 				}
 			}
 		}

@@ -28,6 +28,26 @@ namespace GUI
             //pictureHinhAnh.Image = image;          
         }
 
+        private void lblMonThi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureHinhAnh_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMonThi_MouseHover(object sender, EventArgs e)
+        {
+            lblMonThi.StateNormal.ShortText.Color1 = Color.SaddleBrown;
+        }
+
+        private void lblMonThi_MouseLeave(object sender, EventArgs e)
+        {
+            lblMonThi.StateNormal.ShortText.Color1 = Color.Black;
+        }
+
 
     }
 }

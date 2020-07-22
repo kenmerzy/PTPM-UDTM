@@ -246,8 +246,7 @@
             this.lblDangKy.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
             this.lblDangKy.TabIndex = 10;
             this.lblDangKy.Values.Text = "Bạn chưa có tài khoản? Đăng ký tại đây";
-            this.lblDangKy.Click += new System.EventHandler(this.lblDangKy_Click);
-            // 
+            this.lblDangKy.Click += new System.EventHandler(this.lblDangKy_Click);            // 
             // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
