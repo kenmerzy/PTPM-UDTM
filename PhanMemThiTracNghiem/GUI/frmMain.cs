@@ -66,7 +66,7 @@ namespace GUI
             //btn.Dock = DockStyle.Fill;
             //tableLayoutPanel2.SetColumnSpan(btn, 2);
 
-            getDeThi();
+   
 
         }
 
@@ -78,8 +78,10 @@ namespace GUI
                 for (int i = 0; i < kt.Count; i++)
                 {
                     usrctrDeThi dt = new usrctrDeThi(kt[i].TenKyThi, kt[i].MoTa, kt[i].TongSoCau.ToString()
-                    , kt[i].ThoiGianLamBai.ToString(), kt[i].ThoiGianMoDe.ToString());
+                    , kt[i].ThoiGianLamBai.ToString(), kt[i].ThoiGianMoDe.ToString(),layout_Thi);
                    
+                   
+
                     dt.Dock = DockStyle.Top; 
                     flowLayoutLeft.Controls.Add(dt);
                     flowLayoutLeft.SetFlowBreak(dt, true);
