@@ -126,17 +126,17 @@
             // 
             this.lblSoCau.Location = new System.Drawing.Point(30, 3);
             this.lblSoCau.Name = "lblSoCau";
-            this.lblSoCau.Size = new System.Drawing.Size(109, 21);
+            this.lblSoCau.Size = new System.Drawing.Size(49, 21);
             this.lblSoCau.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoCau.TabIndex = 4;
-            this.lblSoCau.Values.Text = "kryptonLabel2";
+            this.lblSoCau.Values.Text = "6 câu";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::GUI.Properties.Resources.icons8_clock_15__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(152, 3);
+            this.pictureBox3.Location = new System.Drawing.Point(92, 3);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(21, 21);
@@ -145,12 +145,12 @@
             // 
             // lblThoiGianLamBai
             // 
-            this.lblThoiGianLamBai.Location = new System.Drawing.Point(179, 3);
+            this.lblThoiGianLamBai.Location = new System.Drawing.Point(119, 3);
             this.lblThoiGianLamBai.Name = "lblThoiGianLamBai";
-            this.lblThoiGianLamBai.Size = new System.Drawing.Size(109, 21);
+            this.lblThoiGianLamBai.Size = new System.Drawing.Size(63, 21);
             this.lblThoiGianLamBai.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThoiGianLamBai.TabIndex = 5;
-            this.lblThoiGianLamBai.Values.Text = "kryptonLabel3";
+            this.lblThoiGianLamBai.Values.Text = "15 phút";
             // 
             // flowLayoutPanel2
             // 
@@ -175,10 +175,10 @@
             // 
             this.lblThoiGianMoDe.Location = new System.Drawing.Point(30, 3);
             this.lblThoiGianMoDe.Name = "lblThoiGianMoDe";
-            this.lblThoiGianMoDe.Size = new System.Drawing.Size(109, 21);
+            this.lblThoiGianMoDe.Size = new System.Drawing.Size(89, 21);
             this.lblThoiGianMoDe.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThoiGianMoDe.TabIndex = 1;
-            this.lblThoiGianMoDe.Values.Text = "kryptonLabel4";
+            this.lblThoiGianMoDe.Values.Text = "17/10/2020";
             // 
             // lblMonThi
             // 
@@ -186,11 +186,11 @@
             this.lblMonThi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblMonThi.Location = new System.Drawing.Point(3, 9);
             this.lblMonThi.Name = "lblMonThi";
-            this.lblMonThi.Size = new System.Drawing.Size(148, 28);
+            this.lblMonThi.Size = new System.Drawing.Size(108, 28);
             this.lblMonThi.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
             this.lblMonThi.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMonThi.TabIndex = 5;
-            this.lblMonThi.Values.Text = "kryptonLabel1";
+            this.lblMonThi.Values.Text = "Tên bộ đề";
             this.lblMonThi.Click += new System.EventHandler(this.lblMonThi_Click);
             this.lblMonThi.MouseLeave += new System.EventHandler(this.lblMonThi_MouseLeave);
             this.lblMonThi.MouseHover += new System.EventHandler(this.lblMonThi_MouseHover);
@@ -203,7 +203,7 @@
             this.lblMoTa.Size = new System.Drawing.Size(610, 44);
             this.lblMoTa.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMoTa.TabIndex = 6;
-            this.lblMoTa.Values.Text = "kryptonLabel5";
+            this.lblMoTa.Values.Text = "Mô tả";
             // 
             // usrctrDeThi
             // 

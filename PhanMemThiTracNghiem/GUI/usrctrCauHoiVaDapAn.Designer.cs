@@ -32,15 +32,15 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.rdBtnDapAnA = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
+            this.rdBtnDapAnC = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
+            this.rdBtnDapAnB = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
+            this.rdBtnDapAnD = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
+            this.lblCauHoi = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.btnTruocDo = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnKeTiep = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.flowDanhSachCauHoi = new System.Windows.Forms.FlowLayoutPanel();
-            this.rfBtnDapAnA = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
-            this.rfBtnDapAnC = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
-            this.rfBtnDapAnB = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
-            this.rfBtnDapAnD = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
-            this.lblCauHoi = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -103,10 +103,10 @@
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.rfBtnDapAnA, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.rfBtnDapAnC, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.rfBtnDapAnB, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.rfBtnDapAnD, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.rdBtnDapAnA, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.rdBtnDapAnC, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.rdBtnDapAnB, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.rdBtnDapAnD, 1, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 73);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -115,6 +115,51 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(809, 194);
             this.tableLayoutPanel4.TabIndex = 0;
+            // 
+            // rdBtnDapAnA
+            // 
+            this.rdBtnDapAnA.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.rdBtnDapAnA.Location = new System.Drawing.Point(3, 36);
+            this.rdBtnDapAnA.Name = "rdBtnDapAnA";
+            this.rdBtnDapAnA.Size = new System.Drawing.Size(37, 24);
+            this.rdBtnDapAnA.TabIndex = 0;
+            this.rdBtnDapAnA.Values.Text = "A.";
+            // 
+            // rdBtnDapAnC
+            // 
+            this.rdBtnDapAnC.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.rdBtnDapAnC.Location = new System.Drawing.Point(3, 133);
+            this.rdBtnDapAnC.Name = "rdBtnDapAnC";
+            this.rdBtnDapAnC.Size = new System.Drawing.Size(36, 24);
+            this.rdBtnDapAnC.TabIndex = 1;
+            this.rdBtnDapAnC.Values.Text = "C.";
+            // 
+            // rdBtnDapAnB
+            // 
+            this.rdBtnDapAnB.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.rdBtnDapAnB.Location = new System.Drawing.Point(407, 36);
+            this.rdBtnDapAnB.Name = "rdBtnDapAnB";
+            this.rdBtnDapAnB.Size = new System.Drawing.Size(36, 24);
+            this.rdBtnDapAnB.TabIndex = 2;
+            this.rdBtnDapAnB.Values.Text = "B.";
+            // 
+            // rdBtnDapAnD
+            // 
+            this.rdBtnDapAnD.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.rdBtnDapAnD.Location = new System.Drawing.Point(407, 133);
+            this.rdBtnDapAnD.Name = "rdBtnDapAnD";
+            this.rdBtnDapAnD.Size = new System.Drawing.Size(38, 24);
+            this.rdBtnDapAnD.TabIndex = 3;
+            this.rdBtnDapAnD.Values.Text = "D.";
+            // 
+            // lblCauHoi
+            // 
+            this.lblCauHoi.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblCauHoi.Location = new System.Drawing.Point(3, 23);
+            this.lblCauHoi.Name = "lblCauHoi";
+            this.lblCauHoi.Size = new System.Drawing.Size(92, 24);
+            this.lblCauHoi.TabIndex = 1;
+            this.lblCauHoi.Values.Text = "Câu hỏi 19 :";
             // 
             // tableLayoutPanel5
             // 
@@ -159,51 +204,6 @@
             this.flowDanhSachCauHoi.Name = "flowDanhSachCauHoi";
             this.flowDanhSachCauHoi.Size = new System.Drawing.Size(823, 93);
             this.flowDanhSachCauHoi.TabIndex = 2;
-            // 
-            // rfBtnDapAnA
-            // 
-            this.rfBtnDapAnA.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.rfBtnDapAnA.Location = new System.Drawing.Point(3, 36);
-            this.rfBtnDapAnA.Name = "rfBtnDapAnA";
-            this.rfBtnDapAnA.Size = new System.Drawing.Size(37, 24);
-            this.rfBtnDapAnA.TabIndex = 0;
-            this.rfBtnDapAnA.Values.Text = "A.";
-            // 
-            // rfBtnDapAnC
-            // 
-            this.rfBtnDapAnC.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.rfBtnDapAnC.Location = new System.Drawing.Point(3, 133);
-            this.rfBtnDapAnC.Name = "rfBtnDapAnC";
-            this.rfBtnDapAnC.Size = new System.Drawing.Size(36, 24);
-            this.rfBtnDapAnC.TabIndex = 1;
-            this.rfBtnDapAnC.Values.Text = "C.";
-            // 
-            // rfBtnDapAnB
-            // 
-            this.rfBtnDapAnB.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.rfBtnDapAnB.Location = new System.Drawing.Point(407, 36);
-            this.rfBtnDapAnB.Name = "rfBtnDapAnB";
-            this.rfBtnDapAnB.Size = new System.Drawing.Size(36, 24);
-            this.rfBtnDapAnB.TabIndex = 2;
-            this.rfBtnDapAnB.Values.Text = "B.";
-            // 
-            // rfBtnDapAnD
-            // 
-            this.rfBtnDapAnD.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.rfBtnDapAnD.Location = new System.Drawing.Point(407, 133);
-            this.rfBtnDapAnD.Name = "rfBtnDapAnD";
-            this.rfBtnDapAnD.Size = new System.Drawing.Size(38, 24);
-            this.rfBtnDapAnD.TabIndex = 3;
-            this.rfBtnDapAnD.Values.Text = "D.";
-            // 
-            // lblCauHoi
-            // 
-            this.lblCauHoi.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblCauHoi.Location = new System.Drawing.Point(3, 23);
-            this.lblCauHoi.Name = "lblCauHoi";
-            this.lblCauHoi.Size = new System.Drawing.Size(92, 24);
-            this.lblCauHoi.TabIndex = 1;
-            this.lblCauHoi.Values.Text = "Câu hỏi 19 :";
             // 
             // kryptonButton1
             // 
@@ -260,10 +260,10 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private ComponentFactory.Krypton.Toolkit.KryptonRadioButton rfBtnDapAnA;
-        private ComponentFactory.Krypton.Toolkit.KryptonRadioButton rfBtnDapAnC;
-        private ComponentFactory.Krypton.Toolkit.KryptonRadioButton rfBtnDapAnB;
-        private ComponentFactory.Krypton.Toolkit.KryptonRadioButton rfBtnDapAnD;
+        private ComponentFactory.Krypton.Toolkit.KryptonRadioButton rdBtnDapAnA;
+        private ComponentFactory.Krypton.Toolkit.KryptonRadioButton rdBtnDapAnC;
+        private ComponentFactory.Krypton.Toolkit.KryptonRadioButton rdBtnDapAnB;
+        private ComponentFactory.Krypton.Toolkit.KryptonRadioButton rdBtnDapAnD;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnTruocDo;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnKeTiep;

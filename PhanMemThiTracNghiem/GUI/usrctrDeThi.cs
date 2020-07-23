@@ -16,6 +16,7 @@ namespace GUI
         string tsc = null;
         int tglb = 0;
         frmMain ma;
+        string maMon = null;
         public usrctrDeThi()
         {
             InitializeComponent();
@@ -34,11 +35,14 @@ namespace GUI
             tsc = tongSoCau;
             //pictureHinhAnh.Image = image;          
         }
-
+        public void setMaMon(string maMon)
+        {
+            this.maMon = maMon ;
+        }
         private void lblMonThi_Click(object sender, EventArgs e)
         {
             layoutThi.Controls.Clear();
-            usrctrTrangThi th = new usrctrTrangThi(tsc,tglb);
+            usrctrTrangThi th = new usrctrTrangThi(tsc,tglb,maMon);
             layoutThi.Controls.Add(th);
             th.Dock = DockStyle.Fill;
             layoutThi.SetColumnSpan(th, 2);

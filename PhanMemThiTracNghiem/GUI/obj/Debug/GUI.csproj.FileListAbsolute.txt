@@ -91,6 +91,6 @@ E:\PhatTrienPhanMem\ThiTracNghiem\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrX
 E:\PhatTrienPhanMem\ThiTracNghiem\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrThanhVienChuaDangNhap.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrTrangThi.resources
-E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrThongTinBaiThi.resources
-E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrHuongDanLamBaics.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrCauHoiVaDapAn.resources
+E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrKetQuaThi.resources
