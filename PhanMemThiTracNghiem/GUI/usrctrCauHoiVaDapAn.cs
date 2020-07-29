@@ -13,23 +13,47 @@ namespace GUI
     public partial class usrctrCauHoiVaDapAn : UserControl
     {
         List<CauHoi> lstCH;
-        List<DapAn> lstDA;
+        List<List<DapAn>> lstDA;
+        int dapAnChon;
+        int cauHoiHienTai;
         public usrctrCauHoiVaDapAn()
         {
             InitializeComponent();
         }
-        public usrctrCauHoiVaDapAn(List<CauHoi>listCH ,List<DapAn> listDa)
+        public usrctrCauHoiVaDapAn(List<CauHoi>listCH ,List<List<DapAn>> listDa)
         {
             InitializeComponent();
+            lstCH = new List<CauHoi>();
+            lstDA = new List<List<DapAn>>();
             lstCH = listCH;
             lstDA = listDa;
-            loadCHvaDA(lstCH,lstDA);
+            loadCHvaDA(lstCH, lstDA, 0);
+            cauHoiHienTai = 0;
         }
 
-        private void loadCHvaDA(List<CauHoi> lstCH, List<DapAn> lstDA)
+
+        private void loadCHvaDA(List<CauHoi> lstCH, List<List<DapAn>> lstDA, int position)
         {
-            loadCauHoi(lstCH[0].NoiDung);
-            loadDapAn(lstDA[0].NoiDung,lstDA[1].NoiDung,lstDA[2].NoiDung,lstDA[3].NoiDung);
+
+            loadCauHoi(lstCH[position].NoiDung);
+            loadDapAn(lstDA[position][0].NoiDung, lstDA[position][1].NoiDung, lstDA[position][2].NoiDung, lstDA[position][3].NoiDung);
+        }
+        private void loadCHvaDA(List<CauHoi> lstCH, List<List<DapAn>> lstDA, int position,int dapAnChon)
+        {
+            loadCauHoi(lstCH[position].NoiDung);
+            loadDapAn(lstDA[position][0].NoiDung, lstDA[position][1].NoiDung, lstDA[position][2].NoiDung, lstDA[position][3].NoiDung);
+            chonDapAn(dapAnChon);
+        }
+        private void chonDapAn(int dapAn)
+        {
+            if (dapAn == 1)
+                rdBtnDapAnA.Checked = true;
+            else if (dapAn == 2)
+                rdBtnDapAnB.Checked = true;
+            else if (dapAn == 3)
+                rdBtnDapAnC.Checked = true;
+            else if (dapAn == 4)
+                rdBtnDapAnD.Checked = true;
         }
          private void loadCauHoi(string cauHoi)
         {

@@ -17,4 +17,3 @@ E:\PhatTrienPhanMem\ThiTracNghiem\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL
 E:\PhatTrienPhanMem\ThiTracNghiem\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.pdb
 E:\PhatTrienPhanMem\ThiTracNghiem\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.pdb
 E:\PTPM-UDTM\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.dll.config
-E:\PTPM-UDTM\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.csprojResolveAssemblyReference.cache

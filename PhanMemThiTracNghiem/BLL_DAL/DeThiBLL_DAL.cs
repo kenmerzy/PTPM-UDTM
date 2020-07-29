@@ -34,6 +34,15 @@ namespace BLL_DAL
             List<DapAn> daList = dapans.ToList<DapAn>();
             return daList;
         }
-
+        public List<DapAn> getAllDapAn(string maMon)
+        {
+            var dapans = from da in qldt.DapAns
+                                  join ch in qldt.CauHois
+                                  on da.MaCauHoi equals ch.MaCauHoi
+                                where ch.MaMon == maMon
+                                select da;
+            List<DapAn> daList = dapans.ToList<DapAn>();
+            return daList;
+        }
     }
 }
