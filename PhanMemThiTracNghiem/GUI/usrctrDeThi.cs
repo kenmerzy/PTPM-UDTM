@@ -16,12 +16,12 @@ namespace GUI
         string tsc = null;
         int tglb = 0;
         frmMain ma;
-        string maMon ;
+        string maMon = null;
         public usrctrDeThi()
         {
             InitializeComponent();
         }
-        public usrctrDeThi(string tenKyThi, string moTa, string tongSoCau, string thoiGianLamBai, string thoiGianMoDe, TableLayoutPanel layoutT,string maMon)
+        public usrctrDeThi(string tenKyThi, string moTa, string tongSoCau, string thoiGianLamBai, string thoiGianMoDe, TableLayoutPanel layoutT)
         {
             InitializeComponent();
             lblMonThi.Text = tenKyThi;
@@ -33,10 +33,12 @@ namespace GUI
             layoutThi = layoutT;
             tglb = int.Parse(thoiGianLamBai);  
             tsc = tongSoCau;
-            this.maMon = maMon;
             //pictureHinhAnh.Image = image;          
         }
-
+        public void setMaMon(string maMon)
+        {
+            this.maMon = maMon ;
+        }
         private void lblMonThi_Click(object sender, EventArgs e)
         {
             layoutThi.Controls.Clear();

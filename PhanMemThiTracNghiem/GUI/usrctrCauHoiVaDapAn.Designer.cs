@@ -119,60 +119,45 @@
             // rdBtnDapAnA
             // 
             this.rdBtnDapAnA.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.rdBtnDapAnA.Location = new System.Drawing.Point(25, 36);
-            this.rdBtnDapAnA.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
+            this.rdBtnDapAnA.Location = new System.Drawing.Point(3, 36);
             this.rdBtnDapAnA.Name = "rdBtnDapAnA";
-            this.rdBtnDapAnA.Size = new System.Drawing.Size(41, 24);
-            this.rdBtnDapAnA.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
-            this.rdBtnDapAnA.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdBtnDapAnA.Size = new System.Drawing.Size(37, 24);
             this.rdBtnDapAnA.TabIndex = 0;
             this.rdBtnDapAnA.Values.Text = "A.";
             // 
             // rdBtnDapAnC
             // 
             this.rdBtnDapAnC.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.rdBtnDapAnC.Location = new System.Drawing.Point(25, 133);
-            this.rdBtnDapAnC.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
+            this.rdBtnDapAnC.Location = new System.Drawing.Point(3, 133);
             this.rdBtnDapAnC.Name = "rdBtnDapAnC";
-            this.rdBtnDapAnC.Size = new System.Drawing.Size(42, 24);
-            this.rdBtnDapAnC.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
-            this.rdBtnDapAnC.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdBtnDapAnC.Size = new System.Drawing.Size(36, 24);
             this.rdBtnDapAnC.TabIndex = 1;
             this.rdBtnDapAnC.Values.Text = "C.";
             // 
             // rdBtnDapAnB
             // 
             this.rdBtnDapAnB.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.rdBtnDapAnB.Location = new System.Drawing.Point(429, 36);
-            this.rdBtnDapAnB.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
+            this.rdBtnDapAnB.Location = new System.Drawing.Point(407, 36);
             this.rdBtnDapAnB.Name = "rdBtnDapAnB";
-            this.rdBtnDapAnB.Size = new System.Drawing.Size(45, 24);
-            this.rdBtnDapAnB.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
-            this.rdBtnDapAnB.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdBtnDapAnB.Size = new System.Drawing.Size(36, 24);
             this.rdBtnDapAnB.TabIndex = 2;
-            this.rdBtnDapAnB.Values.Text = " B.";
+            this.rdBtnDapAnB.Values.Text = "B.";
             // 
             // rdBtnDapAnD
             // 
             this.rdBtnDapAnD.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.rdBtnDapAnD.Location = new System.Drawing.Point(429, 133);
-            this.rdBtnDapAnD.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
+            this.rdBtnDapAnD.Location = new System.Drawing.Point(407, 133);
             this.rdBtnDapAnD.Name = "rdBtnDapAnD";
-            this.rdBtnDapAnD.Size = new System.Drawing.Size(42, 24);
-            this.rdBtnDapAnD.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
-            this.rdBtnDapAnD.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdBtnDapAnD.Size = new System.Drawing.Size(38, 24);
             this.rdBtnDapAnD.TabIndex = 3;
             this.rdBtnDapAnD.Values.Text = "D.";
             // 
             // lblCauHoi
             // 
             this.lblCauHoi.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblCauHoi.Location = new System.Drawing.Point(10, 19);
-            this.lblCauHoi.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.lblCauHoi.Location = new System.Drawing.Point(3, 23);
             this.lblCauHoi.Name = "lblCauHoi";
-            this.lblCauHoi.Size = new System.Drawing.Size(141, 31);
-            this.lblCauHoi.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
-            this.lblCauHoi.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCauHoi.Size = new System.Drawing.Size(92, 24);
             this.lblCauHoi.TabIndex = 1;
             this.lblCauHoi.Values.Text = "Câu hỏi 19 :";
             // 
