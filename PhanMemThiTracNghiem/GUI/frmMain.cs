@@ -78,8 +78,7 @@ namespace GUI
                 for (int i = 0; i < kt.Count; i++)
                 {
                     usrctrDeThi dt = new usrctrDeThi(kt[i].TenKyThi, kt[i].MoTa, kt[i].TongSoCau.ToString()
-                    , kt[i].ThoiGianLamBai.ToString(), kt[i].ThoiGianMoDe.ToString(),layout_Thi);
-                    dt.setMaMon(kt[i].MaMon);
+                    , kt[i].ThoiGianLamBai.ToString(), kt[i].ThoiGianMoDe.ToString(),layout_Thi,kt[i].MaMon.ToString());
                     dt.Dock = DockStyle.Top; 
                     flowLayoutLeft.Controls.Add(dt);
                     flowLayoutLeft.SetFlowBreak(dt, true);

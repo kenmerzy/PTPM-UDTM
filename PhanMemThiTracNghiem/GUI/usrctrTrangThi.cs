@@ -15,8 +15,8 @@ namespace GUI
         int minute ;
         int second ;
         string mnl, scl,maMon;
-        List<CauHoi> lstCH;
-        List<DapAn> lstDA;
+        List<CauHoi> listCH;
+        List<List<DapAn>> listDA;
         usrctrCauHoiVaDapAn ch;
         DeThiBLL_DAL dethiBLL_DAL;
         
@@ -40,9 +40,8 @@ namespace GUI
         {
             getCauHoiDapAn();
 
-
             countDown.Enabled = true;
-            ch = new usrctrCauHoiVaDapAn(lstCH,lstDA);
+            ch = new usrctrCauHoiVaDapAn(listCH, listDA);
             layoutRight.Controls.Clear();
             ch.Dock = DockStyle.Fill;
             layoutRight.Controls.Add(ch);
@@ -53,13 +52,16 @@ namespace GUI
         }
         private void getCauHoiDapAn()
         {
+            List<DapAn> listTMP;
+            listCH = new List<CauHoi>();
+            listDA = new List<List<DapAn>>();
             dethiBLL_DAL = new DeThiBLL_DAL();
-            lstCH = dethiBLL_DAL.getCauHois(maMon);
-            MessageBox.Show(lstCH.Count.ToString());
-            for(int i = 0 ; i< lstCH.Count ; i++)
+            listCH = dethiBLL_DAL.getCauHois(maMon);
+            for(int i = 0 ; i< listCH.Count ; i++)
             {
-                    lstDA.AddRange(dethiBLL_DAL.getDapAns(lstCH[i].MaCauHoi));
-                    
+                    listTMP = new List<DapAn>();
+                    listTMP = dethiBLL_DAL.getDapAns(listCH[i].MaCauHoi);
+                    listDA.Add(listTMP);
             }
         }
 
