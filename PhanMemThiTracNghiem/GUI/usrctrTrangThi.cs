@@ -14,42 +14,35 @@ namespace GUI
     {
         int minute ;
         int second ;
-        string mnl, scl,maMon;
+        string mnl, scl,maMon,tenKyThi;
+        string soCau;
+        int thoiGianLamBai;
         List<CauHoi> listCH;
         List<List<DapAn>> listDA;
         usrctrCauHoiVaDapAn ch;
+        usrctlHuongDanThi hdt;
         DeThiBLL_DAL dethiBLL_DAL;
         
         public usrctrTrangThi()
         {
             InitializeComponent();
         }
-        public usrctrTrangThi(string soCau, int thoiGianLamBai,string maMon)
+        public usrctrTrangThi(string soCau, int thoiGianLamBai,string maMon,string tenKyThi)
         {
             InitializeComponent();
+
             lbltxtSoCau.Text = soCau;
             lbltxtThoiGian.Text = thoiGianLamBai.ToString() + " phút";
             minute = thoiGianLamBai;
             second = 0;
             this.maMon = maMon;
-            layoutTop.Visible = false; 
-
+            this.soCau = soCau;
+            this.thoiGianLamBai = thoiGianLamBai;
+            layoutTop.Visible = false;
+            this.tenKyThi = tenKyThi;
+            lbltxtThoiGianConLai.StateNormal.ShortText.Color1 = Color.Black;
         }
 
-        private void btnBatDauLamBai_Click(object sender, EventArgs e)
-        {
-            getCauHoiDapAn();
-
-            countDown.Enabled = true;
-            ch = new usrctrCauHoiVaDapAn(listCH, listDA);
-            layoutRight.Controls.Clear();
-            ch.Dock = DockStyle.Fill;
-            layoutRight.Controls.Add(ch);
-            layoutTop.Visible = true;
-
-            
-
-        }
         private void getCauHoiDapAn()
         {
             List<DapAn> listTMP;
@@ -93,5 +86,59 @@ namespace GUI
             }
           
         }
+
+        private void usrctrTrangThi_Load(object sender, EventArgs e)
+        {
+            hdt = new usrctlHuongDanThi();
+            layoutRight.Controls.Clear();
+            hdt.Dock = DockStyle.Fill;
+            layoutRight.Controls.Add(hdt);
+            layoutNopBai.Visible = false;
+        }
+
+        private void btnBatDauLamBai_Click_1(object sender, EventArgs e)
+        {
+            getCauHoiDapAn();
+
+            countDown.Enabled = true;
+            ch = new usrctrCauHoiVaDapAn(listCH, listDA);
+            layoutRight.Controls.Clear();
+            ch.Dock = DockStyle.Fill;
+            lblTenKyThi.Text = tenKyThi;
+            layoutRight.Controls.Add(ch);
+            
+            layoutTop.Visible = true;
+            layoutNopBai.Visible = true;
+            layoutBatDauLamBai.Visible = false;
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult rs;
+
+            rs = MessageBox.Show("Bạn có chắc chắn muốn thoát ?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (rs == DialogResult.Yes)
+            {
+                lbltxtSoCau.Text = soCau;
+                lbltxtThoiGian.Text = thoiGianLamBai.ToString() + " phút";
+                minute = thoiGianLamBai;
+                second = 0;
+                layoutTop.Visible = false;
+                layoutNopBai.Visible = false;
+                layoutBatDauLamBai.Visible = true;
+
+                hdt = new usrctlHuongDanThi();
+                layoutRight.Controls.Clear();
+                hdt.Dock = DockStyle.Fill;
+                layoutRight.Controls.Add(hdt);
+                lbltxtThoiGianConLai.StateNormal.ShortText.Color1 = Color.Black;
+            }
+        }
+
+
+
+
+
      }
 }

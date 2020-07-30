@@ -41,15 +41,11 @@
             this.btnTruocDo = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnKeTiep = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.flowDanhSachCauHoi = new System.Windows.Forms.FlowLayoutPanel();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            this.flowDanhSachCauHoi.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -119,6 +115,7 @@
             // rdBtnDapAnA
             // 
             this.rdBtnDapAnA.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.rdBtnDapAnA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rdBtnDapAnA.Location = new System.Drawing.Point(25, 36);
             this.rdBtnDapAnA.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
             this.rdBtnDapAnA.Name = "rdBtnDapAnA";
@@ -131,6 +128,7 @@
             // rdBtnDapAnC
             // 
             this.rdBtnDapAnC.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.rdBtnDapAnC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rdBtnDapAnC.Location = new System.Drawing.Point(25, 133);
             this.rdBtnDapAnC.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
             this.rdBtnDapAnC.Name = "rdBtnDapAnC";
@@ -143,6 +141,7 @@
             // rdBtnDapAnB
             // 
             this.rdBtnDapAnB.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.rdBtnDapAnB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rdBtnDapAnB.Location = new System.Drawing.Point(429, 36);
             this.rdBtnDapAnB.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
             this.rdBtnDapAnB.Name = "rdBtnDapAnB";
@@ -155,6 +154,7 @@
             // rdBtnDapAnD
             // 
             this.rdBtnDapAnD.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.rdBtnDapAnD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rdBtnDapAnD.Location = new System.Drawing.Point(429, 133);
             this.rdBtnDapAnD.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
             this.rdBtnDapAnD.Name = "rdBtnDapAnD";
@@ -167,12 +167,12 @@
             // lblCauHoi
             // 
             this.lblCauHoi.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblCauHoi.Location = new System.Drawing.Point(10, 19);
+            this.lblCauHoi.Location = new System.Drawing.Point(10, 17);
             this.lblCauHoi.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.lblCauHoi.Name = "lblCauHoi";
-            this.lblCauHoi.Size = new System.Drawing.Size(141, 31);
+            this.lblCauHoi.Size = new System.Drawing.Size(165, 36);
             this.lblCauHoi.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
-            this.lblCauHoi.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCauHoi.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCauHoi.TabIndex = 1;
             this.lblCauHoi.Values.Text = "Câu hỏi 19 :";
             // 
@@ -199,6 +199,7 @@
             this.btnTruocDo.Size = new System.Drawing.Size(100, 36);
             this.btnTruocDo.TabIndex = 0;
             this.btnTruocDo.Values.Text = "Trước đó";
+            this.btnTruocDo.Click += new System.EventHandler(this.btnTruocDo_Click);
             // 
             // btnKeTiep
             // 
@@ -208,47 +209,15 @@
             this.btnKeTiep.Size = new System.Drawing.Size(100, 36);
             this.btnKeTiep.TabIndex = 1;
             this.btnKeTiep.Values.Text = "Kế tiếp";
+            this.btnKeTiep.Click += new System.EventHandler(this.btnKeTiep_Click);
             // 
             // flowDanhSachCauHoi
             // 
-            this.flowDanhSachCauHoi.Controls.Add(this.kryptonButton1);
-            this.flowDanhSachCauHoi.Controls.Add(this.kryptonButton2);
-            this.flowDanhSachCauHoi.Controls.Add(this.kryptonButton3);
             this.flowDanhSachCauHoi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowDanhSachCauHoi.Location = new System.Drawing.Point(3, 356);
             this.flowDanhSachCauHoi.Name = "flowDanhSachCauHoi";
             this.flowDanhSachCauHoi.Size = new System.Drawing.Size(823, 93);
             this.flowDanhSachCauHoi.TabIndex = 2;
-            // 
-            // kryptonButton1
-            // 
-            this.kryptonButton1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.kryptonButton1.Location = new System.Drawing.Point(3, 15);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(113, 39);
-            this.kryptonButton1.TabIndex = 0;
-            this.kryptonButton1.Values.Text = "Câu 1 Demo";
-            // 
-            // kryptonButton2
-            // 
-            this.kryptonButton2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.kryptonButton2.Location = new System.Drawing.Point(122, 15);
-            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
-            this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(113, 39);
-            this.kryptonButton2.TabIndex = 1;
-            this.kryptonButton2.Values.Text = "Câu 2 Demo";
-            // 
-            // kryptonButton3
-            // 
-            this.kryptonButton3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.kryptonButton3.Location = new System.Drawing.Point(241, 15);
-            this.kryptonButton3.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
-            this.kryptonButton3.Name = "kryptonButton3";
-            this.kryptonButton3.Size = new System.Drawing.Size(113, 39);
-            this.kryptonButton3.TabIndex = 2;
-            this.kryptonButton3.Values.Text = "Câu 3 Demo";
             // 
             // usrctrCauHoiVaDapAn
             // 
@@ -257,6 +226,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "usrctrCauHoiVaDapAn";
             this.Size = new System.Drawing.Size(829, 452);
+            this.Load += new System.EventHandler(this.usrctrCauHoiVaDapAn_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -264,7 +234,6 @@
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
-            this.flowDanhSachCauHoi.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -284,8 +253,5 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnKeTiep;
         private System.Windows.Forms.FlowLayoutPanel flowDanhSachCauHoi;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel lblCauHoi;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;
     }
 }

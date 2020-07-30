@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
+
 namespace GUI
 {
     public partial class usrctrDeThi : UserControl
@@ -17,6 +18,7 @@ namespace GUI
         int tglb = 0;
         frmMain ma;
         string maMon ;
+        string tenKyThi;
         public usrctrDeThi()
         {
             InitializeComponent();
@@ -33,6 +35,7 @@ namespace GUI
             layoutThi = layoutT;
             tglb = int.Parse(thoiGianLamBai);  
             tsc = tongSoCau;
+            this.tenKyThi = tenKyThi;
             this.maMon = maMon;
             //pictureHinhAnh.Image = image;          
         }
@@ -40,7 +43,7 @@ namespace GUI
         private void lblMonThi_Click(object sender, EventArgs e)
         {
             layoutThi.Controls.Clear();
-            usrctrTrangThi th = new usrctrTrangThi(tsc,tglb,maMon);
+            usrctrTrangThi th = new usrctrTrangThi(tsc,tglb,maMon,tenKyThi);
             layoutThi.Controls.Add(th);
             th.Dock = DockStyle.Fill;
             layoutThi.SetColumnSpan(th, 2);

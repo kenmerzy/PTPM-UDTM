@@ -94,3 +94,26 @@ E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrTrangThi.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrCauHoiVaDapAn.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrKetQuaThi.resources
+E:\New folder\PhanMemThiTracNghiem\GUI\bin\Debug\GUI.exe.config
+E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.exe
+E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.pdb
+E:\New folder\PhanMemThiTracNghiem\GUI\bin\Debug\GUI.exe
+E:\New folder\PhanMemThiTracNghiem\GUI\bin\Debug\GUI.pdb
+E:\New folder\PhanMemThiTracNghiem\GUI\bin\Debug\BLL_DAL.dll
+E:\New folder\PhanMemThiTracNghiem\GUI\bin\Debug\BLL_DAL.pdb
+E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.frmDangKy.resources
+E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.frmDangNhap.resources
+E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.frmMain.resources
+E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.Properties.Resources.resources
+E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrCauHoiVaDapAn.resources
+E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrDeThi.resources
+E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrKetQuaThi.resources
+E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrRightInfo.resources
+E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrSearch.resources
+E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrThanhVien.resources
+E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrThanhVienChuaDangNhap.resources
+E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrTrangThi.resources
+E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrXepHang.resources
+E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctlHuongDanThi.resources

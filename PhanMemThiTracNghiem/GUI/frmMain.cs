@@ -22,12 +22,6 @@ namespace GUI
             dethiBLL_DAL = new DeThiBLL_DAL();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-
-           
-        }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
@@ -51,24 +45,6 @@ namespace GUI
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-            //tableLayoutPanel2.Controls.Clear();
-            //usrctrThi th = new usrctrThi();
-            //tableLayoutPanel2.Controls.Add(th);
-            //th.Dock = DockStyle.Fill;
-            //tableLayoutPanel2.SetColumnSpan(th, 2);
-
-            //Button btn = new Button();
-            //btn.Text = "Buttonnnnn";
-            //tableLayoutPanel2.Controls.Add(btn);
-            //btn.Dock = DockStyle.Fill;
-            //tableLayoutPanel2.SetColumnSpan(btn, 2);
-
-   
-
-        }
 
         public void getDeThi()
         {

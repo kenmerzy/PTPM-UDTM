@@ -100,6 +100,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="usrctlHuongDanThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrctlHuongDanThi.Designer.cs">
+      <DependentUpon>usrctlHuongDanThi.cs</DependentUpon>
+    </Compile>
     <Compile Include="usrctrCauHoiVaDapAn.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -173,6 +179,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="usrctlHuongDanThi.resx">
+      <DependentUpon>usrctlHuongDanThi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="usrctrCauHoiVaDapAn.resx">
       <DependentUpon>usrctrCauHoiVaDapAn.cs</DependentUpon>
     </EmbeddedResource>
