@@ -96,8 +96,8 @@ namespace GUI
          }
         private void loadCacButtonCau(int soButton)
         {
-             KryptonButton btn ;
-            for(int i=0 ; i<soButton;i++)
+            KryptonButton btn ;
+            for(int i=0; i<soButton; i++)
             {
                 btn = new KryptonButton();
                 btn.Values.Text = "Câu " + (i + 1).ToString();

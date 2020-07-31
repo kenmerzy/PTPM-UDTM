@@ -40,7 +40,6 @@
             this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel6 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel7 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.dateTimePickerNgaySinh = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             this.txtHoTen = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtTenTaiKhoan = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtMatKhau = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -51,10 +50,11 @@
             this.lblLoiMatKhau = new System.Windows.Forms.Label();
             this.lblLoiXacNhanMatKhau = new System.Windows.Forms.Label();
             this.lblLoiEmail = new System.Windows.Forms.Label();
+            this.lblLoiSoDienThoai = new System.Windows.Forms.Label();
             this.lblLoiTenTaiKhoan = new System.Windows.Forms.Label();
             this.btnDangKy = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.lblQuayVeDangNhap = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.lblLoiSoDienThoai = new System.Windows.Forms.Label();
+            this.dateTimePickerNgaySinh = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -228,22 +228,12 @@
             this.kryptonLabel7.TabIndex = 2;
             this.kryptonLabel7.Values.Text = "Ngày sinh";
             // 
-            // dateTimePickerNgaySinh
-            // 
-            this.dateTimePickerNgaySinh.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.BreadCrumb;
-            this.dateTimePickerNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerNgaySinh.Location = new System.Drawing.Point(183, 339);
-            this.dateTimePickerNgaySinh.Name = "dateTimePickerNgaySinh";
-            this.dateTimePickerNgaySinh.Size = new System.Drawing.Size(215, 25);
-            this.dateTimePickerNgaySinh.TabIndex = 6;
-            // 
             // txtHoTen
             // 
             this.txtHoTen.Location = new System.Drawing.Point(183, 3);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(215, 24);
             this.txtHoTen.TabIndex = 0;
-            this.txtHoTen.TextChanged += new System.EventHandler(this.txtHoTen_TextChanged);
             // 
             // txtTenTaiKhoan
             // 
@@ -265,7 +255,6 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(215, 24);
             this.txtEmail.TabIndex = 4;
-            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // txtSDT
             // 
@@ -322,6 +311,16 @@
             this.lblLoiEmail.TabIndex = 7;
             this.lblLoiEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lblLoiSoDienThoai
+            // 
+            this.lblLoiSoDienThoai.AutoSize = true;
+            this.lblLoiSoDienThoai.Location = new System.Drawing.Point(426, 287);
+            this.lblLoiSoDienThoai.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
+            this.lblLoiSoDienThoai.Name = "lblLoiSoDienThoai";
+            this.lblLoiSoDienThoai.Size = new System.Drawing.Size(0, 17);
+            this.lblLoiSoDienThoai.TabIndex = 7;
+            this.lblLoiSoDienThoai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // lblLoiTenTaiKhoan
             // 
             this.lblLoiTenTaiKhoan.AutoSize = true;
@@ -338,6 +337,7 @@
             this.btnDangKy.Location = new System.Drawing.Point(237, 534);
             this.btnDangKy.Name = "btnDangKy";
             this.btnDangKy.Size = new System.Drawing.Size(117, 39);
+            this.btnDangKy.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangKy.TabIndex = 8;
             this.btnDangKy.Values.Text = "Đăng ký";
             this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
@@ -346,23 +346,24 @@
             // 
             this.lblQuayVeDangNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblQuayVeDangNhap.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblQuayVeDangNhap.Location = new System.Drawing.Point(150, 596);
+            this.lblQuayVeDangNhap.Location = new System.Drawing.Point(124, 596);
             this.lblQuayVeDangNhap.Name = "lblQuayVeDangNhap";
-            this.lblQuayVeDangNhap.Size = new System.Drawing.Size(290, 24);
+            this.lblQuayVeDangNhap.Size = new System.Drawing.Size(343, 24);
             this.lblQuayVeDangNhap.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
+            this.lblQuayVeDangNhap.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuayVeDangNhap.TabIndex = 9;
             this.lblQuayVeDangNhap.Values.Text = "Bạn đã có tài khoản? Quay lại đăng nhập";
             this.lblQuayVeDangNhap.Click += new System.EventHandler(this.lblQuayVeDangNhap_Click);
             // 
-            // lblLoiSoDienThoai
+            // dateTimePickerNgaySinh
             // 
-            this.lblLoiSoDienThoai.AutoSize = true;
-            this.lblLoiSoDienThoai.Location = new System.Drawing.Point(426, 287);
-            this.lblLoiSoDienThoai.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
-            this.lblLoiSoDienThoai.Name = "lblLoiSoDienThoai";
-            this.lblLoiSoDienThoai.Size = new System.Drawing.Size(0, 17);
-            this.lblLoiSoDienThoai.TabIndex = 7;
-            this.lblLoiSoDienThoai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dateTimePickerNgaySinh.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.BreadCrumb;
+            this.dateTimePickerNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerNgaySinh.Location = new System.Drawing.Point(183, 339);
+            this.dateTimePickerNgaySinh.Name = "dateTimePickerNgaySinh";
+            this.dateTimePickerNgaySinh.Size = new System.Drawing.Size(215, 25);
+            this.dateTimePickerNgaySinh.TabIndex = 6;
+            this.dateTimePickerNgaySinh.ValueNullable = new System.DateTime(2020, 7, 31, 15, 29, 0, 0);
             // 
             // frmDangKy
             // 
@@ -398,7 +399,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel5;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel6;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel7;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker dateTimePickerNgaySinh;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtHoTen;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtTenTaiKhoan;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtMatKhau;
@@ -415,6 +415,7 @@
         private System.Windows.Forms.Label lblLoiEmail;
         private System.Windows.Forms.Label lblLoiTenTaiKhoan;
         private System.Windows.Forms.Label lblLoiSoDienThoai;
+        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker dateTimePickerNgaySinh;
 
 
 

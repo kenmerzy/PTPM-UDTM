@@ -8,31 +8,25 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BLL_DAL;
 namespace GUI
 {
     public partial class frmDangKy : Form
     {
+        DeThiBLL_DAL dethi;
         public frmDangKy()
         {
             InitializeComponent();
+            dethi = new DeThiBLL_DAL();
         }
 
         private void lblQuayVeDangNhap_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frmDangNhap dangnhap = new frmDangNhap();
+            dangnhap.Show();
+            this.Hide();
         }
 
-        private void txtHoTen_TextChanged(object sender, EventArgs e)
-        {
-            
-
-        }
-
-        private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
 
         public static bool isEmail(string inputEmail)
         {
@@ -47,40 +41,110 @@ namespace GUI
                 return (false);
         }
 
-        public void kiemTraHoTen(string hoten)
+        public bool kiemTraDangKy()
         {
-           
+            if (!kiemTraRong())
+                return false;
+                
+            else
+            {
+                if (!kiemTraHoTen(txtHoTen.Text))
+                    lblLoiHoTen.Text = "Họ tên chỉ được chứa chữ cái";
+                else
+                    lblLoiHoTen.Text = "";
+                if (isEmail(txtEmail.Text) == false)
+                    lblLoiEmail.Text = "Email chưa đúng định dạng. Ví dụ khanh@gmail.com";
+                else
+                    lblLoiEmail.Text = "";
+                if (txtSDT.Text.Length != 10)
+                    lblLoiSoDienThoai.Text = "Số điện thoại phải đủ 10 số !!!";
+                else
+                    lblLoiSoDienThoai.Text = "";
+                if (!kiemTraMatKhau(txtMatKhau.Text))
+                {
+                    if (txtMatKhau.Text.Length < 6)
+                        lblLoiMatKhau.Text = "Mật khẩu không được ngắn hơn 6 kí tự !!!";
+                    else if (txtMatKhau.Text.Length > 20)
+                        lblLoiMatKhau.Text = "Mật khẩu không được quá 20 kí tự !!!";
+                    else
+                        lblLoiMatKhau.Text = "";
+                }
+                else
+                    lblLoiMatKhau.Text = "Mật khẩu không chứa các kí tự đặc biệt !!!";
+                if (dethi.kiemTraTonTaiTenTaiKhoan(txtTenTaiKhoan.Text))
+                    lblLoiTenTaiKhoan.Text = "Tên tài khoản đã tồn tại !!!";
+                else
+                    lblLoiTenTaiKhoan.Text = "";
+                if (!kiemTraNhapLaiMatKhau(txtXacNhanMatKhau.Text))
+                    lblLoiXacNhanMatKhau.Text = "Mật khẩu nhập lại không đúng. Vui lòng nhập lại !!!";
+                else
+                    lblLoiXacNhanMatKhau.Text = "";
+            }
+            return true;
         }
 
         private void btnDangKy_Click(object sender, EventArgs e)
         {
-            if (txtHoTen.Text == "" && txtTenTaiKhoan.Text == "" && txtMatKhau.Text == "" && txtXacNhanMatKhau.Text == "" && txtEmail.Text == "" && txtSDT.Text == "")
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin !!!");
-            else
+            if (kiemTraDangKy())
             {
-                if (isEmail(txtEmail.Text))
+                int kq = dethi.luuThongTinDangKy(txtHoTen.Text, txtTenTaiKhoan.Text, txtMatKhau.Text, txtEmail.Text, txtSDT.Text, DateTime.Parse(dateTimePickerNgaySinh.Value.ToString()));
+                if (kq == 1)
                 {
-                    if (kiemTraSoDienThoai(txtSDT.Text))
-                    {
-
-                    }
-                    else
-                        lblLoiSoDienThoai.Text = "Số điện thoại không được bỏ trống !!!";
+                    MessageBox.Show("Đăng ký thành công <3");
+                    frmDangNhap dangnhap = new frmDangNhap();
+                    dangnhap.Show();
+                    this.Hide();
                 }
                 else
-                    lblLoiEmail.Text = "Email chưa đúng định dạng. Ví dụ:Khanh@gmail.com!!!";
+                    MessageBox.Show("Đăng ký không thành công !!!");
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
-
-        public bool kiemTraSoDienThoai(string soDienThoai)
+        public bool kiemTraRong()
         {
-            if (soDienThoai.Length <= 0 || soDienThoai.All(t => char.IsLetter(t)))
+            if (string.IsNullOrEmpty(txtHoTen.Text) || string.IsNullOrEmpty(txtTenTaiKhoan.Text) || string.IsNullOrEmpty(txtMatKhau.Text) || string.IsNullOrEmpty(txtXacNhanMatKhau.Text) || string.IsNullOrEmpty(txtSDT.Text) || string.IsNullOrEmpty(txtEmail.Text))
                 return false;
             return true;
         }
+        public bool kiemTraSDT(string SDT)
+        {
+            if (SDT.All(t => char.IsDigit(t)))
+                return true;
+            return false;
+        }
 
+        public bool kiemTraMatKhau(string matKhau)
+        {
+            if (matKhau.Any(t => !char.IsLetterOrDigit(t)))
+                return true;
+            return false;
+        }
 
-     
+        public bool kiemTraNhapLaiMatKhau(string nhapLaiMatKhau)
+        {
+            if (nhapLaiMatKhau.Equals(txtMatKhau.Text))
+                return true;
+            return false;
+        }
+
+        public bool kiemTraHoTen(string hoTen)
+        {
+            string[] ten = hoTen.Split(' ');
+            if (ten.Length < 1)
+                return false;
+            else
+            {
+                for (int i = 0; i < ten.Length; i++)
+                {
+                    if (ten[i].Any(t => !char.IsLetter(t)))
+                        return false;
+                }
+                return true;
+            }
+        }
     }
 }

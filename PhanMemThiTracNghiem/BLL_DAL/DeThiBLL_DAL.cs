@@ -28,12 +28,14 @@ namespace BLL_DAL
             List<CauHoi> chList = cauhois.ToList<CauHoi>();
             return chList;
         }
+
         public List<DapAn> getDapAns(int mach)
         {
             var dapans = from da in qldt.DapAns where da.MaCauHoi == mach select da;
             List<DapAn> daList = dapans.ToList<DapAn>();
             return daList;
         }
+
         public List<DapAn> getAllDapAn(string maMon)
         {
             var dapans = from da in qldt.DapAns
@@ -43,6 +45,51 @@ namespace BLL_DAL
                                 select da;
             List<DapAn> daList = dapans.ToList<DapAn>();
             return daList;
+        }
+
+        public List<MonThi> getTenMonThi(string tenMon)
+        {
+            var laymonthi = from tenmon in qldt.MonThis select tenmon;
+            List<MonThi> list = laymonthi.ToList<MonThi>();
+            return list;
+        }
+
+        public List<TaiKhoan> getTaiKhoan()
+        {
+            var getTKC = from tk in qldt.TaiKhoans select tk;
+            return getTKC.ToList<TaiKhoan>();
+        }
+
+        public bool kiemTraTonTaiTenTaiKhoan(string tenDN)
+        {
+            TaiKhoan tk = qldt.TaiKhoans.Where(t => t.TenDangNhap == tenDN).FirstOrDefault();
+            if (tk != null)
+                return true;
+            return false;
+            
+        }
+        public int luuThongTinDangKy(string hoTen, string tenDangNhap, string matKhau, string email, string SDT, DateTime ngaySinh)
+        {
+            TaiKhoan tk = new TaiKhoan();
+            ThiSinh ts = new ThiSinh();
+            ts.TenThiSinh = hoTen;
+            tk.TenDangNhap = tenDangNhap;
+            tk.MatKhau = matKhau;
+            ts.Email = email;
+            ts.SoDienThoai  =SDT;
+            ts.NamSinh = ngaySinh;
+
+            try
+            {
+                qldt.TaiKhoans.InsertOnSubmit(tk);
+                qldt.ThiSinhs.InsertOnSubmit(ts);
+                qldt.SubmitChanges();
+                return 1;
+            }
+            catch
+            {
+                return 2;
+            }
         }
     }
 }

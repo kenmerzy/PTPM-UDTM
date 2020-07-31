@@ -17,3 +17,8 @@ E:\PhatTrienPhanMem\ThiTracNghiem\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL
 E:\PhatTrienPhanMem\ThiTracNghiem\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.pdb
 E:\PhatTrienPhanMem\ThiTracNghiem\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.pdb
 E:\PTPM-UDTM\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.dll.config
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.dll.config
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.dll
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.pdb
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.dll
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.pdb

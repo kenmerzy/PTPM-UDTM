@@ -110,9 +110,11 @@
             this.txtPassword.Location = new System.Drawing.Point(95, 17);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(10, 15, 3, 10);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '●';
             this.txtPassword.Size = new System.Drawing.Size(243, 24);
-            this.txtPassword.StateNormal.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.StateNormal.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.TabIndex = 7;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // pictureBox3
             // 
@@ -231,7 +233,7 @@
             this.btnDangNhap.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(106, 37);
-            this.btnDangNhap.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangNhap.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.TabIndex = 3;
             this.btnDangNhap.Values.Text = "Đăng nhập";
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
@@ -240,13 +242,15 @@
             // 
             this.lblDangKy.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDangKy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblDangKy.Location = new System.Drawing.Point(77, 392);
+            this.lblDangKy.Location = new System.Drawing.Point(51, 392);
             this.lblDangKy.Name = "lblDangKy";
-            this.lblDangKy.Size = new System.Drawing.Size(279, 24);
+            this.lblDangKy.Size = new System.Drawing.Size(330, 24);
             this.lblDangKy.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
+            this.lblDangKy.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDangKy.TabIndex = 10;
             this.lblDangKy.Values.Text = "Bạn chưa có tài khoản? Đăng ký tại đây";
-            this.lblDangKy.Click += new System.EventHandler(this.lblDangKy_Click);            // 
+            this.lblDangKy.Click += new System.EventHandler(this.lblDangKy_Click);
+            // 
             // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);

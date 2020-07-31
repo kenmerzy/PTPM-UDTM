@@ -14,7 +14,7 @@ namespace GUI
     {
         int minute ;
         int second ;
-        string mnl, scl,maMon,tenKyThi;
+        string mnl,scl,maMon,tenKyThi, tenMon;
         string soCau;
         int thoiGianLamBai;
         List<CauHoi> listCH;
@@ -30,9 +30,9 @@ namespace GUI
         public usrctrTrangThi(string soCau, int thoiGianLamBai,string maMon,string tenKyThi)
         {
             InitializeComponent();
-
             lbltxtSoCau.Text = soCau;
             lbltxtThoiGian.Text = thoiGianLamBai.ToString() + " phút";
+            lblTenKyThi.Text = tenKyThi;
             minute = thoiGianLamBai;
             second = 0;
             this.maMon = maMon;

@@ -117,3 +117,34 @@ E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrTrangThi.resources
 E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrXepHang.resources
 E:\New folder\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctlHuongDanThi.resources
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\bin\Debug\GUI.exe.config
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.exe
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.pdb
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\bin\Debug\GUI.exe
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\bin\Debug\GUI.pdb
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\bin\Debug\BLL_DAL.dll
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\bin\Debug\ComponentFactory.Krypton.Design.dll
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\bin\Debug\ComponentFactory.Krypton.Docking.dll
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\bin\Debug\KryptonHintTextBox.dll
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\bin\Debug\ThuvienDLLChoDoAn.dll
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\bin\Debug\BLL_DAL.pdb
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.frmDangKy.resources
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.frmDangNhap.resources
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.frmMain.resources
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctlHuongDanThi.resources
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrCauHoiVaDapAn.resources
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrDeThi.resources
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrKetQuaThi.resources
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrRightInfo.resources
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrSearch.resources
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrThanhVien.resources
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrThanhVienChuaDangNhap.resources
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrTrangThi.resources
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrXepHang.resources
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache

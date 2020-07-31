@@ -46,6 +46,8 @@ namespace GUI
         }
 
 
+
+
         public void getDeThi()
         {
             try
