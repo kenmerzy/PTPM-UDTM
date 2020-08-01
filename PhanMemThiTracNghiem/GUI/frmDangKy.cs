@@ -83,26 +83,6 @@ namespace GUI
             return true;
         }
 
-        private void btnDangKy_Click(object sender, EventArgs e)
-        {
-            if (kiemTraDangKy())
-            {
-                int kq = dethi.luuThongTinDangKy(txtHoTen.Text, txtTenTaiKhoan.Text, txtMatKhau.Text, txtEmail.Text, txtSDT.Text, DateTime.Parse(dateTimePickerNgaySinh.Value.ToString()));
-                if (kq == 1)
-                {
-                    MessageBox.Show("Đăng ký thành công <3");
-                    frmDangNhap dangnhap = new frmDangNhap();
-                    dangnhap.Show();
-                    this.Hide();
-                }
-                else
-                    MessageBox.Show("Đăng ký không thành công !!!");
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
 
         public bool kiemTraRong()
         {
@@ -146,5 +126,34 @@ namespace GUI
                 return true;
             }
         }
+
+        private void btnDangKy_Click_1(object sender, EventArgs e)
+        {
+            if (kiemTraDangKy())
+            {
+                int kq = dethi.luuThongTinDangKy(txtHoTen.Text, txtTenTaiKhoan.Text, txtMatKhau.Text, txtEmail.Text, txtSDT.Text, Convert.ToDateTime(dateTimePickerNgaySinh.Value.ToString()));
+                if (kq == 1)
+                {
+                    MessageBox.Show("Đăng ký thành công <3");
+                    frmDangNhap dangnhap = new frmDangNhap();
+                    this.Close();
+                }
+                else
+                    MessageBox.Show("Đăng ký không thành công !!!");
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult rs = MessageBox.Show("Bạn có chắc muốn thoát không?","Thông báo thoát!",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            if (rs.Equals(DialogResult.Yes))
+                this.Close();
+            return;
+        }
     }
 }
+ 

@@ -33,16 +33,5 @@ namespace BLL_DAL.Properties {
                 return ((string)(this["ThiTracNghiemConnectionString"]));
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-R57SVSA\\SQLEXPRESS;Initial Catalog=ThiTracNghiem;Integrated S" +
-            "ecurity=True")]
-        public string ThiTracNghiemConnectionString1 {
-            get {
-                return ((string)(this["ThiTracNghiemConnectionString1"]));
-            }
-        }
     }
 }

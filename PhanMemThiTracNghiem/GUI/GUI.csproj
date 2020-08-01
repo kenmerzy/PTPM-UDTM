@@ -80,6 +80,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="usrctrDeThiMoi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrctrDeThiMoi.Designer.cs">
+      <DependentUpon>usrctrDeThiMoi.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDangKy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,12 @@
     </Compile>
     <Compile Include="usrctrDeThi.Designer.cs">
       <DependentUpon>usrctrDeThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usrctrHoTroTrucTuyen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrctrHoTroTrucTuyen.Designer.cs">
+      <DependentUpon>usrctrHoTroTrucTuyen.cs</DependentUpon>
     </Compile>
     <Compile Include="usrctrKetQuaThi.cs">
       <SubType>UserControl</SubType>
@@ -160,6 +172,9 @@
     <Compile Include="usrctrXepHang.Designer.cs">
       <DependentUpon>usrctrXepHang.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="usrctrDeThiMoi.resx">
+      <DependentUpon>usrctrDeThiMoi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDangKy.resx">
       <DependentUpon>frmDangKy.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="usrctrDeThi.resx">
       <DependentUpon>usrctrDeThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrctrHoTroTrucTuyen.resx">
+      <DependentUpon>usrctrHoTroTrucTuyen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usrctrKetQuaThi.resx">
       <DependentUpon>usrctrKetQuaThi.cs</DependentUpon>

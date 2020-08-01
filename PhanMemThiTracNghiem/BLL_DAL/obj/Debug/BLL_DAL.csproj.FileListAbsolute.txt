@@ -22,3 +22,4 @@ D:\DoAn_PhatTrien\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.dll
 D:\DoAn_PhatTrien\PhanMemThiTracNghiem\BLL_DAL\bin\Debug\BLL_DAL.pdb
 D:\DoAn_PhatTrien\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.dll
 D:\DoAn_PhatTrien\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.pdb
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\BLL_DAL\obj\Debug\BLL_DAL.csprojResolveAssemblyReference.cache

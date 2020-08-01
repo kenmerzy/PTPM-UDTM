@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(usrctrXepHang));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -44,10 +45,10 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.lblTenKyThi2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.lblTenKyThi3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel6 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblTenKyThi3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.lblDiem3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
@@ -80,11 +81,11 @@
             this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.05534F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.83399F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(430, 506);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -109,6 +110,7 @@
             // 
             // tableLayoutPanel2
             // 
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.Gold;
             this.tableLayoutPanel2.ColumnCount = 4;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
@@ -120,18 +122,18 @@
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 53);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 84F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(424, 69);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // lblTenThiSinh
             // 
             this.lblTenThiSinh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTenThiSinh.Location = new System.Drawing.Point(129, 13);
+            this.lblTenThiSinh.Location = new System.Drawing.Point(129, 8);
             this.lblTenThiSinh.Name = "lblTenThiSinh";
-            this.lblTenThiSinh.Size = new System.Drawing.Size(292, 42);
+            this.lblTenThiSinh.Size = new System.Drawing.Size(292, 51);
             this.lblTenThiSinh.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenThiSinh.TabIndex = 0;
             this.lblTenThiSinh.Values.Text = "Ngọc Long";
@@ -139,9 +141,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(45, 13);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(45, 8);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(57, 42);
+            this.pictureBox1.Size = new System.Drawing.Size(57, 51);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -162,15 +165,15 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(424, 119);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(424, 69);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // lblTenKyThi1
             // 
             this.lblTenKyThi1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTenKyThi1.Location = new System.Drawing.Point(45, 20);
+            this.lblTenKyThi1.Location = new System.Drawing.Point(45, 13);
             this.lblTenKyThi1.Name = "lblTenKyThi1";
-            this.lblTenKyThi1.Size = new System.Drawing.Size(248, 77);
+            this.lblTenKyThi1.Size = new System.Drawing.Size(248, 42);
             this.lblTenKyThi1.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenKyThi1.TabIndex = 0;
             this.lblTenKyThi1.Values.Text = "Đề thi trường chuyên môn Địa lý lớp 7";
@@ -178,15 +181,16 @@
             // lblDiem
             // 
             this.lblDiem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDiem.Location = new System.Drawing.Point(332, 20);
+            this.lblDiem.Location = new System.Drawing.Point(332, 13);
             this.lblDiem.Name = "lblDiem";
-            this.lblDiem.Size = new System.Drawing.Size(66, 77);
+            this.lblDiem.Size = new System.Drawing.Size(66, 42);
             this.lblDiem.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDiem.TabIndex = 0;
             this.lblDiem.Values.Text = "8 / 10";
             // 
             // tableLayoutPanel4
             // 
+            this.tableLayoutPanel4.BackColor = System.Drawing.Color.DarkKhaki;
             this.tableLayoutPanel4.ColumnCount = 4;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
@@ -195,36 +199,38 @@
             this.tableLayoutPanel4.Controls.Add(this.pictureBox2, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.kryptonLabel2, 3, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 253);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 203);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(424, 54);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 84F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(424, 69);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Location = new System.Drawing.Point(45, 11);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(45, 8);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(57, 31);
+            this.pictureBox2.Size = new System.Drawing.Size(57, 51);
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
             // kryptonLabel2
             // 
             this.kryptonLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonLabel2.Location = new System.Drawing.Point(129, 11);
+            this.kryptonLabel2.Location = new System.Drawing.Point(129, 8);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(292, 31);
+            this.kryptonLabel2.Size = new System.Drawing.Size(292, 51);
             this.kryptonLabel2.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel2.TabIndex = 1;
             this.kryptonLabel2.Values.Text = "Ngọc Long";
             // 
             // tableLayoutPanel6
             // 
+            this.tableLayoutPanel6.BackColor = System.Drawing.Color.LightGreen;
             this.tableLayoutPanel6.ColumnCount = 4;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
@@ -233,30 +239,31 @@
             this.tableLayoutPanel6.Controls.Add(this.pictureBox3, 1, 1);
             this.tableLayoutPanel6.Controls.Add(this.kryptonLabel3, 3, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 378);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 353);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(424, 54);
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 84F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(424, 69);
             this.tableLayoutPanel6.TabIndex = 5;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Location = new System.Drawing.Point(45, 11);
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(45, 8);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(57, 31);
+            this.pictureBox3.Size = new System.Drawing.Size(57, 51);
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
             // kryptonLabel3
             // 
             this.kryptonLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonLabel3.Location = new System.Drawing.Point(129, 11);
+            this.kryptonLabel3.Location = new System.Drawing.Point(129, 8);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(292, 31);
+            this.kryptonLabel3.Size = new System.Drawing.Size(292, 51);
             this.kryptonLabel3.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel3.TabIndex = 1;
             this.kryptonLabel3.Values.Text = "Ngọc Long";
@@ -273,14 +280,34 @@
             this.tableLayoutPanel5.Controls.Add(this.lblTenKyThi2, 1, 1);
             this.tableLayoutPanel5.Controls.Add(this.kryptonLabel6, 3, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 313);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 278);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 3;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(424, 59);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(424, 69);
             this.tableLayoutPanel5.TabIndex = 7;
+            // 
+            // lblTenKyThi2
+            // 
+            this.lblTenKyThi2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTenKyThi2.Location = new System.Drawing.Point(45, 13);
+            this.lblTenKyThi2.Name = "lblTenKyThi2";
+            this.lblTenKyThi2.Size = new System.Drawing.Size(248, 42);
+            this.lblTenKyThi2.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenKyThi2.TabIndex = 0;
+            this.lblTenKyThi2.Values.Text = "Đề thi trường chuyên môn Địa lý lớp 7";
+            // 
+            // kryptonLabel6
+            // 
+            this.kryptonLabel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonLabel6.Location = new System.Drawing.Point(332, 13);
+            this.kryptonLabel6.Name = "kryptonLabel6";
+            this.kryptonLabel6.Size = new System.Drawing.Size(66, 42);
+            this.kryptonLabel6.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel6.TabIndex = 1;
+            this.kryptonLabel6.Values.Text = "8/10";
             // 
             // tableLayoutPanel7
             // 
@@ -293,51 +320,31 @@
             this.tableLayoutPanel7.Controls.Add(this.lblTenKyThi3, 1, 1);
             this.tableLayoutPanel7.Controls.Add(this.lblDiem3, 3, 1);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 438);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 428);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 3;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(424, 65);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(424, 75);
             this.tableLayoutPanel7.TabIndex = 8;
-            // 
-            // lblTenKyThi2
-            // 
-            this.lblTenKyThi2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTenKyThi2.Location = new System.Drawing.Point(45, 11);
-            this.lblTenKyThi2.Name = "lblTenKyThi2";
-            this.lblTenKyThi2.Size = new System.Drawing.Size(248, 35);
-            this.lblTenKyThi2.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenKyThi2.TabIndex = 0;
-            this.lblTenKyThi2.Values.Text = "Đề thi trường chuyên môn Địa lý lớp 7";
             // 
             // lblTenKyThi3
             // 
             this.lblTenKyThi3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTenKyThi3.Location = new System.Drawing.Point(45, 12);
+            this.lblTenKyThi3.Location = new System.Drawing.Point(45, 14);
             this.lblTenKyThi3.Name = "lblTenKyThi3";
-            this.lblTenKyThi3.Size = new System.Drawing.Size(248, 39);
+            this.lblTenKyThi3.Size = new System.Drawing.Size(248, 46);
             this.lblTenKyThi3.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenKyThi3.TabIndex = 0;
             this.lblTenKyThi3.Values.Text = "Đề thi trường chuyên môn Địa lý lớp 7";
             // 
-            // kryptonLabel6
-            // 
-            this.kryptonLabel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonLabel6.Location = new System.Drawing.Point(332, 11);
-            this.kryptonLabel6.Name = "kryptonLabel6";
-            this.kryptonLabel6.Size = new System.Drawing.Size(66, 35);
-            this.kryptonLabel6.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel6.TabIndex = 1;
-            this.kryptonLabel6.Values.Text = "8/10";
-            // 
             // lblDiem3
             // 
             this.lblDiem3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDiem3.Location = new System.Drawing.Point(332, 12);
+            this.lblDiem3.Location = new System.Drawing.Point(332, 14);
             this.lblDiem3.Name = "lblDiem3";
-            this.lblDiem3.Size = new System.Drawing.Size(66, 39);
+            this.lblDiem3.Size = new System.Drawing.Size(66, 46);
             this.lblDiem3.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDiem3.TabIndex = 1;
             this.lblDiem3.Values.Text = "7/10";

@@ -27,7 +27,6 @@ namespace GUI
         {
             InitializeComponent();
             lblMonThi.Text = tenKyThi;
-            //Image image = Image.FromFile("D:\\DAPT\\PhanMemThiTracNghiem\\GUI\\Resources");
             lblMoTa.Text = moTa;
             lblSoCau.Text =  tongSoCau +"  "+"Câu hỏi";
             lblThoiGianLamBai.Text = thoiGianLamBai.ToString() +" "+"phút" ;
@@ -36,8 +35,7 @@ namespace GUI
             tglb = int.Parse(thoiGianLamBai);  
             tsc = tongSoCau;
             this.tenKyThi = tenKyThi;
-            this.maMon = maMon;
-            //pictureHinhAnh.Image = image;          
+            this.maMon = maMon;   
         }
 
         private void lblMonThi_Click(object sender, EventArgs e)

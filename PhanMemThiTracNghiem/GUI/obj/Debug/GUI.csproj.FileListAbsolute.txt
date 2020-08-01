@@ -148,3 +148,5 @@ D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrThanhVienChuaDang
 D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrTrangThi.resources
 D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrXepHang.resources
 D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrDeThiMoi.resources
+D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrHoTroTrucTuyen.resources

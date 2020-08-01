@@ -35,27 +35,27 @@
             this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.txtTenDangNhap = new KryptonHintTextBox.KryptonHintTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.txtMatKhau = new KryptonHintTextBox.KryptonHintTextBox();
             this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.btnThietLapLai = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnDangNhap = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.btnDangKy = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnDangKy = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -162,16 +162,6 @@
             this.txtTenDangNhap.Tag = "Tên đăng nhập hoặc email";
             this.txtTenDangNhap.Text = "Tên đăng nhập hoặc email";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::GUI.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(56, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 38);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // kryptonLabel4
             // 
             this.kryptonLabel4.Location = new System.Drawing.Point(352, 3);
@@ -206,11 +196,13 @@
             this.txtMatKhau.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMatKhau.Location = new System.Drawing.Point(103, 10);
             this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '●';
             this.txtMatKhau.Size = new System.Drawing.Size(243, 24);
             this.txtMatKhau.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
             this.txtMatKhau.TabIndex = 0;
             this.txtMatKhau.Tag = "Mật khẩu";
             this.txtMatKhau.Text = "Mật khẩu";
+            this.txtMatKhau.UseSystemPasswordChar = true;
             // 
             // kryptonLabel5
             // 
@@ -221,17 +213,6 @@
             this.kryptonLabel5.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel5.TabIndex = 2;
             this.kryptonLabel5.Values.Text = "*";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Image = global::GUI.Properties.Resources.password;
-            this.pictureBox2.Location = new System.Drawing.Point(53, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(44, 38);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
             // 
             // tableLayoutPanel5
             // 
@@ -275,24 +256,14 @@
             this.btnDangNhap.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.TabIndex = 1;
             this.btnDangNhap.Values.Text = "ĐĂNG NHẬP";
-            // 
-            // btnDangKy
-            // 
-            this.btnDangKy.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDangKy.Location = new System.Drawing.Point(264, 3);
-            this.btnDangKy.Name = "btnDangKy";
-            this.btnDangKy.Size = new System.Drawing.Size(106, 31);
-            this.btnDangKy.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnDangKy.StateNormal.Back.Color2 = System.Drawing.Color.Silver;
-            this.btnDangKy.TabIndex = 0;
-            this.btnDangKy.Values.Text = "Đăng ký";
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 51F));
             this.tableLayoutPanel6.Controls.Add(this.btnDangKy, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 278);
@@ -301,6 +272,39 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(424, 37);
             this.tableLayoutPanel6.TabIndex = 5;
+            // 
+            // btnDangKy
+            // 
+            this.btnDangKy.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDangKy.Location = new System.Drawing.Point(264, 3);
+            this.btnDangKy.Name = "btnDangKy";
+            this.btnDangKy.Size = new System.Drawing.Size(105, 31);
+            this.btnDangKy.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnDangKy.StateNormal.Back.Color2 = System.Drawing.Color.Silver;
+            this.btnDangKy.TabIndex = 0;
+            this.btnDangKy.Values.Text = "Đăng ký";
+            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::GUI.Properties.Resources.user;
+            this.pictureBox1.Location = new System.Drawing.Point(56, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(38, 38);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Image = global::GUI.Properties.Resources.password;
+            this.pictureBox2.Location = new System.Drawing.Point(53, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(44, 38);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // usrctrThanhVienChuaDangNhap
             // 
@@ -316,12 +320,12 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

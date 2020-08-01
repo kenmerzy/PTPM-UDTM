@@ -430,7 +430,7 @@ namespace BLL_DAL
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaThiSinh;
+		private int _MaThiSinh;
 		
 		private string _TenThiSinh;
 		
@@ -444,17 +444,13 @@ namespace BLL_DAL
 		
 		private string _Email;
 		
-		private string _AnhDaiDien;
-		
-		private EntitySet<KetQua> _KetQuas;
-		
-		private EntitySet<TaiKhoan> _TaiKhoans;
+		private System.Data.Linq.Binary _AnhDaiDien;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaThiSinhChanging(string value);
+    partial void OnMaThiSinhChanging(int value);
     partial void OnMaThiSinhChanged();
     partial void OnTenThiSinhChanging(string value);
     partial void OnTenThiSinhChanged();
@@ -468,19 +464,17 @@ namespace BLL_DAL
     partial void OnNamSinhChanged();
     partial void OnEmailChanging(string value);
     partial void OnEmailChanged();
-    partial void OnAnhDaiDienChanging(string value);
+    partial void OnAnhDaiDienChanging(System.Data.Linq.Binary value);
     partial void OnAnhDaiDienChanged();
     #endregion
 		
 		public ThiSinh()
 		{
-			this._KetQuas = new EntitySet<KetQua>(new Action<KetQua>(this.attach_KetQuas), new Action<KetQua>(this.detach_KetQuas));
-			this._TaiKhoans = new EntitySet<TaiKhoan>(new Action<TaiKhoan>(this.attach_TaiKhoans), new Action<TaiKhoan>(this.detach_TaiKhoans));
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaThiSinh", DbType="VarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaThiSinh
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaThiSinh", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MaThiSinh
 		{
 			get
 			{
@@ -559,7 +553,7 @@ namespace BLL_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoDienThoai", DbType="VarChar(15)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoDienThoai", DbType="VarChar(20)")]
 		public string SoDienThoai
 		{
 			get
@@ -619,8 +613,8 @@ namespace BLL_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AnhDaiDien", DbType="VarChar(50)")]
-		public string AnhDaiDien
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AnhDaiDien", DbType="Image", UpdateCheck=UpdateCheck.Never)]
+		public System.Data.Linq.Binary AnhDaiDien
 		{
 			get
 			{
@@ -636,32 +630,6 @@ namespace BLL_DAL
 					this.SendPropertyChanged("AnhDaiDien");
 					this.OnAnhDaiDienChanged();
 				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ThiSinh_KetQua", Storage="_KetQuas", ThisKey="MaThiSinh", OtherKey="MaThiSinh")]
-		public EntitySet<KetQua> KetQuas
-		{
-			get
-			{
-				return this._KetQuas;
-			}
-			set
-			{
-				this._KetQuas.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ThiSinh_TaiKhoan", Storage="_TaiKhoans", ThisKey="MaThiSinh", OtherKey="MaThiSinh")]
-		public EntitySet<TaiKhoan> TaiKhoans
-		{
-			get
-			{
-				return this._TaiKhoans;
-			}
-			set
-			{
-				this._TaiKhoans.Assign(value);
 			}
 		}
 		
@@ -683,30 +651,6 @@ namespace BLL_DAL
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
-		}
-		
-		private void attach_KetQuas(KetQua entity)
-		{
-			this.SendPropertyChanging();
-			entity.ThiSinh = this;
-		}
-		
-		private void detach_KetQuas(KetQua entity)
-		{
-			this.SendPropertyChanging();
-			entity.ThiSinh = null;
-		}
-		
-		private void attach_TaiKhoans(TaiKhoan entity)
-		{
-			this.SendPropertyChanging();
-			entity.ThiSinh = this;
-		}
-		
-		private void detach_TaiKhoans(TaiKhoan entity)
-		{
-			this.SendPropertyChanging();
-			entity.ThiSinh = null;
 		}
 	}
 	
@@ -893,7 +837,7 @@ namespace BLL_DAL
 		
 		private int _MaKetQua;
 		
-		private string _MaThiSinh;
+		private int _MaThiSinh;
 		
 		private int _MaKyThi;
 		
@@ -903,8 +847,6 @@ namespace BLL_DAL
 		
 		private System.Nullable<System.DateTime> _ThoiGianThi;
 		
-		private EntityRef<ThiSinh> _ThiSinh;
-		
 		private EntityRef<KyThi> _KyThi;
 		
     #region Extensibility Method Definitions
@@ -913,7 +855,7 @@ namespace BLL_DAL
     partial void OnCreated();
     partial void OnMaKetQuaChanging(int value);
     partial void OnMaKetQuaChanged();
-    partial void OnMaThiSinhChanging(string value);
+    partial void OnMaThiSinhChanging(int value);
     partial void OnMaThiSinhChanged();
     partial void OnMaKyThiChanging(int value);
     partial void OnMaKyThiChanged();
@@ -927,7 +869,6 @@ namespace BLL_DAL
 		
 		public KetQua()
 		{
-			this._ThiSinh = default(EntityRef<ThiSinh>);
 			this._KyThi = default(EntityRef<KyThi>);
 			OnCreated();
 		}
@@ -952,8 +893,8 @@ namespace BLL_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaThiSinh", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string MaThiSinh
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaThiSinh", DbType="Int NOT NULL")]
+		public int MaThiSinh
 		{
 			get
 			{
@@ -963,10 +904,6 @@ namespace BLL_DAL
 			{
 				if ((this._MaThiSinh != value))
 				{
-					if (this._ThiSinh.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMaThiSinhChanging(value);
 					this.SendPropertyChanging();
 					this._MaThiSinh = value;
@@ -1056,40 +993,6 @@ namespace BLL_DAL
 					this._ThoiGianThi = value;
 					this.SendPropertyChanged("ThoiGianThi");
 					this.OnThoiGianThiChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ThiSinh_KetQua", Storage="_ThiSinh", ThisKey="MaThiSinh", OtherKey="MaThiSinh", IsForeignKey=true)]
-		public ThiSinh ThiSinh
-		{
-			get
-			{
-				return this._ThiSinh.Entity;
-			}
-			set
-			{
-				ThiSinh previousValue = this._ThiSinh.Entity;
-				if (((previousValue != value) 
-							|| (this._ThiSinh.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ThiSinh.Entity = null;
-						previousValue.KetQuas.Remove(this);
-					}
-					this._ThiSinh.Entity = value;
-					if ((value != null))
-					{
-						value.KetQuas.Add(this);
-						this._MaThiSinh = value.MaThiSinh;
-					}
-					else
-					{
-						this._MaThiSinh = default(string);
-					}
-					this.SendPropertyChanged("ThiSinh");
 				}
 			}
 		}
@@ -1332,6 +1235,8 @@ namespace BLL_DAL
 		
 		private string _MoTa;
 		
+		private string _HinhAnh;
+		
 		private EntitySet<KetQua> _KetQuas;
 		
 		private EntitySet<LuuKyThi> _LuuKyThis;
@@ -1368,6 +1273,8 @@ namespace BLL_DAL
     partial void OnMaKhoiChanged();
     partial void OnMoTaChanging(string value);
     partial void OnMoTaChanged();
+    partial void OnHinhAnhChanging(string value);
+    partial void OnHinhAnhChanged();
     #endregion
 		
 		public KyThi()
@@ -1642,6 +1549,26 @@ namespace BLL_DAL
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HinhAnh", DbType="NVarChar(50)")]
+		public string HinhAnh
+		{
+			get
+			{
+				return this._HinhAnh;
+			}
+			set
+			{
+				if ((this._HinhAnh != value))
+				{
+					this.OnHinhAnhChanging(value);
+					this.SendPropertyChanging();
+					this._HinhAnh = value;
+					this.SendPropertyChanged("HinhAnh");
+					this.OnHinhAnhChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KyThi_KetQua", Storage="_KetQuas", ThisKey="MaKyThi", OtherKey="MaKyThi")]
 		public EntitySet<KetQua> KetQuas
 		{
@@ -1757,8 +1684,6 @@ namespace BLL_DAL
 		
 		private string _TenLoaiTaiKhoan;
 		
-		private EntitySet<TaiKhoan> _TaiKhoans;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -1771,7 +1696,6 @@ namespace BLL_DAL
 		
 		public LoaiTaiKhoan()
 		{
-			this._TaiKhoans = new EntitySet<TaiKhoan>(new Action<TaiKhoan>(this.attach_TaiKhoans), new Action<TaiKhoan>(this.detach_TaiKhoans));
 			OnCreated();
 		}
 		
@@ -1815,19 +1739,6 @@ namespace BLL_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiTaiKhoan_TaiKhoan", Storage="_TaiKhoans", ThisKey="MaLoaiTaiKhoan", OtherKey="LoaiTaiKhoan")]
-		public EntitySet<TaiKhoan> TaiKhoans
-		{
-			get
-			{
-				return this._TaiKhoans;
-			}
-			set
-			{
-				this._TaiKhoans.Assign(value);
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -1846,18 +1757,6 @@ namespace BLL_DAL
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
-		}
-		
-		private void attach_TaiKhoans(TaiKhoan entity)
-		{
-			this.SendPropertyChanging();
-			entity.LoaiTaiKhoan1 = this;
-		}
-		
-		private void detach_TaiKhoans(TaiKhoan entity)
-		{
-			this.SendPropertyChanging();
-			entity.LoaiTaiKhoan1 = null;
 		}
 	}
 	
@@ -2222,10 +2121,6 @@ namespace BLL_DAL
 		
 		private string _LoaiTaiKhoan;
 		
-		private EntityRef<LoaiTaiKhoan> _LoaiTaiKhoan1;
-		
-		private EntityRef<ThiSinh> _ThiSinh;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -2244,8 +2139,6 @@ namespace BLL_DAL
 		
 		public TaiKhoan()
 		{
-			this._LoaiTaiKhoan1 = default(EntityRef<LoaiTaiKhoan>);
-			this._ThiSinh = default(EntityRef<ThiSinh>);
 			OnCreated();
 		}
 		
@@ -2300,10 +2193,6 @@ namespace BLL_DAL
 			{
 				if ((this._MaThiSinh != value))
 				{
-					if (this._ThiSinh.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMaThiSinhChanging(value);
 					this.SendPropertyChanging();
 					this._MaThiSinh = value;
@@ -2344,83 +2233,11 @@ namespace BLL_DAL
 			{
 				if ((this._LoaiTaiKhoan != value))
 				{
-					if (this._LoaiTaiKhoan1.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnLoaiTaiKhoanChanging(value);
 					this.SendPropertyChanging();
 					this._LoaiTaiKhoan = value;
 					this.SendPropertyChanged("LoaiTaiKhoan");
 					this.OnLoaiTaiKhoanChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiTaiKhoan_TaiKhoan", Storage="_LoaiTaiKhoan1", ThisKey="LoaiTaiKhoan", OtherKey="MaLoaiTaiKhoan", IsForeignKey=true)]
-		public LoaiTaiKhoan LoaiTaiKhoan1
-		{
-			get
-			{
-				return this._LoaiTaiKhoan1.Entity;
-			}
-			set
-			{
-				LoaiTaiKhoan previousValue = this._LoaiTaiKhoan1.Entity;
-				if (((previousValue != value) 
-							|| (this._LoaiTaiKhoan1.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._LoaiTaiKhoan1.Entity = null;
-						previousValue.TaiKhoans.Remove(this);
-					}
-					this._LoaiTaiKhoan1.Entity = value;
-					if ((value != null))
-					{
-						value.TaiKhoans.Add(this);
-						this._LoaiTaiKhoan = value.MaLoaiTaiKhoan;
-					}
-					else
-					{
-						this._LoaiTaiKhoan = default(string);
-					}
-					this.SendPropertyChanged("LoaiTaiKhoan1");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ThiSinh_TaiKhoan", Storage="_ThiSinh", ThisKey="MaThiSinh", OtherKey="MaThiSinh", IsForeignKey=true)]
-		public ThiSinh ThiSinh
-		{
-			get
-			{
-				return this._ThiSinh.Entity;
-			}
-			set
-			{
-				ThiSinh previousValue = this._ThiSinh.Entity;
-				if (((previousValue != value) 
-							|| (this._ThiSinh.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ThiSinh.Entity = null;
-						previousValue.TaiKhoans.Remove(this);
-					}
-					this._ThiSinh.Entity = value;
-					if ((value != null))
-					{
-						value.TaiKhoans.Add(this);
-						this._MaThiSinh = value.MaThiSinh;
-					}
-					else
-					{
-						this._MaThiSinh = default(string);
-					}
-					this.SendPropertyChanged("ThiSinh");
 				}
 			}
 		}

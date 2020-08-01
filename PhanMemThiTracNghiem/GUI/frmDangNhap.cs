@@ -34,7 +34,7 @@ namespace GUI
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             List<TaiKhoan> ttcn = dethi.getTaiKhoan();
-            if (string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtPassword.Text))
+            if (string.IsNullOrEmpty(txtTenDangNhap.Text) || string.IsNullOrEmpty(txtMatKhau.Text))
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin đăng nhập");
             else if (!kiemTraDangNhap())
             {
@@ -50,8 +50,8 @@ namespace GUI
         public bool kiemTraDangNhap()
         {
             List<TaiKhoan> listTK = dethi.getTaiKhoan();
-            string tendn = txtUsername.Text;
-            string matkhau = txtPassword.Text;
+            string tendn = txtTenDangNhap.Text;
+            string matkhau = txtMatKhau.Text;
             TaiKhoan taikhoan = null;
             foreach (TaiKhoan tk in listTK)
             {
@@ -81,5 +81,6 @@ namespace GUI
                 }
             }
         }
+
     }
 }

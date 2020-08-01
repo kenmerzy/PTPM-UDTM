@@ -41,7 +41,15 @@ namespace GUI
             flowLayoutRight.Controls.Add(xh);
             flowLayoutRight.SetFlowBreak(xh, true);
 
+            usrctrDeThiMoi dtm = new usrctrDeThiMoi();
+            dtm.Dock = DockStyle.Top;
+            flowLayoutRight.Controls.Add(dtm);
+            flowLayoutRight.SetFlowBreak(dtm, true);
 
+            usrctrHoTroTrucTuyen httt = new usrctrHoTroTrucTuyen();
+            httt.Dock = DockStyle.Top;
+            flowLayoutRight.Controls.Add(httt);
+            flowLayoutRight.SetFlowBreak(httt, true);
 
         }
 
