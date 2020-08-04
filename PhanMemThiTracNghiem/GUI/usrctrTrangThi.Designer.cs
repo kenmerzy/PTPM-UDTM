@@ -205,7 +205,7 @@
             this.btnNopBai.Location = new System.Drawing.Point(3, 3);
             this.btnNopBai.Name = "btnNopBai";
             this.btnNopBai.Size = new System.Drawing.Size(131, 60);
-            this.btnNopBai.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNopBai.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNopBai.TabIndex = 0;
             this.btnNopBai.Values.Text = "Nộp bài";
             // 
@@ -215,7 +215,7 @@
             this.btnThoat.Location = new System.Drawing.Point(140, 3);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(131, 60);
-            this.btnThoat.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.TabIndex = 1;
             this.btnThoat.Values.Text = "Thoát";
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
@@ -328,7 +328,7 @@
             this.btnLuuDeThi.Location = new System.Drawing.Point(3, 3);
             this.btnLuuDeThi.Name = "btnLuuDeThi";
             this.btnLuuDeThi.Size = new System.Drawing.Size(131, 58);
-            this.btnLuuDeThi.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuuDeThi.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuuDeThi.TabIndex = 1;
             this.btnLuuDeThi.Values.Text = "Lưu đề thi";
             // 
@@ -338,7 +338,7 @@
             this.btnBatDauLamBai.Location = new System.Drawing.Point(140, 3);
             this.btnBatDauLamBai.Name = "btnBatDauLamBai";
             this.btnBatDauLamBai.Size = new System.Drawing.Size(131, 58);
-            this.btnBatDauLamBai.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBatDauLamBai.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBatDauLamBai.TabIndex = 2;
             this.btnBatDauLamBai.Values.Text = "Bắt đầu làm bài";
             this.btnBatDauLamBai.Click += new System.EventHandler(this.btnBatDauLamBai_Click_1);

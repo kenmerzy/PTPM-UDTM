@@ -35,7 +35,7 @@ namespace GUI
         {
             List<TaiKhoan> ttcn = dethi.getTaiKhoan();
             if (string.IsNullOrEmpty(txtTenDangNhap.Text) || string.IsNullOrEmpty(txtMatKhau.Text))
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin đăng nhập");
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin đăng nhập", "Thông báo", MessageBoxButtons.OK);
             else if (!kiemTraDangNhap())
             {
                 return;
@@ -64,7 +64,7 @@ namespace GUI
             }
             if (taikhoan == null)
             {
-                MessageBox.Show("Tên đăng nhập không tồn tại.");
+                MessageBox.Show("Tên đăng nhập không tồn tại.","Thông báo", MessageBoxButtons.OK);
                 return false;
             }
             else
@@ -76,11 +76,21 @@ namespace GUI
                 }
                 else
                 {
-                    MessageBox.Show("Mật khẩu không đúng.");
+                    MessageBox.Show("Mật khẩu không đúng.","Thông báo",MessageBoxButtons.OK);
                     return false;
                 }
             }
         }
+
+        private void txtMatKhau_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnDangNhap_Click(this, new EventArgs());
+            }
+        }
+
+
 
     }
 }

@@ -197,6 +197,8 @@
             this.btnTruocDo.Location = new System.Drawing.Point(308, 13);
             this.btnTruocDo.Name = "btnTruocDo";
             this.btnTruocDo.Size = new System.Drawing.Size(100, 36);
+            this.btnTruocDo.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnTruocDo.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTruocDo.TabIndex = 0;
             this.btnTruocDo.Values.Text = "Trước đó";
             this.btnTruocDo.Click += new System.EventHandler(this.btnTruocDo_Click);
@@ -207,6 +209,8 @@
             this.btnKeTiep.Location = new System.Drawing.Point(414, 13);
             this.btnKeTiep.Name = "btnKeTiep";
             this.btnKeTiep.Size = new System.Drawing.Size(100, 36);
+            this.btnKeTiep.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnKeTiep.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKeTiep.TabIndex = 1;
             this.btnKeTiep.Values.Text = "Kế tiếp";
             this.btnKeTiep.Click += new System.EventHandler(this.btnKeTiep_Click);

@@ -134,12 +134,12 @@ namespace GUI
                 int kq = dethi.luuThongTinDangKy(txtHoTen.Text, txtTenTaiKhoan.Text, txtMatKhau.Text, txtEmail.Text, txtSDT.Text, Convert.ToDateTime(dateTimePickerNgaySinh.Value.ToString()));
                 if (kq == 1)
                 {
-                    MessageBox.Show("Đăng ký thành công <3");
+                    MessageBox.Show("Đăng ký thành công <3", "Thông báo", MessageBoxButtons.OK);
                     frmDangNhap dangnhap = new frmDangNhap();
                     this.Close();
                 }
                 else
-                    MessageBox.Show("Đăng ký không thành công !!!");
+                    MessageBox.Show("Đăng ký không thành công !!!", "Thông báo", MessageBoxButtons.OK);
             }
             else
             {

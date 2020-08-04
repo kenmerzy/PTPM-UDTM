@@ -36,7 +36,6 @@ namespace GUI
             }
             else
                 return;
-                //MessageBox.Show("Đăng nhập không thành công !!!");
         }
 
         private void btnDangKy_Click(object sender, EventArgs e)

@@ -36,11 +36,12 @@
             // 
             // tableLayoutPanel2
             // 
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 51F));
-            this.tableLayoutPanel2.Controls.Add(this.kryptonHintTextBox1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnSearch, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.kryptonHintTextBox1, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -51,7 +52,7 @@
             // 
             // kryptonHintTextBox1
             // 
-            this.kryptonHintTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonHintTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.kryptonHintTextBox1.Location = new System.Drawing.Point(3, 14);
             this.kryptonHintTextBox1.Name = "kryptonHintTextBox1";
             this.kryptonHintTextBox1.Size = new System.Drawing.Size(373, 24);
