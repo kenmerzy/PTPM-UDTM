@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ThiTracNghiem" Class="QuanLyDeThiDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-R57SVSA\SQLEXPRESS;Initial Catalog=ThiTracNghiem;Integrated Security=True" SettingsObjectName="BLL_DAL.Properties.Settings" SettingsPropertyName="ThiTracNghiemConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-UKDQP37H\SQLEXPRESS;Initial Catalog=ThiTracNghiem;Integrated Security=True" SettingsObjectName="BLL_DAL.Properties.Settings" SettingsPropertyName="ThiTracNghiemConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.CauHoi" Member="CauHois">
     <Type Name="CauHoi">
       <Column Name="MaCauHoi" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -12,16 +12,13 @@
       <Association Name="MonThi_CauHoi" Member="MonThi" ThisKey="MaMon" OtherKey="MaMon" Type="MonThi" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.ThiSinh" Member="ThiSinhs">
-    <Type Name="ThiSinh">
-      <Column Name="MaThiSinh" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="TenThiSinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="GioiTinh" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
-      <Column Name="SoDienThoai" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="NamSinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="AnhDaiDien" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+  <Table Name="dbo.TaiKhoan" Member="TaiKhoans">
+    <Type Name="TaiKhoan">
+      <Column Name="TenDangNhap" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MatKhau" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MaThiSinh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="LoaiTaiKhoan" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.DapAn" Member="DapAns">
@@ -67,7 +64,7 @@
       <Column Name="MatKhau" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="MaKhoi" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
       <Column Name="MoTa" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="HinhAnh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HinhAnh" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
       <Association Name="KyThi_KetQua" Member="KetQuas" ThisKey="MaKyThi" OtherKey="MaKyThi" Type="KetQua" />
       <Association Name="KyThi_LuuKyThi" Member="LuuKyThis" ThisKey="MaKyThi" OtherKey="MaKyThi" Type="LuuKyThi" />
       <Association Name="MonThi_KyThi" Member="MonThi" ThisKey="MaMon" OtherKey="MaMon" Type="MonThi" IsForeignKey="true" />
@@ -97,13 +94,16 @@
       <Association Name="MonThi_KyThi" Member="KyThis" ThisKey="MaMon" OtherKey="MaMon" Type="KyThi" />
     </Type>
   </Table>
-  <Table Name="dbo.TaiKhoan" Member="TaiKhoans">
-    <Type Name="TaiKhoan">
-      <Column Name="TenDangNhap" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="MatKhau" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="MaThiSinh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="NgayTao" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="LoaiTaiKhoan" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+  <Table Name="dbo.ThiSinh" Member="ThiSinhs">
+    <Type Name="ThiSinh">
+      <Column Name="MaThiSinh" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenThiSinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GioiTinh" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="SoDienThoai" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NamSinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AnhDaiDien" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
     </Type>
   </Table>
 </Database>

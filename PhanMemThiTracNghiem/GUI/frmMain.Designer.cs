@@ -41,13 +41,13 @@
             this.flowLayoutLeft = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutRight = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.kryptonRibbonGroupButton10 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroupButton12 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroupTriple4 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.kryptonRibbonGroup6 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.layout_Thi.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -80,6 +80,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.layout_Thi, 0, 2);
@@ -98,6 +99,7 @@
             // layout_Thi
             // 
             this.layout_Thi.AutoScroll = true;
+            this.layout_Thi.BackColor = System.Drawing.Color.White;
             this.layout_Thi.ColumnCount = 3;
             this.layout_Thi.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
             this.layout_Thi.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -115,6 +117,7 @@
             // flowLayoutLeft
             // 
             this.flowLayoutLeft.AutoScroll = true;
+            this.flowLayoutLeft.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutLeft.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutLeft.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutLeft.Name = "flowLayoutLeft";
@@ -124,6 +127,7 @@
             // flowLayoutRight
             // 
             this.flowLayoutRight.AutoScroll = true;
+            this.flowLayoutRight.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutRight.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutRight.Location = new System.Drawing.Point(669, 3);
             this.flowLayoutRight.Name = "flowLayoutRight";
@@ -145,19 +149,6 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(948, 49);
             this.tableLayoutPanel3.TabIndex = 1;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.BackColor = System.Drawing.SystemColors.Control;
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(669, 3);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(216, 43);
-            this.tableLayoutPanel4.TabIndex = 0;
             // 
             // kryptonRibbonGroupButton10
             // 
@@ -181,6 +172,30 @@
             this.kryptonRibbonGroup6.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple4});
             // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(669, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(216, 43);
+            this.tableLayoutPanel4.TabIndex = 0;
+            // 
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.kryptonLabel1.Location = new System.Drawing.Point(241, 38);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(466, 40);
+            this.kryptonLabel1.StateNormal.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.kryptonLabel1.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel1.TabIndex = 0;
+            this.kryptonLabel1.Values.Text = "ỨNG DỤNG THI TRẮC NGHIỆM";
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -194,17 +209,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(948, 117);
             this.tableLayoutPanel2.TabIndex = 2;
-            // 
-            // kryptonLabel1
-            // 
-            this.kryptonLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.kryptonLabel1.Location = new System.Drawing.Point(241, 36);
-            this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(466, 40);
-            this.kryptonLabel1.StateNormal.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.kryptonLabel1.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel1.TabIndex = 0;
-            this.kryptonLabel1.Values.Text = "ỨNG DỤNG THI TRẮC NGHIỆM";
             // 
             // frmMain
             // 

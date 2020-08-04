@@ -26,7 +26,7 @@ namespace BLL_DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-R57SVSA\\SQLEXPRESS;Initial Catalog=ThiTracNghiem;Integrated S" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-UKDQP37H\\SQLEXPRESS;Initial Catalog=ThiTracNghiem;Integrated S" +
             "ecurity=True")]
         public string ThiTracNghiemConnectionString {
             get {

@@ -28,7 +28,6 @@ E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.exe
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.pdb
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\bin\Debug\GUI.exe
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\bin\Debug\GUI.pdb
-E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\bin\Debug\BLL_DAL.dll
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\bin\Debug\BLL_DAL.pdb
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.frmDangKy.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.frmDangNhap.resources
@@ -150,3 +149,6 @@ D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrXepHang.resources
 D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
 D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrDeThiMoi.resources
 D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrHoTroTrucTuyen.resources
+E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrDeThiMoi.resources
+E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrHoTroTrucTuyen.resources
+E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\bin\Debug\BLL_DAL.dll
