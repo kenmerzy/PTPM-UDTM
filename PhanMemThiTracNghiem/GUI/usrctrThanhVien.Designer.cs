@@ -31,18 +31,18 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.lblThongTinThanhVien = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.lblThietLapTaiKhoan = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.lblTaiKhoan = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.f = new System.Windows.Forms.PictureBox();
+            this.lblDateTime = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.btnThoat = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -52,7 +52,7 @@
             this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tableLayoutPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.f)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel3
@@ -94,8 +94,8 @@
             // 
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Controls.Add(this.kryptonLabel3, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.kryptonLabel4, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.lblThongTinThanhVien, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.lblThietLapTaiKhoan, 0, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(133, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -105,22 +105,22 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(288, 121);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
-            // kryptonLabel3
+            // lblThongTinThanhVien
             // 
-            this.kryptonLabel3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.kryptonLabel3.Location = new System.Drawing.Point(3, 18);
-            this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(153, 24);
-            this.kryptonLabel3.TabIndex = 1;
-            this.kryptonLabel3.Values.Text = "Thông tin thành viên";
+            this.lblThongTinThanhVien.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblThongTinThanhVien.Location = new System.Drawing.Point(3, 18);
+            this.lblThongTinThanhVien.Name = "lblThongTinThanhVien";
+            this.lblThongTinThanhVien.Size = new System.Drawing.Size(153, 24);
+            this.lblThongTinThanhVien.TabIndex = 1;
+            this.lblThongTinThanhVien.Values.Text = "Thông tin thành viên";
             // 
-            // kryptonLabel4
+            // lblThietLapTaiKhoan
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(3, 63);
-            this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(138, 24);
-            this.kryptonLabel4.TabIndex = 1;
-            this.kryptonLabel4.Values.Text = "Thiết lập tài khoản";
+            this.lblThietLapTaiKhoan.Location = new System.Drawing.Point(3, 63);
+            this.lblThietLapTaiKhoan.Name = "lblThietLapTaiKhoan";
+            this.lblThietLapTaiKhoan.Size = new System.Drawing.Size(138, 24);
+            this.lblThietLapTaiKhoan.TabIndex = 1;
+            this.lblThietLapTaiKhoan.Values.Text = "Thiết lập tài khoản";
             // 
             // pictureBox2
             // 
@@ -159,7 +159,7 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 297F));
             this.tableLayoutPanel6.Controls.Add(this.pictureBox3, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.kryptonLabel2, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.lblTaiKhoan, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 44);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -178,14 +178,14 @@
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
-            // kryptonLabel2
+            // lblTaiKhoan
             // 
-            this.kryptonLabel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.kryptonLabel2.Location = new System.Drawing.Point(130, 12);
-            this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(81, 24);
-            this.kryptonLabel2.TabIndex = 1;
-            this.kryptonLabel2.Values.Text = "Tài khoản:";
+            this.lblTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblTaiKhoan.Location = new System.Drawing.Point(130, 12);
+            this.lblTaiKhoan.Name = "lblTaiKhoan";
+            this.lblTaiKhoan.Size = new System.Drawing.Size(81, 24);
+            this.lblTaiKhoan.TabIndex = 1;
+            this.lblTaiKhoan.Values.Text = "Tài khoản:";
             // 
             // tableLayoutPanel7
             // 
@@ -193,9 +193,9 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel7.Controls.Add(this.pictureBox4, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.kryptonLabel5, 1, 0);
-            this.tableLayoutPanel7.Controls.Add(this.kryptonButton1, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.f, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.lblDateTime, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.btnThoat, 2, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 232);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -204,70 +204,70 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(424, 44);
             this.tableLayoutPanel7.TabIndex = 3;
             // 
-            // pictureBox4
+            // f
             // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox4.Image = global::GUI.Properties.Resources.icons8_enter_24;
-            this.pictureBox4.Location = new System.Drawing.Point(51, 7);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
+            this.f.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.f.Image = global::GUI.Properties.Resources.icons8_enter_24;
+            this.f.Location = new System.Drawing.Point(51, 7);
+            this.f.Name = "f";
+            this.f.Size = new System.Drawing.Size(30, 30);
+            this.f.TabIndex = 0;
+            this.f.TabStop = false;
             // 
-            // kryptonLabel5
+            // lblDateTime
             // 
-            this.kryptonLabel5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.kryptonLabel5.Location = new System.Drawing.Point(87, 10);
-            this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(81, 24);
-            this.kryptonLabel5.TabIndex = 1;
-            this.kryptonLabel5.Values.Text = "Date Time";
+            this.lblDateTime.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblDateTime.Location = new System.Drawing.Point(87, 10);
+            this.lblDateTime.Name = "lblDateTime";
+            this.lblDateTime.Size = new System.Drawing.Size(81, 24);
+            this.lblDateTime.TabIndex = 1;
+            this.lblDateTime.Values.Text = "Date Time";
             // 
-            // kryptonButton1
+            // btnThoat
             // 
-            this.kryptonButton1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.kryptonButton1.Location = new System.Drawing.Point(310, 7);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(111, 30);
-            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.Goldenrod;
-            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.Goldenrod;
-            this.kryptonButton1.StateCommon.Back.Image = global::GUI.Properties.Resources.icons8_export_24;
-            this.kryptonButton1.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterLeft;
-            this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.Goldenrod;
-            this.kryptonButton1.StateCommon.Border.Color2 = System.Drawing.Color.Goldenrod;
-            this.kryptonButton1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnThoat.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnThoat.Location = new System.Drawing.Point(310, 7);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(111, 30);
+            this.btnThoat.StateCommon.Back.Color1 = System.Drawing.Color.Goldenrod;
+            this.btnThoat.StateCommon.Back.Color2 = System.Drawing.Color.Goldenrod;
+            this.btnThoat.StateCommon.Back.Image = global::GUI.Properties.Resources.icons8_export_24;
+            this.btnThoat.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterLeft;
+            this.btnThoat.StateCommon.Border.Color1 = System.Drawing.Color.Goldenrod;
+            this.btnThoat.StateCommon.Border.Color2 = System.Drawing.Color.Goldenrod;
+            this.btnThoat.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateCommon.Content.Image.ImageH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonButton1.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.kryptonButton1.StateNormal.Back.Color1 = System.Drawing.Color.Goldenrod;
-            this.kryptonButton1.StateNormal.Back.Color2 = System.Drawing.Color.Goldenrod;
-            this.kryptonButton1.StateNormal.Back.Image = global::GUI.Properties.Resources.icons8_export_24;
-            this.kryptonButton1.StateNormal.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterLeft;
-            this.kryptonButton1.StateNormal.Content.Image.ImageH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonButton1.StateNormal.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.kryptonButton1.StatePressed.Back.Color1 = System.Drawing.Color.OrangeRed;
-            this.kryptonButton1.StatePressed.Back.Color2 = System.Drawing.Color.OrangeRed;
-            this.kryptonButton1.StatePressed.Back.Image = global::GUI.Properties.Resources.icons8_export_24;
-            this.kryptonButton1.StatePressed.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterLeft;
-            this.kryptonButton1.StatePressed.Border.Color1 = System.Drawing.Color.OrangeRed;
-            this.kryptonButton1.StatePressed.Border.Color2 = System.Drawing.Color.OrangeRed;
-            this.kryptonButton1.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnThoat.StateCommon.Content.Image.ImageH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.btnThoat.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.btnThoat.StateNormal.Back.Color1 = System.Drawing.Color.Goldenrod;
+            this.btnThoat.StateNormal.Back.Color2 = System.Drawing.Color.Goldenrod;
+            this.btnThoat.StateNormal.Back.Image = global::GUI.Properties.Resources.icons8_export_24;
+            this.btnThoat.StateNormal.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterLeft;
+            this.btnThoat.StateNormal.Content.Image.ImageH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.btnThoat.StateNormal.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.btnThoat.StatePressed.Back.Color1 = System.Drawing.Color.OrangeRed;
+            this.btnThoat.StatePressed.Back.Color2 = System.Drawing.Color.OrangeRed;
+            this.btnThoat.StatePressed.Back.Image = global::GUI.Properties.Resources.icons8_export_24;
+            this.btnThoat.StatePressed.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterLeft;
+            this.btnThoat.StatePressed.Border.Color1 = System.Drawing.Color.OrangeRed;
+            this.btnThoat.StatePressed.Border.Color2 = System.Drawing.Color.OrangeRed;
+            this.btnThoat.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StatePressed.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.kryptonButton1.StateTracking.Back.Color1 = System.Drawing.Color.LightGray;
-            this.kryptonButton1.StateTracking.Back.Color2 = System.Drawing.Color.LightGray;
-            this.kryptonButton1.StateTracking.Back.Image = global::GUI.Properties.Resources.icons8_export_24;
-            this.kryptonButton1.StateTracking.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterLeft;
-            this.kryptonButton1.StateTracking.Border.Color1 = System.Drawing.Color.LightGray;
-            this.kryptonButton1.StateTracking.Border.Color2 = System.Drawing.Color.LightGray;
-            this.kryptonButton1.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnThoat.StatePressed.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.btnThoat.StateTracking.Back.Color1 = System.Drawing.Color.LightGray;
+            this.btnThoat.StateTracking.Back.Color2 = System.Drawing.Color.LightGray;
+            this.btnThoat.StateTracking.Back.Image = global::GUI.Properties.Resources.icons8_export_24;
+            this.btnThoat.StateTracking.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterLeft;
+            this.btnThoat.StateTracking.Border.Color1 = System.Drawing.Color.LightGray;
+            this.btnThoat.StateTracking.Border.Color2 = System.Drawing.Color.LightGray;
+            this.btnThoat.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateTracking.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.kryptonButton1.TabIndex = 2;
-            this.kryptonButton1.Values.Text = "THOÁT";
+            this.btnThoat.StateTracking.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.btnThoat.TabIndex = 2;
+            this.btnThoat.Values.Text = "THOÁT";
             // 
             // usrctrThanhVien
             // 
@@ -290,7 +290,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.f)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -300,17 +300,17 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel4;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel lblThongTinThanhVien;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel lblThietLapTaiKhoan;
         private System.Windows.Forms.PictureBox pictureBox2;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel lblTaiKhoan;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel5;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
+        private System.Windows.Forms.PictureBox f;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel lblDateTime;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnThoat;
     }
 }

@@ -14,12 +14,19 @@ namespace GUI
 {
     public partial class frmMain : Form
     {
+        ThiSinh thiSinh;
         Color defaultSearch_BackGround;
         DeThiBLL_DAL dethiBLL_DAL;
         public frmMain()
         {
             InitializeComponent();
             dethiBLL_DAL = new DeThiBLL_DAL();
+        }
+        public frmMain(ThiSinh thiSinh)
+        {
+            InitializeComponent();
+            dethiBLL_DAL = new DeThiBLL_DAL();
+            this.thiSinh = thiSinh;
         }
 
 
@@ -31,7 +38,7 @@ namespace GUI
             us.Dock = DockStyle.Top;
             tableLayoutPanel4.Controls.Add(us);
             
-            usrctrThanhVienChuaDangNhap u = new usrctrThanhVienChuaDangNhap();
+            usrctrThanhVien u = new usrctrThanhVien();
             u.Dock = DockStyle.Top;
             flowLayoutRight.Controls.Add(u);
             flowLayoutRight.SetFlowBreak(u, true);

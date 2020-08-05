@@ -72,18 +72,27 @@ namespace BLL_DAL
         {
             TaiKhoan tk = new TaiKhoan();
             ThiSinh ts = new ThiSinh();
-            ts.TenThiSinh = hoTen;
+           
             tk.TenDangNhap = tenDangNhap;
             tk.MatKhau = matKhau;
+            tk.NgayTao = DateTime.Now;
+            tk.LoaiTaiKhoan = "TS"; 
+
+
+            ts.TenThiSinh = hoTen;
             ts.Email = email;
             ts.SoDienThoai  =SDT;
             ts.NamSinh = ngaySinh;
+            ts.TenDangNhap = tenDangNhap;
 
             try
             {
                 qldt.TaiKhoans.InsertOnSubmit(tk);
+                qldt.SubmitChanges();
+
                 qldt.ThiSinhs.InsertOnSubmit(ts);
                 qldt.SubmitChanges();
+                
                 return 1;
             }
             catch
