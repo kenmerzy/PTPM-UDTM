@@ -123,7 +123,7 @@ namespace GUI
             createDapAnDaChon();
 
             countDown.Enabled = true;
-            ch = new usrctrCauHoiVaDapAn(listCH, listDA);
+            ch = new usrctrCauHoiVaDapAn(listCH, listDA,lstDapAnDung);
             layoutRight.Controls.Clear();
             ch.Dock = DockStyle.Fill;
             lblTenKyThi.Text = tenKyThi;

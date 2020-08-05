@@ -15,25 +15,30 @@ namespace GUI
     {
         List<CauHoi> lstCH;
         List<List<DapAn>> lstDA;
+        List<DapAn> listDapAnDung;
+        List<DapAn> listDapAnChon;
         List<int> lstIntChon;
+        List<int> lstViTriRadioButtonChon;
         int tongSoCau;
         int cauHoiHienTai;
         public usrctrCauHoiVaDapAn()
         {
             InitializeComponent();
         }
-        public usrctrCauHoiVaDapAn(List<CauHoi>listCH ,List<List<DapAn>> listDa)
+        public usrctrCauHoiVaDapAn(List<CauHoi>listCH ,List<List<DapAn>> listDa, List<DapAn> listDapAnDung)
         {
             InitializeComponent();
             lstCH = new List<CauHoi>();
             lstDA = new List<List<DapAn>>();
             lstCH = listCH;
-            lstDA = listDa; 
+            lstDA = listDa;
+            this.listDapAnDung = listDapAnDung;
             tongSoCau = lstCH.Count;
             lstIntChon = new List<int>();
             lstIntChon = newlstIntChon(tongSoCau);
             loadCHvaDA(lstCH, lstDA, 0);
             cauHoiHienTai = 0;
+            createDapAnDaChon();
         }
 
         
@@ -68,6 +73,26 @@ namespace GUI
             }
 
         }
+
+        private void createDapAnDaChon()
+        {
+            listDapAnChon = new List<DapAn>();
+            DapAn da;
+            for (int i = 0; i < tongSoCau; i++)
+            {
+                da = new DapAn();
+                listDapAnChon.Add(da);
+            }
+        }
+        private void createViTriRadioButton()
+        {
+            
+            for (int i = 0; i < tongSoCau; i++)
+            {
+                lstViTriRadioButtonChon.Add(0);
+            }
+        }
+
          private void loadCauHoi(string cauHoi, int position)
         {
                 lblCauHoi.Text = "Câu " +(position + 1).ToString() + ": " + cauHoi;
@@ -169,8 +194,9 @@ namespace GUI
 
          private void rdBtnDapAnA_CheckedChanged(object sender, EventArgs e)
          {
-             //KryptonRadioButton rd = sender as KryptonRadioButton;
-             //if(rd.Checked)
+             KryptonRadioButton rd = sender as KryptonRadioButton;
+             if (rd.Checked)
+                 listDapAnChon[cauHoiHienTai].NoiDung = rd.Text.Trim();
          }
     }
 }
