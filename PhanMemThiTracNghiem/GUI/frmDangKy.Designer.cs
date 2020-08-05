@@ -146,9 +146,6 @@
             this.tableLayoutPanel3.Controls.Add(this.kryptonLabel1, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.txtHoTen, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.lblLoiHoTen, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.lblLoiMatKhau, 2, 2);
-            this.tableLayoutPanel3.Controls.Add(this.lblLoiXacNhanMatKhau, 2, 3);
-            this.tableLayoutPanel3.Controls.Add(this.lblLoiSoDienThoai, 2, 5);
             this.tableLayoutPanel3.Controls.Add(this.lblLoiTenTaiKhoan, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.txtXacNhanMatKhau, 1, 8);
             this.tableLayoutPanel3.Controls.Add(this.txtMatKhau, 1, 7);
@@ -156,7 +153,6 @@
             this.tableLayoutPanel3.Controls.Add(this.kryptonLabel3, 0, 7);
             this.tableLayoutPanel3.Controls.Add(this.txtTenTaiKhoan, 1, 6);
             this.tableLayoutPanel3.Controls.Add(this.kryptonLabel2, 0, 6);
-            this.tableLayoutPanel3.Controls.Add(this.lblLoiEmail, 2, 8);
             this.tableLayoutPanel3.Controls.Add(this.dateTimePickerNgaySinh, 1, 2);
             this.tableLayoutPanel3.Controls.Add(this.kryptonLabel7, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.kryptonLabel5, 0, 3);
@@ -167,6 +163,10 @@
             this.tableLayoutPanel3.Controls.Add(this.lblGioiTinh, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.layoutGioiTinh, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.txtDiaChi, 1, 5);
+            this.tableLayoutPanel3.Controls.Add(this.lblLoiMatKhau, 2, 7);
+            this.tableLayoutPanel3.Controls.Add(this.lblLoiXacNhanMatKhau, 2, 8);
+            this.tableLayoutPanel3.Controls.Add(this.lblLoiSoDienThoai, 2, 4);
+            this.tableLayoutPanel3.Controls.Add(this.lblLoiEmail, 2, 3);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 123);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -213,7 +213,7 @@
             // lblLoiMatKhau
             // 
             this.lblLoiMatKhau.AutoSize = true;
-            this.lblLoiMatKhau.Location = new System.Drawing.Point(426, 99);
+            this.lblLoiMatKhau.Location = new System.Drawing.Point(426, 319);
             this.lblLoiMatKhau.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
             this.lblLoiMatKhau.Name = "lblLoiMatKhau";
             this.lblLoiMatKhau.Size = new System.Drawing.Size(0, 17);
@@ -223,7 +223,7 @@
             // lblLoiXacNhanMatKhau
             // 
             this.lblLoiXacNhanMatKhau.AutoSize = true;
-            this.lblLoiXacNhanMatKhau.Location = new System.Drawing.Point(426, 143);
+            this.lblLoiXacNhanMatKhau.Location = new System.Drawing.Point(426, 363);
             this.lblLoiXacNhanMatKhau.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
             this.lblLoiXacNhanMatKhau.Name = "lblLoiXacNhanMatKhau";
             this.lblLoiXacNhanMatKhau.Size = new System.Drawing.Size(0, 17);
@@ -233,7 +233,7 @@
             // lblLoiSoDienThoai
             // 
             this.lblLoiSoDienThoai.AutoSize = true;
-            this.lblLoiSoDienThoai.Location = new System.Drawing.Point(426, 231);
+            this.lblLoiSoDienThoai.Location = new System.Drawing.Point(426, 187);
             this.lblLoiSoDienThoai.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
             this.lblLoiSoDienThoai.Name = "lblLoiSoDienThoai";
             this.lblLoiSoDienThoai.Size = new System.Drawing.Size(0, 17);
@@ -308,7 +308,7 @@
             // lblLoiEmail
             // 
             this.lblLoiEmail.AutoSize = true;
-            this.lblLoiEmail.Location = new System.Drawing.Point(426, 363);
+            this.lblLoiEmail.Location = new System.Drawing.Point(426, 143);
             this.lblLoiEmail.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
             this.lblLoiEmail.Name = "lblLoiEmail";
             this.lblLoiEmail.Size = new System.Drawing.Size(0, 17);

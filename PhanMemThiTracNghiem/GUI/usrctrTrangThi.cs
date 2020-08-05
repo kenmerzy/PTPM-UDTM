@@ -14,11 +14,13 @@ namespace GUI
     {
         int minute ;
         int second ;
-        string mnl,scl,maMon,tenKyThi, tenMon;
+        string mnl,scl,maMon,tenKyThi;
         string soCau;
         int thoiGianLamBai;
         List<CauHoi> listCH;
         List<List<DapAn>> listDA;
+        List<string> lstDapAnDaChon;
+        List<DapAn> lstDapAnDung;
         usrctrCauHoiVaDapAn ch;
         usrctlHuongDanThi hdt;
         DeThiBLL_DAL dethiBLL_DAL;
@@ -43,7 +45,7 @@ namespace GUI
             lbltxtThoiGianConLai.StateNormal.ShortText.Color1 = Color.Black;
         }
 
-        private void getCauHoiDapAn()
+        private void getCauHoiDapAn(string maMon)
         {
             List<DapAn> listTMP;
             listCH = new List<CauHoi>();
@@ -96,9 +98,29 @@ namespace GUI
             layoutNopBai.Visible = false;
         }
 
+        private void getAllDapAnDung(string maMon)
+        {
+            lstDapAnDung = new List<DapAn>();
+            lstDapAnDung .AddRange(dethiBLL_DAL.getAllDapAnDung(maMon));
+        }
+        private void createDapAnDaChon()
+        {
+            lstDapAnDaChon = new List<string>();
+
+            for (int i = 0; i < listCH.Count; i++)
+            {
+                lstDapAnDaChon.Add("Epmty");
+            }
+        }
+        public void updateListDapAnChon(int viTriCauHoi, string noiDungDapAn)
+        {
+            lstDapAnDaChon[viTriCauHoi] = noiDungDapAn;
+        }
         private void btnBatDauLamBai_Click_1(object sender, EventArgs e)
         {
-            getCauHoiDapAn();
+            getCauHoiDapAn(maMon);
+            getAllDapAnDung(maMon);
+            createDapAnDaChon();
 
             countDown.Enabled = true;
             ch = new usrctrCauHoiVaDapAn(listCH, listDA);
@@ -106,7 +128,6 @@ namespace GUI
             ch.Dock = DockStyle.Fill;
             lblTenKyThi.Text = tenKyThi;
             layoutRight.Controls.Add(ch);
-            
             layoutTop.Visible = true;
             layoutNopBai.Visible = true;
             layoutBatDauLamBai.Visible = false;

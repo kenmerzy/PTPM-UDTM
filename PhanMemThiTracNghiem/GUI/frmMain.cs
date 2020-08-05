@@ -17,6 +17,7 @@ namespace GUI
         ThiSinh thiSinh;
         Color defaultSearch_BackGround;
         DeThiBLL_DAL dethiBLL_DAL;
+
         public frmMain()
         {
             InitializeComponent();
@@ -33,7 +34,8 @@ namespace GUI
         private void frmMain_Load(object sender, EventArgs e)
         {
 
-            getDeThi();
+            loadDeThi();
+
             usrctrSearch us = new usrctrSearch();
             us.Dock = DockStyle.Top;
             tableLayoutPanel4.Controls.Add(us);
@@ -59,10 +61,7 @@ namespace GUI
             flowLayoutRight.SetFlowBreak(httt, true);
         }
 
-
-
-
-        public void getDeThi()
+        public void loadDeThi()
         {
             try
             {

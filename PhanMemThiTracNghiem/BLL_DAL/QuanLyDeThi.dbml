@@ -21,7 +21,6 @@
       <Column Name="SoDienThoai" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="NamSinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="AnhDaiDien" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="TenDangNhap" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Association Name="ThiSinh_KetQua" Member="KetQuas" ThisKey="MaThiSinh" OtherKey="MaThiSinh" Type="KetQua" />
       <Association Name="TaiKhoan_ThiSinh" Member="TaiKhoan" ThisKey="TenDangNhap" OtherKey="TenDangNhap" Type="TaiKhoan" IsForeignKey="true" />

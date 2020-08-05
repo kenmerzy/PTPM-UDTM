@@ -245,11 +245,11 @@
             // 
             this.lblDangKy.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDangKy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblDangKy.Location = new System.Drawing.Point(47, 391);
+            this.lblDangKy.Location = new System.Drawing.Point(57, 392);
             this.lblDangKy.Name = "lblDangKy";
-            this.lblDangKy.Size = new System.Drawing.Size(338, 25);
+            this.lblDangKy.Size = new System.Drawing.Size(319, 24);
             this.lblDangKy.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
-            this.lblDangKy.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDangKy.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDangKy.TabIndex = 10;
             this.lblDangKy.Values.Text = "Bạn chưa có tài khoản? Đăng ký tại đây";
             this.lblDangKy.Click += new System.EventHandler(this.lblDangKy_Click);

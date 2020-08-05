@@ -62,7 +62,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.24691F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.75309F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 98F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(829, 452);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(829, 405);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -76,7 +76,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(823, 278);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(823, 240);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -91,7 +91,7 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.26728F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.73272F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(815, 270);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(815, 232);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // tableLayoutPanel4
@@ -104,19 +104,19 @@
             this.tableLayoutPanel4.Controls.Add(this.rdBtnDapAnB, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.rdBtnDapAnD, 1, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 73);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 63);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(809, 194);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(809, 166);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // rdBtnDapAnA
             // 
             this.rdBtnDapAnA.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.rdBtnDapAnA.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rdBtnDapAnA.Location = new System.Drawing.Point(25, 36);
+            this.rdBtnDapAnA.Location = new System.Drawing.Point(25, 29);
             this.rdBtnDapAnA.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
             this.rdBtnDapAnA.Name = "rdBtnDapAnA";
             this.rdBtnDapAnA.Size = new System.Drawing.Size(41, 24);
@@ -124,12 +124,13 @@
             this.rdBtnDapAnA.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdBtnDapAnA.TabIndex = 0;
             this.rdBtnDapAnA.Values.Text = "A.";
+            this.rdBtnDapAnA.CheckedChanged += new System.EventHandler(this.rdBtnDapAnA_CheckedChanged);
             // 
             // rdBtnDapAnC
             // 
             this.rdBtnDapAnC.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.rdBtnDapAnC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rdBtnDapAnC.Location = new System.Drawing.Point(25, 133);
+            this.rdBtnDapAnC.Location = new System.Drawing.Point(25, 112);
             this.rdBtnDapAnC.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
             this.rdBtnDapAnC.Name = "rdBtnDapAnC";
             this.rdBtnDapAnC.Size = new System.Drawing.Size(42, 24);
@@ -142,7 +143,7 @@
             // 
             this.rdBtnDapAnB.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.rdBtnDapAnB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rdBtnDapAnB.Location = new System.Drawing.Point(429, 36);
+            this.rdBtnDapAnB.Location = new System.Drawing.Point(429, 29);
             this.rdBtnDapAnB.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
             this.rdBtnDapAnB.Name = "rdBtnDapAnB";
             this.rdBtnDapAnB.Size = new System.Drawing.Size(45, 24);
@@ -155,7 +156,7 @@
             // 
             this.rdBtnDapAnD.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.rdBtnDapAnD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rdBtnDapAnD.Location = new System.Drawing.Point(429, 133);
+            this.rdBtnDapAnD.Location = new System.Drawing.Point(429, 112);
             this.rdBtnDapAnD.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
             this.rdBtnDapAnD.Name = "rdBtnDapAnD";
             this.rdBtnDapAnD.Size = new System.Drawing.Size(42, 24);
@@ -167,7 +168,7 @@
             // lblCauHoi
             // 
             this.lblCauHoi.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblCauHoi.Location = new System.Drawing.Point(10, 17);
+            this.lblCauHoi.Location = new System.Drawing.Point(10, 12);
             this.lblCauHoi.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.lblCauHoi.Name = "lblCauHoi";
             this.lblCauHoi.Size = new System.Drawing.Size(165, 36);
@@ -184,17 +185,17 @@
             this.tableLayoutPanel5.Controls.Add(this.btnTruocDo, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.btnKeTiep, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 287);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 249);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(823, 63);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(823, 54);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // btnTruocDo
             // 
             this.btnTruocDo.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTruocDo.Location = new System.Drawing.Point(308, 13);
+            this.btnTruocDo.Location = new System.Drawing.Point(308, 9);
             this.btnTruocDo.Name = "btnTruocDo";
             this.btnTruocDo.Size = new System.Drawing.Size(100, 36);
             this.btnTruocDo.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -206,7 +207,7 @@
             // btnKeTiep
             // 
             this.btnKeTiep.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnKeTiep.Location = new System.Drawing.Point(414, 13);
+            this.btnKeTiep.Location = new System.Drawing.Point(414, 9);
             this.btnKeTiep.Name = "btnKeTiep";
             this.btnKeTiep.Size = new System.Drawing.Size(100, 36);
             this.btnKeTiep.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -218,7 +219,7 @@
             // flowDanhSachCauHoi
             // 
             this.flowDanhSachCauHoi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowDanhSachCauHoi.Location = new System.Drawing.Point(3, 356);
+            this.flowDanhSachCauHoi.Location = new System.Drawing.Point(3, 309);
             this.flowDanhSachCauHoi.Name = "flowDanhSachCauHoi";
             this.flowDanhSachCauHoi.Size = new System.Drawing.Size(823, 93);
             this.flowDanhSachCauHoi.TabIndex = 2;
@@ -230,7 +231,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "usrctrCauHoiVaDapAn";
-            this.Size = new System.Drawing.Size(829, 452);
+            this.Size = new System.Drawing.Size(829, 405);
             this.Load += new System.EventHandler(this.usrctrCauHoiVaDapAn_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

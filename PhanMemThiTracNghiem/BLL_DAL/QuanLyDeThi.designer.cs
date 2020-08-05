@@ -444,8 +444,6 @@ namespace BLL_DAL
 		
 		private string _Email;
 		
-		private System.Data.Linq.Binary _AnhDaiDien;
-		
 		private string _TenDangNhap;
 		
 		private EntitySet<KetQua> _KetQuas;
@@ -470,8 +468,6 @@ namespace BLL_DAL
     partial void OnNamSinhChanged();
     partial void OnEmailChanging(string value);
     partial void OnEmailChanged();
-    partial void OnAnhDaiDienChanging(System.Data.Linq.Binary value);
-    partial void OnAnhDaiDienChanged();
     partial void OnTenDangNhapChanging(string value);
     partial void OnTenDangNhapChanged();
     #endregion
@@ -619,26 +615,6 @@ namespace BLL_DAL
 					this._Email = value;
 					this.SendPropertyChanged("Email");
 					this.OnEmailChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AnhDaiDien", DbType="Image", UpdateCheck=UpdateCheck.Never)]
-		public System.Data.Linq.Binary AnhDaiDien
-		{
-			get
-			{
-				return this._AnhDaiDien;
-			}
-			set
-			{
-				if ((this._AnhDaiDien != value))
-				{
-					this.OnAnhDaiDienChanging(value);
-					this.SendPropertyChanging();
-					this._AnhDaiDien = value;
-					this.SendPropertyChanged("AnhDaiDien");
-					this.OnAnhDaiDienChanged();
 				}
 			}
 		}
@@ -1683,7 +1659,7 @@ namespace BLL_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HinhAnh", DbType="Image", UpdateCheck=UpdateCheck.Never)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HinhAnh", DbType="Image", CanBeNull=true, UpdateCheck=UpdateCheck.Never)]
 		public System.Data.Linq.Binary HinhAnh
 		{
 			get

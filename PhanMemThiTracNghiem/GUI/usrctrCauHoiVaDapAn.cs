@@ -15,7 +15,6 @@ namespace GUI
     {
         List<CauHoi> lstCH;
         List<List<DapAn>> lstDA;
-        List<DapAn> lstDapAnDaChon;
         List<int> lstIntChon;
         int tongSoCau;
         int cauHoiHienTai;
@@ -166,6 +165,12 @@ namespace GUI
              cauHoiHienTai++;
              loadCHvaDA(lstCH, lstDA, cauHoiHienTai, lstIntChon[cauHoiHienTai]);
              checkPreAndNextButton();
+         }
+
+         private void rdBtnDapAnA_CheckedChanged(object sender, EventArgs e)
+         {
+             //KryptonRadioButton rd = sender as KryptonRadioButton;
+             //if(rd.Checked)
          }
     }
 }
