@@ -91,9 +91,9 @@ namespace GUI
         private void usrctrTrangThi_Load(object sender, EventArgs e)
         {
             hdt = new usrctlHuongDanThi();
-            layoutRight.Controls.Clear();
+            layoutCauHoiDapAn.Controls.Clear();
             hdt.Dock = DockStyle.Fill;
-            layoutRight.Controls.Add(hdt);
+            layoutCauHoiDapAn.Controls.Add(hdt);
             layoutNopBai.Visible = false;
         }
 
@@ -110,10 +110,13 @@ namespace GUI
             getAllDapAnDung(maMon);
             countDown.Enabled = true;
             ch = new usrctrCauHoiVaDapAn(listCH, listDA,lstDapAnDung);
-            layoutRight.Controls.Clear();
+            layoutCauHoiDapAn.Controls.Clear();
+          
+   
             ch.Dock = DockStyle.Fill;
             lblTenKyThi.Text = tenKyThi;
-            layoutRight.Controls.Add(ch);
+            layoutCauHoiDapAn.Controls.Add(ch);
+         
             layoutTop.Visible = true;
             layoutNopBai.Visible = true;
             layoutBatDauLamBai.Visible = false;
@@ -136,9 +139,9 @@ namespace GUI
                 layoutBatDauLamBai.Visible = true;
 
                 hdt = new usrctlHuongDanThi();
-                layoutRight.Controls.Clear();
+                layoutCauHoiDapAn.Controls.Clear();
                 hdt.Dock = DockStyle.Fill;
-                layoutRight.Controls.Add(hdt);
+                layoutCauHoiDapAn.Controls.Add(hdt);
                 lbltxtThoiGianConLai.StateNormal.ShortText.Color1 = Color.Black;
             }
         }

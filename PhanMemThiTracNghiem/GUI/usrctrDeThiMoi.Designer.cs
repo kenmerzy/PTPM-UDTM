@@ -43,7 +43,7 @@
             this.kryptonPanelDeThiMoi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanelDeThiMoi.Location = new System.Drawing.Point(3, 3);
             this.kryptonPanelDeThiMoi.Name = "kryptonPanelDeThiMoi";
-            this.kryptonPanelDeThiMoi.Size = new System.Drawing.Size(424, 46);
+            this.kryptonPanelDeThiMoi.Size = new System.Drawing.Size(424, 44);
             this.kryptonPanelDeThiMoi.TabIndex = 0;
             // 
             // kryptonLabel1
@@ -51,7 +51,7 @@
             this.kryptonLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonLabel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(424, 46);
+            this.kryptonLabel1.Size = new System.Drawing.Size(424, 44);
             this.kryptonLabel1.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.TabIndex = 0;
             this.kryptonLabel1.Values.Text = "Đề Thi Mới";
@@ -66,17 +66,17 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(430, 150);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(430, 488);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // flowLayoutPanelDeThi
             // 
             this.flowLayoutPanelDeThi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanelDeThi.Location = new System.Drawing.Point(3, 55);
+            this.flowLayoutPanelDeThi.Location = new System.Drawing.Point(3, 53);
             this.flowLayoutPanelDeThi.Name = "flowLayoutPanelDeThi";
-            this.flowLayoutPanelDeThi.Size = new System.Drawing.Size(424, 92);
+            this.flowLayoutPanelDeThi.Size = new System.Drawing.Size(424, 432);
             this.flowLayoutPanelDeThi.TabIndex = 1;
             // 
             // usrctrDeThiMoi
@@ -86,7 +86,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "usrctrDeThiMoi";
-            this.Size = new System.Drawing.Size(430, 150);
+            this.Size = new System.Drawing.Size(430, 488);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanelDeThiMoi)).EndInit();
             this.kryptonPanelDeThiMoi.ResumeLayout(false);
             this.kryptonPanelDeThiMoi.PerformLayout();

@@ -152,3 +152,4 @@ D:\DoAn_PhatTrien\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrHoTroTrucTuyen.re
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrDeThiMoi.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrHoTroTrucTuyen.resources
 E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\bin\Debug\BLL_DAL.dll
+E:\PTPM-UDTM\PhanMemThiTracNghiem\GUI\obj\Debug\GUI.usrctrItemsDeThiMoi.resources

@@ -22,6 +22,11 @@ namespace BLL_DAL
            List<KyThi> asList =  dethis.ToList<KyThi>();
            return asList;
         }
+        public List<KyThi> getDeThiMoi()
+        {
+            var getALL = from kt in qldt.KyThis orderby kt.ThoiGianMoDe descending select kt;
+            return getALL.ToList<KyThi>();
+        }
         public List<CauHoi> getCauHois(string maMon)
         {
             var cauhois = from ch in qldt.CauHois where ch.MaMon == maMon select ch;

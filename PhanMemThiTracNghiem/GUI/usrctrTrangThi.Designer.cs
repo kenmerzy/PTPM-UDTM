@@ -54,7 +54,10 @@
             this.lblThoiGianConLai = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.lbltxtThoiGianConLai = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.countDown = new System.Windows.Forms.Timer(this.components);
+            this.layoutCauHoiDapAn = new System.Windows.Forms.TableLayoutPanel();
+            this.layoutKetQua = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
+            this.layoutRight.SuspendLayout();
             this.layoutLeft.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
@@ -88,6 +91,8 @@
             this.layoutRight.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.layoutRight.ColumnCount = 1;
             this.layoutRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.layoutRight.Controls.Add(this.layoutCauHoiDapAn, 0, 0);
+            this.layoutRight.Controls.Add(this.layoutKetQua, 0, 1);
             this.layoutRight.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutRight.Location = new System.Drawing.Point(303, 3);
             this.layoutRight.Name = "layoutRight";
@@ -398,6 +403,30 @@
             this.countDown.Interval = 50;
             this.countDown.Tick += new System.EventHandler(this.countDown_Tick);
             // 
+            // layoutCauHoiDapAn
+            // 
+            this.layoutCauHoiDapAn.ColumnCount = 1;
+            this.layoutCauHoiDapAn.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.layoutCauHoiDapAn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutCauHoiDapAn.Location = new System.Drawing.Point(4, 4);
+            this.layoutCauHoiDapAn.Name = "layoutCauHoiDapAn";
+            this.layoutCauHoiDapAn.RowCount = 1;
+            this.layoutCauHoiDapAn.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.layoutCauHoiDapAn.Size = new System.Drawing.Size(670, 351);
+            this.layoutCauHoiDapAn.TabIndex = 0;
+            // 
+            // layoutKetQua
+            // 
+            this.layoutKetQua.ColumnCount = 1;
+            this.layoutKetQua.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.layoutKetQua.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutKetQua.Location = new System.Drawing.Point(4, 362);
+            this.layoutKetQua.Name = "layoutKetQua";
+            this.layoutKetQua.RowCount = 1;
+            this.layoutKetQua.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.layoutKetQua.Size = new System.Drawing.Size(670, 232);
+            this.layoutKetQua.TabIndex = 0;
+            // 
             // usrctrTrangThi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -408,6 +437,7 @@
             this.Size = new System.Drawing.Size(984, 604);
             this.Load += new System.EventHandler(this.usrctrTrangThi_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.layoutRight.ResumeLayout(false);
             this.layoutLeft.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel10.ResumeLayout(false);
@@ -452,6 +482,8 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnLuuDeThi;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnBatDauLamBai;
+        private System.Windows.Forms.TableLayoutPanel layoutCauHoiDapAn;
+        private System.Windows.Forms.TableLayoutPanel layoutKetQua;
 
 
     }

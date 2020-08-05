@@ -23,12 +23,13 @@ namespace GUI
         {
             InitializeComponent();
         }
-        public usrctrDeThi(string tenKyThi, string moTa, string tongSoCau, string thoiGianLamBai, string thoiGianMoDe, TableLayoutPanel layoutT,string maMon)
+        public usrctrDeThi(string tenKyThi, string moTa, string tongSoCau, string thoiGianLamBai, string thoiGianMoDe, TableLayoutPanel layoutT,string maMon,string hinhAnh)
         {
             InitializeComponent();
             lblMonThi.Text = tenKyThi;
             lblMoTa.Text = moTa;
             lblSoCau.Text =  tongSoCau +"  "+"Câu hỏi";
+            pictureHinhAnh.Image = Image.FromFile("E:\\PTPM-UDTM\\PhanMemThiTracNghiem\\GUI\\Resources\\" + hinhAnh);
             lblThoiGianLamBai.Text = thoiGianLamBai.ToString() +" "+"phút" ;
             lblThoiGianMoDe.Text = thoiGianMoDe;
             layoutThi = layoutT;

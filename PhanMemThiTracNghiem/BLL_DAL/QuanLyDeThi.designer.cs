@@ -1345,7 +1345,7 @@ namespace BLL_DAL
 		
 		private string _MoTa;
 		
-		private System.Data.Linq.Binary _HinhAnh;
+		private string _HinhAnh;
 		
 		private EntitySet<KetQua> _KetQuas;
 		
@@ -1383,7 +1383,7 @@ namespace BLL_DAL
     partial void OnMaKhoiChanged();
     partial void OnMoTaChanging(string value);
     partial void OnMoTaChanged();
-    partial void OnHinhAnhChanging(System.Data.Linq.Binary value);
+    partial void OnHinhAnhChanging(string value);
     partial void OnHinhAnhChanged();
     #endregion
 		
@@ -1659,8 +1659,8 @@ namespace BLL_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HinhAnh", DbType="Image", CanBeNull=true, UpdateCheck=UpdateCheck.Never)]
-		public System.Data.Linq.Binary HinhAnh
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HinhAnh", DbType="NVarChar(50)")]
+		public string HinhAnh
 		{
 			get
 			{

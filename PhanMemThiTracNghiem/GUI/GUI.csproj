@@ -130,6 +130,12 @@
     <Compile Include="usrctrHoTroTrucTuyen.Designer.cs">
       <DependentUpon>usrctrHoTroTrucTuyen.cs</DependentUpon>
     </Compile>
+    <Compile Include="usrctrItemDeThiMoi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrctrItemDeThiMoi.Designer.cs">
+      <DependentUpon>usrctrItemDeThiMoi.cs</DependentUpon>
+    </Compile>
     <Compile Include="usrctrKetQuaThi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -205,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="usrctrHoTroTrucTuyen.resx">
       <DependentUpon>usrctrHoTroTrucTuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrctrItemDeThiMoi.resx">
+      <DependentUpon>usrctrItemDeThiMoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usrctrKetQuaThi.resx">
       <DependentUpon>usrctrKetQuaThi.cs</DependentUpon>
@@ -347,6 +356,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\VatLy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bronze_medal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiaLy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\english1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gold_medal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LichSu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NguVan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silver_medal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SinhHoc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VatLy1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

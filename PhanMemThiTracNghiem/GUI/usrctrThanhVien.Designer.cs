@@ -33,25 +33,25 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.lblThongTinThanhVien = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.lblThietLapTaiKhoan = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblTaiKhoan = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.f = new System.Windows.Forms.PictureBox();
             this.lblDateTime = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.btnThoat = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.f = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.f)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,16 +122,6 @@
             this.lblThietLapTaiKhoan.TabIndex = 1;
             this.lblThietLapTaiKhoan.Values.Text = "Thiết lập tài khoản";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::GUI.Properties.Resources.icons8_user_male_90;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(124, 121);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
             // kryptonPanel1
             // 
             this.kryptonPanel1.Controls.Add(this.kryptonLabel1);
@@ -168,16 +158,6 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(424, 49);
             this.tableLayoutPanel6.TabIndex = 2;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox3.Image = global::GUI.Properties.Resources.user;
-            this.pictureBox3.Location = new System.Drawing.Point(94, 9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
             // lblTaiKhoan
             // 
             this.lblTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -203,16 +183,6 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(424, 44);
             this.tableLayoutPanel7.TabIndex = 3;
-            // 
-            // f
-            // 
-            this.f.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.f.Image = global::GUI.Properties.Resources.icons8_enter_24;
-            this.f.Location = new System.Drawing.Point(51, 7);
-            this.f.Name = "f";
-            this.f.Size = new System.Drawing.Size(30, 30);
-            this.f.TabIndex = 0;
-            this.f.TabStop = false;
             // 
             // lblDateTime
             // 
@@ -268,6 +238,37 @@
             this.btnThoat.StateTracking.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
             this.btnThoat.TabIndex = 2;
             this.btnThoat.Values.Text = "THOÁT";
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::GUI.Properties.Resources.icons8_user_male_90;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(124, 121);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox3.Image = global::GUI.Properties.Resources.user;
+            this.pictureBox3.Location = new System.Drawing.Point(94, 9);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // f
+            // 
+            this.f.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.f.Image = global::GUI.Properties.Resources.icons8_enter_24;
+            this.f.Location = new System.Drawing.Point(51, 7);
+            this.f.Name = "f";
+            this.f.Size = new System.Drawing.Size(30, 30);
+            this.f.TabIndex = 0;
+            this.f.TabStop = false;
             // 
             // usrctrThanhVien
             // 
@@ -281,15 +282,15 @@
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.f)).EndInit();
             this.ResumeLayout(false);
 

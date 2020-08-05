@@ -70,7 +70,7 @@
       <Column Name="MatKhau" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="MaKhoi" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
       <Column Name="MoTa" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="HinhAnh" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HinhAnh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="KyThi_KetQua" Member="KetQuas" ThisKey="MaKyThi" OtherKey="MaKyThi" Type="KetQua" />
       <Association Name="KyThi_LuuKyThi" Member="LuuKyThis" ThisKey="MaKyThi" OtherKey="MaKyThi" Type="LuuKyThi" />
       <Association Name="MonThi_KyThi" Member="MonThi" ThisKey="MaMon" OtherKey="MaMon" Type="MonThi" IsForeignKey="true" />
