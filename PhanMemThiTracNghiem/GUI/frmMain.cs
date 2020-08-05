@@ -32,8 +32,8 @@ namespace GUI
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            getDeThi();
 
+            getDeThi();
             usrctrSearch us = new usrctrSearch();
             us.Dock = DockStyle.Top;
             tableLayoutPanel4.Controls.Add(us);
@@ -57,7 +57,6 @@ namespace GUI
             httt.Dock = DockStyle.Top;
             flowLayoutRight.Controls.Add(httt);
             flowLayoutRight.SetFlowBreak(httt, true);
-
         }
 
 
@@ -82,21 +81,5 @@ namespace GUI
                 MessageBox.Show("FAIL");
             }
         }
-
-
-
-     
-
-      
-
-
-
-
-
-
-
-  
-
-
     }
 }

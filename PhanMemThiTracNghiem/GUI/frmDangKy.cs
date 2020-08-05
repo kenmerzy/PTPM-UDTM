@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
+using ComponentFactory.Krypton.Toolkit;
 namespace GUI
 {
     public partial class frmDangKy : Form
@@ -27,7 +28,16 @@ namespace GUI
             this.Hide();
         }
 
-
+        private string getGioiTinh()
+        {
+            foreach (KryptonRadioButton rd in layoutGioiTinh.Controls)
+            {
+                if (rd.Checked)
+                    return rd.Text;
+            }
+            return null;
+        }
+        
         public static bool isEmail(string inputEmail)
         {
             inputEmail = inputEmail ?? string.Empty;
@@ -83,13 +93,13 @@ namespace GUI
             return true;
         }
 
-
         public bool kiemTraRong()
         {
             if (string.IsNullOrEmpty(txtHoTen.Text) || string.IsNullOrEmpty(txtTenTaiKhoan.Text) || string.IsNullOrEmpty(txtMatKhau.Text) || string.IsNullOrEmpty(txtXacNhanMatKhau.Text) || string.IsNullOrEmpty(txtSDT.Text) || string.IsNullOrEmpty(txtEmail.Text))
                 return false;
             return true;
         }
+
         public bool kiemTraSDT(string SDT)
         {
             if (SDT.All(t => char.IsDigit(t)))
@@ -127,11 +137,11 @@ namespace GUI
             }
         }
 
-        private void btnDangKy_Click_1(object sender, EventArgs e)
+        private void btnDangKy_Click(object sender, EventArgs e)
         {
             if (kiemTraDangKy())
             {
-                int kq = dethi.luuThongTinDangKy(txtHoTen.Text, txtTenTaiKhoan.Text, txtMatKhau.Text, txtEmail.Text, txtSDT.Text, Convert.ToDateTime(dateTimePickerNgaySinh.Value.ToString()));
+                int kq = dethi.luuThongTinDangKy(txtHoTen.Text, txtTenTaiKhoan.Text, txtMatKhau.Text, txtEmail.Text, txtSDT.Text, Convert.ToDateTime(dateTimePickerNgaySinh.Value.ToString()),txtDiaChi.Text.Trim(),getGioiTinh());
                 if (kq == 1)
                 {
                     MessageBox.Show("Đăng ký thành công <3", "Thông báo", MessageBoxButtons.OK);
@@ -147,13 +157,11 @@ namespace GUI
             }
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
+        private void frmDangKy_Load(object sender, EventArgs e)
         {
-            DialogResult rs = MessageBox.Show("Bạn có chắc muốn thoát không?","Thông báo thoát!",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
-            if (rs.Equals(DialogResult.Yes))
-                this.Close();
-            return;
+            txtHoTen.Select();
         }
+
     }
 }
  

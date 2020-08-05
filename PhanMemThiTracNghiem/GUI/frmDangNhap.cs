@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
+using ComponentFactory.Krypton.Toolkit;
 namespace GUI
 {
     public partial class frmDangNhap : Form
@@ -47,6 +48,7 @@ namespace GUI
                 this.Hide();
             }
         }
+
         public bool kiemTraDangNhap()
         {
             List<TaiKhoan> listTK = dethi.getTaiKhoan();

@@ -66,9 +66,8 @@ namespace BLL_DAL
             if (tk != null)
                 return true;
             return false;
-            
         }
-        public int luuThongTinDangKy(string hoTen, string tenDangNhap, string matKhau, string email, string SDT, DateTime ngaySinh)
+        public int luuThongTinDangKy(string hoTen, string tenDangNhap, string matKhau, string email, string SDT, DateTime ngaySinh,string diaChi, string gioiTinh)
         {
             TaiKhoan tk = new TaiKhoan();
             ThiSinh ts = new ThiSinh();
@@ -84,15 +83,15 @@ namespace BLL_DAL
             ts.SoDienThoai  =SDT;
             ts.NamSinh = ngaySinh;
             ts.TenDangNhap = tenDangNhap;
+            ts.DiaChi = diaChi;
+            ts.GioiTinh = gioiTinh;
 
             try
             {
                 qldt.TaiKhoans.InsertOnSubmit(tk);
                 qldt.SubmitChanges();
-
                 qldt.ThiSinhs.InsertOnSubmit(ts);
-                qldt.SubmitChanges();
-                
+                qldt.SubmitChanges();               
                 return 1;
             }
             catch
