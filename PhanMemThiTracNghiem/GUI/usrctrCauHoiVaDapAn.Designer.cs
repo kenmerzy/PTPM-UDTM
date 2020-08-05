@@ -138,6 +138,7 @@
             this.rdBtnDapAnC.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdBtnDapAnC.TabIndex = 1;
             this.rdBtnDapAnC.Values.Text = "C.";
+            this.rdBtnDapAnC.CheckedChanged += new System.EventHandler(this.rdBtnDapAnA_CheckedChanged);
             // 
             // rdBtnDapAnB
             // 
@@ -151,6 +152,7 @@
             this.rdBtnDapAnB.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdBtnDapAnB.TabIndex = 2;
             this.rdBtnDapAnB.Values.Text = " B.";
+            this.rdBtnDapAnB.CheckedChanged += new System.EventHandler(this.rdBtnDapAnA_CheckedChanged);
             // 
             // rdBtnDapAnD
             // 
@@ -164,6 +166,7 @@
             this.rdBtnDapAnD.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdBtnDapAnD.TabIndex = 3;
             this.rdBtnDapAnD.Values.Text = "D.";
+            this.rdBtnDapAnD.CheckedChanged += new System.EventHandler(this.rdBtnDapAnA_CheckedChanged);
             // 
             // lblCauHoi
             // 

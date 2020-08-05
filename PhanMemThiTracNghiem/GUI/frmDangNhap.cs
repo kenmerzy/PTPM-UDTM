@@ -34,7 +34,7 @@ namespace GUI
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            List<TaiKhoan> ttcn = dethi.getTaiKhoan();
+            
             if (string.IsNullOrEmpty(txtTenDangNhap.Text) || string.IsNullOrEmpty(txtMatKhau.Text))
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin đăng nhập", "Thông báo", MessageBoxButtons.OK);
             else if (!kiemTraDangNhap())
@@ -43,7 +43,8 @@ namespace GUI
             }
             else
             {
-                frmMain main = new frmMain();
+                ThiSinh ts = dethi.getThiSinh(txtTenDangNhap.Text);
+                frmMain main = new frmMain(ts);
                 main.Show();
                 this.Hide();
             }

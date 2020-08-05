@@ -64,10 +64,10 @@ namespace BLL_DAL
             return list;
         }
 
-        public List<TaiKhoan> getTaiKhoan()
+        public ThiSinh getThiSinh(string tenDangNhap)
         {
-            var getTKC = from tk in qldt.TaiKhoans select tk;
-            return getTKC.ToList<TaiKhoan>();
+            ThiSinh ts = qldt.ThiSinhs.Where(t => t.TenDangNhap.Equals(tenDangNhap)).FirstOrDefault();
+            return ts;
         }
 
         public bool kiemTraTonTaiTenTaiKhoan(string tenDN)

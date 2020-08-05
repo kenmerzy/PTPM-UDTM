@@ -36,22 +36,25 @@ namespace GUI
             tongSoCau = lstCH.Count;
             lstIntChon = new List<int>();
             lstIntChon = newlstIntChon(tongSoCau);
+            lstViTriRadioButtonChon = new List<int>();
+            lstViTriRadioButtonChon = createViTriRadioButton(tongSoCau);
             loadCHvaDA(lstCH, lstDA, 0);
             cauHoiHienTai = 0;
-            createDapAnDaChon();
+            listDapAnChon = new List<DapAn>();
+            listDapAnChon =  createDapAnDaChon(tongSoCau);
         }
 
         
         private void loadCHvaDA(List<CauHoi> lstCH, List<List<DapAn>> lstDA, int position)
         {
 
-            loadCauHoi(lstCH[position].NoiDung,position);
-            loadDapAn(lstDA[position][0].NoiDung, lstDA[position][1].NoiDung, lstDA[position][2].NoiDung, lstDA[position][3].NoiDung);
+            loadCauHoi(lstCH[position],position);
+            loadDapAn(lstDA[position]);
         }
         private void loadCHvaDA(List<CauHoi> lstCH, List<List<DapAn>> lstDA, int position,int dapAnChon)
         {
-            loadCauHoi(lstCH[position].NoiDung,position);
-            loadDapAn(lstDA[position][0].NoiDung, lstDA[position][1].NoiDung, lstDA[position][2].NoiDung, lstDA[position][3].NoiDung);
+            loadCauHoi(lstCH[position],position);
+            loadDapAn(lstDA[position]);
             chonDapAn(dapAnChon);
         }
         private void chonDapAn(int dapAn)
@@ -74,36 +77,74 @@ namespace GUI
 
         }
 
-        private void createDapAnDaChon()
+        private List<DapAn> createDapAnDaChon(int tongSoCau)
         {
-            listDapAnChon = new List<DapAn>();
+            List <DapAn>listDAC = new List<DapAn>();
             DapAn da;
             for (int i = 0; i < tongSoCau; i++)
             {
                 da = new DapAn();
-                listDapAnChon.Add(da);
+                listDAC.Add(da);
             }
+            return listDAC;
         }
-        private void createViTriRadioButton()
+        private List<int> createViTriRadioButton(int tongSoCau)
         {
-            
+           List<int> listBtnChon = new List<int>();
             for (int i = 0; i < tongSoCau; i++)
             {
-                lstViTriRadioButtonChon.Add(0);
+                listBtnChon.Add(0);
+            }
+            return listBtnChon;
+        }
+        private void checkDapAn(int viTriRadioButton)
+        {
+            switch (viTriRadioButton)
+            {
+                case 1:
+                    {
+                        rdBtnDapAnA.Checked = true;
+                        break;
+                    }
+                case 2:
+                    {
+                        rdBtnDapAnB.Checked = true;
+                        break;
+                    }
+                case 3:
+                    {
+                        rdBtnDapAnC.Checked = true;
+                        break;
+                    }
+                case 4:
+                    {
+                        rdBtnDapAnD.Checked = true;
+                        break;
+                    }
+                case 0:
+                    {
+                        break;
+                    }
+                default:
+                    break;
             }
         }
 
-         private void loadCauHoi(string cauHoi, int position)
+
+         private void loadCauHoi(CauHoi cauHoi, int position)
         {
                 lblCauHoi.Text = "Câu " +(position + 1).ToString() + ": " + cauHoi;
         }
 
-         private void loadDapAn( string dapAnA, string dapAnB, string dapAnC, string dapAnD)
+         private void loadDapAn(List<DapAn> listDapAn)
          {
-             rdBtnDapAnA.Text = "A. "+ dapAnA;
-             rdBtnDapAnB.Text = "B. " + dapAnB;
-             rdBtnDapAnC.Text = "C. " + dapAnC;
-             rdBtnDapAnD.Text = "D. " + dapAnD;
+             rdBtnDapAnA.Text = "A. "+ listDapAn[0].NoiDung;
+             rdBtnDapAnB.Text = "B. " + listDapAn[1].NoiDung;
+             rdBtnDapAnC.Text = "C. " + listDapAn[2].NoiDung;
+             rdBtnDapAnD.Text = "D. " + listDapAn[3].NoiDung;
+
+
+
          }
          private void disableAllRadioButton()
          {
@@ -136,6 +177,7 @@ namespace GUI
             KryptonButton bt = (sender as KryptonButton);
             cauHoiHienTai = Convert.ToInt32(bt.Tag);
             loadCHvaDA(lstCH, lstDA, cauHoiHienTai, lstIntChon[cauHoiHienTai]);
+            checkDapAn(lstViTriRadioButtonChon[cauHoiHienTai]);
             checkPreAndNextButton();
         }
 
@@ -182,7 +224,7 @@ namespace GUI
              cauHoiHienTai--;
              loadCHvaDA(lstCH, lstDA, cauHoiHienTai, lstIntChon[cauHoiHienTai]);
              checkPreAndNextButton();
-
+             checkDapAn(lstViTriRadioButtonChon[cauHoiHienTai]);
          }
 
          private void btnKeTiep_Click(object sender, EventArgs e)
@@ -190,13 +232,17 @@ namespace GUI
              cauHoiHienTai++;
              loadCHvaDA(lstCH, lstDA, cauHoiHienTai, lstIntChon[cauHoiHienTai]);
              checkPreAndNextButton();
+             checkDapAn(lstViTriRadioButtonChon[cauHoiHienTai]);
          }
 
          private void rdBtnDapAnA_CheckedChanged(object sender, EventArgs e)
          {
-             KryptonRadioButton rd = sender as KryptonRadioButton;
+             KryptonRadioButton rd = (sender as KryptonRadioButton);
              if (rd.Checked)
+             {
                  listDapAnChon[cauHoiHienTai].NoiDung = rd.Text.Trim();
+                 lstViTriRadioButtonChon[cauHoiHienTai
+             }
          }
     }
 }
