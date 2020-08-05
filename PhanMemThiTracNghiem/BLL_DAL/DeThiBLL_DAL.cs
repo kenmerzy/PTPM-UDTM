@@ -77,6 +77,11 @@ namespace BLL_DAL
                 return true;
             return false;
         }
+        public List<TaiKhoan> getTaiKhoan()
+        {
+            var getTKC = from tk in qldt.TaiKhoans select tk;
+            return getTKC.ToList<TaiKhoan>();
+        }
         public int luuThongTinDangKy(string hoTen, string tenDangNhap, string matKhau, string email, string SDT, DateTime ngaySinh,string diaChi, string gioiTinh)
         {
             TaiKhoan tk = new TaiKhoan();
@@ -95,7 +100,6 @@ namespace BLL_DAL
             ts.TenDangNhap = tenDangNhap;
             ts.DiaChi = diaChi;
             ts.GioiTinh = gioiTinh;
-
             try
             {
                 qldt.TaiKhoans.InsertOnSubmit(tk);

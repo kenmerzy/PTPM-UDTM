@@ -133,7 +133,7 @@ namespace GUI
 
          private void loadCauHoi(CauHoi cauHoi, int position)
         {
-                lblCauHoi.Text = "Câu " +(position + 1).ToString() + ": " + cauHoi;
+                lblCauHoi.Text = "Câu " +(position + 1).ToString() + ": " + cauHoi.NoiDung;
         }
 
          private void loadDapAn(List<DapAn> listDapAn)
@@ -143,8 +143,17 @@ namespace GUI
              rdBtnDapAnC.Text = "C. " + listDapAn[2].NoiDung;
              rdBtnDapAnD.Text = "D. " + listDapAn[3].NoiDung;
 
+             rdBtnDapAnA.Tag = getTag(listDapAn[0]);
+             rdBtnDapAnB.Tag = getTag(listDapAn[1]);
+             rdBtnDapAnC.Tag = getTag(listDapAn[2]);
+             rdBtnDapAnD.Tag = getTag(listDapAn[3]);
 
-
+         }
+         private string getTag(DapAn da)
+         {
+             if (da.DungSai == true)
+                 return "True";
+             return "False";
          }
          private void disableAllRadioButton()
          {
@@ -241,7 +250,30 @@ namespace GUI
              if (rd.Checked)
              {
                  listDapAnChon[cauHoiHienTai].NoiDung = rd.Text.Trim();
-                 lstViTriRadioButtonChon[cauHoiHienTai
+                
+                 switch (rd.Name.ToString())
+                 {
+                     case "rdBtnDapAnA":
+                         {
+                             lstViTriRadioButtonChon[cauHoiHienTai] = 1;
+                             break;
+                         }
+                     case "rdBtnDapAnB":
+                         {
+                             lstViTriRadioButtonChon[cauHoiHienTai] = 2;
+                             break;
+                         }
+                     case "rdBtnDapAnC":
+                         {
+                             lstViTriRadioButtonChon[cauHoiHienTai] = 3;
+                             break;
+                         }
+                     case "rdBtnDapAnD":
+                         {
+                             lstViTriRadioButtonChon[cauHoiHienTai] = 4;
+                             break;
+                         }
+                 }
              }
          }
     }
