@@ -30,7 +30,7 @@
         {
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.kryptonHintTextBox1 = new KryptonHintTextBox.KryptonHintTextBox();
+            this.txtTimKiem = new KryptonHintTextBox.KryptonHintTextBox();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,7 +41,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 51F));
             this.tableLayoutPanel2.Controls.Add(this.btnSearch, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.kryptonHintTextBox1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txtTimKiem, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -60,19 +60,22 @@
             this.btnSearch.Size = new System.Drawing.Size(45, 39);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             this.btnSearch.MouseEnter += new System.EventHandler(this.btnSearch_MouseEnter);
             this.btnSearch.MouseLeave += new System.EventHandler(this.btnSearch_MouseLeave);
             // 
-            // kryptonHintTextBox1
+            // txtTimKiem
             // 
-            this.kryptonHintTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.kryptonHintTextBox1.Location = new System.Drawing.Point(3, 10);
-            this.kryptonHintTextBox1.Name = "kryptonHintTextBox1";
-            this.kryptonHintTextBox1.Size = new System.Drawing.Size(373, 24);
-            this.kryptonHintTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
-            this.kryptonHintTextBox1.TabIndex = 1;
-            this.kryptonHintTextBox1.Tag = "Tìm kiếm...";
-            this.kryptonHintTextBox1.Text = "Tìm kiếm...";
+            this.txtTimKiem.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTimKiem.Location = new System.Drawing.Point(3, 10);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(373, 24);
+            this.txtTimKiem.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
+            this.txtTimKiem.TabIndex = 1;
+            this.txtTimKiem.Tag = "Tìm kiếm...";
+            this.txtTimKiem.Text = "Tìm kiếm...";
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
+            this.txtTimKiem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTimKiem_KeyDown);
             // 
             // usrctrSearch
             // 
@@ -90,7 +93,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private KryptonHintTextBox.KryptonHintTextBox kryptonHintTextBox1;
+        private KryptonHintTextBox.KryptonHintTextBox txtTimKiem;
         private System.Windows.Forms.Button btnSearch;
     }
 }

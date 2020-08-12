@@ -34,11 +34,11 @@ namespace GUI
 
             loadDeThi();
 
-            usrctrSearch us = new usrctrSearch();
+            usrctrSearch us = new usrctrSearch(this);
             us.Dock = DockStyle.Top;
             tableLayoutPanel4.Controls.Add(us);
             
-            usrctrThanhVien u = new usrctrThanhVien();
+            usrctrThanhVien u = new usrctrThanhVien(thiSinh);
             u.Dock = DockStyle.Top;
             flowLayoutRight.Controls.Add(u);
             flowLayoutRight.SetFlowBreak(u, true);
@@ -61,6 +61,7 @@ namespace GUI
 
         public void loadDeThi()
         {
+            flowLayoutLeft.Controls.Clear();
             try
             {
                 List<KyThi> kt = dethiBLL_DAL.getDeThi();
@@ -75,7 +76,27 @@ namespace GUI
             }
             catch
             {
-                MessageBox.Show("Load Fail");
+                MessageBox.Show("Load đề thi Fail");
+            }
+        }
+        public void loadDeThiTheoTen(string ten)
+        {
+            flowLayoutLeft.Controls.Clear();
+            try
+            {
+                List<KyThi> kt = dethiBLL_DAL.getDeThiTheoTen(ten);
+                for (int i = 0; i < kt.Count; i++)
+                {
+                    usrctrDeThi dt = new usrctrDeThi(kt[i].TenKyThi, kt[i].MoTa, kt[i].TongSoCau.ToString()
+                    , kt[i].ThoiGianLamBai.ToString(), kt[i].ThoiGianMoDe.ToString(), layout_Thi, kt[i].MaMon.ToString(), kt[i].HinhAnh.ToString());
+                    dt.Dock = DockStyle.Top;
+                    flowLayoutLeft.Controls.Add(dt);
+                    flowLayoutLeft.SetFlowBreak(dt, true);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Load đề thi Fail");
             }
         }
     }
