@@ -42,7 +42,7 @@
       <Column Name="MaKyThi" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="NgayThi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="Diem" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="ThoiGianThi" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="ThoiGianLamBai" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="ThiSinh_KetQua" Member="ThiSinh" ThisKey="MaThiSinh" OtherKey="MaThiSinh" Type="ThiSinh" IsForeignKey="true" />
       <Association Name="KyThi_KetQua" Member="KyThi" ThisKey="MaKyThi" OtherKey="MaKyThi" Type="KyThi" IsForeignKey="true" />
     </Type>

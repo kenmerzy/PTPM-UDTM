@@ -914,7 +914,7 @@ namespace BLL_DAL
 		
 		private System.Nullable<double> _Diem;
 		
-		private System.Nullable<System.DateTime> _ThoiGianThi;
+		private System.Nullable<int> _ThoiGianLamBai;
 		
 		private EntityRef<ThiSinh> _ThiSinh;
 		
@@ -934,8 +934,8 @@ namespace BLL_DAL
     partial void OnNgayThiChanged();
     partial void OnDiemChanging(System.Nullable<double> value);
     partial void OnDiemChanged();
-    partial void OnThoiGianThiChanging(System.Nullable<System.DateTime> value);
-    partial void OnThoiGianThiChanged();
+    partial void OnThoiGianLamBaiChanging(System.Nullable<int> value);
+    partial void OnThoiGianLamBaiChanged();
     #endregion
 		
 		public KetQua()
@@ -1053,22 +1053,22 @@ namespace BLL_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThoiGianThi", DbType="SmallDateTime")]
-		public System.Nullable<System.DateTime> ThoiGianThi
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThoiGianLamBai", DbType="Int")]
+		public System.Nullable<int> ThoiGianLamBai
 		{
 			get
 			{
-				return this._ThoiGianThi;
+				return this._ThoiGianLamBai;
 			}
 			set
 			{
-				if ((this._ThoiGianThi != value))
+				if ((this._ThoiGianLamBai != value))
 				{
-					this.OnThoiGianThiChanging(value);
+					this.OnThoiGianLamBaiChanging(value);
 					this.SendPropertyChanging();
-					this._ThoiGianThi = value;
-					this.SendPropertyChanged("ThoiGianThi");
-					this.OnThoiGianThiChanged();
+					this._ThoiGianLamBai = value;
+					this.SendPropertyChanged("ThoiGianLamBai");
+					this.OnThoiGianLamBaiChanged();
 				}
 			}
 		}

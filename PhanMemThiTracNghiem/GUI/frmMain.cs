@@ -67,8 +67,8 @@ namespace GUI
                 List<KyThi> kt = dethiBLL_DAL.getDeThi();
                 for (int i = 0; i < kt.Count; i++)
                 {
-                    usrctrDeThi dt = new usrctrDeThi(kt[i].TenKyThi, kt[i].MoTa, kt[i].TongSoCau.ToString()
-                    , kt[i].ThoiGianLamBai.ToString(), kt[i].ThoiGianMoDe.ToString(),layout_Thi,kt[i].MaMon.ToString(),kt[i].HinhAnh.ToString());
+                    usrctrDeThi dt = new usrctrDeThi(kt[i].MaKyThi,kt[i].TenKyThi, kt[i].MoTa, kt[i].TongSoCau.ToString()
+                    , kt[i].ThoiGianLamBai.ToString(), kt[i].ThoiGianMoDe.ToString(),layout_Thi,kt[i].MaMon.ToString(),kt[i].HinhAnh.ToString(),thiSinh.MaThiSinh);
                     dt.Dock = DockStyle.Top; 
                     flowLayoutLeft.Controls.Add(dt);
                     flowLayoutLeft.SetFlowBreak(dt, true);
@@ -87,8 +87,8 @@ namespace GUI
                 List<KyThi> kt = dethiBLL_DAL.getDeThiTheoTen(ten);
                 for (int i = 0; i < kt.Count; i++)
                 {
-                    usrctrDeThi dt = new usrctrDeThi(kt[i].TenKyThi, kt[i].MoTa, kt[i].TongSoCau.ToString()
-                    , kt[i].ThoiGianLamBai.ToString(), kt[i].ThoiGianMoDe.ToString(), layout_Thi, kt[i].MaMon.ToString(), kt[i].HinhAnh.ToString());
+                    usrctrDeThi dt = new usrctrDeThi(kt[i].MaKyThi,kt[i].TenKyThi, kt[i].MoTa, kt[i].TongSoCau.ToString()
+                    , kt[i].ThoiGianLamBai.ToString(), kt[i].ThoiGianMoDe.ToString(), layout_Thi, kt[i].MaMon.ToString(), kt[i].HinhAnh.ToString(),thiSinh.MaThiSinh);
                     dt.Dock = DockStyle.Top;
                     flowLayoutLeft.Controls.Add(dt);
                     flowLayoutLeft.SetFlowBreak(dt, true);
@@ -98,6 +98,11 @@ namespace GUI
             {
                 MessageBox.Show("Load đề thi Fail");
             }
+        }
+
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+                Application.Exit();
         }
     }
 }

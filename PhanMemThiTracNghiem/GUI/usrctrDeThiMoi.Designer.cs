@@ -49,7 +49,7 @@
             // kryptonLabel1
             // 
             this.kryptonLabel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.kryptonLabel1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonLabel1.Location = new System.Drawing.Point(8, 7);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(112, 28);
             this.kryptonLabel1.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;

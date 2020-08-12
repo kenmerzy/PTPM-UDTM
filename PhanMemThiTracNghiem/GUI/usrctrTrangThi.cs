@@ -17,7 +17,8 @@ namespace GUI
         int second ;
         string mnl,scl,maMon,tenKyThi;
         string soCau;
-        int thoiGianLamBai;
+        int thoiGianLamBai,maKyThi;
+        int maThiSinh;
         List<CauHoi> listCH;
         List<List<DapAn>> listDA;
         List<DapAn> lstDapAnDung;
@@ -30,7 +31,7 @@ namespace GUI
         {
             InitializeComponent();
         }
-        public usrctrTrangThi(string soCau, int thoiGianLamBai,string maMon,string tenKyThi)
+        public usrctrTrangThi(string soCau, int thoiGianLamBai,string maMon,string tenKyThi,int maKyThi,int maThiSinh)
         {
             InitializeComponent();
             lbltxtSoCau.Text = soCau;
@@ -44,6 +45,8 @@ namespace GUI
             layoutTop.Visible = false;
             this.tenKyThi = tenKyThi;
             lbltxtThoiGianConLai.StateNormal.ShortText.Color1 = Color.Black;
+            this.maKyThi = maKyThi;
+            this.maThiSinh = maThiSinh;
         }
 
         private void getCauHoiDapAn(string maMon)
@@ -84,11 +87,15 @@ namespace GUI
             lbltxtThoiGianConLai.Text = mnl + ":" + scl;
             if (minute < 0)
             {
+                countDown.Enabled = false;
                 lbltxtThoiGianConLai.Text = "00:00";
                 ch.ketThucBaiThi();
-                kqt = new usrctrKetQuaThi(ch.getSoCauDung(), ch.getSoCauSai(), ch.getSoCauChuaLam(), ch.chamDiem());
+                kqt = new usrctrKetQuaThi(ch.getSoCauDung(), ch.getSoCauSai(), ch.getSoCauChuaLam(), ch.chamDiem(),thoiGianLamBai*60 - (minute*60+second));
                 btnNopBai.Visible = false;
-                countDown.Enabled = false;
+                if (dethiBLL_DAL.luuKetQua(maThiSinh, maKyThi, DateTime.Now, diem, thoiGianLamBai * 60 - (minute * 60 + second)))
+                    MessageBox.Show("Kết thúc giờ làm bài. Bài thi của bạn đã được lưu !");
+                else
+                    MessageBox.Show("Nộp bài thất bại");
             }
           
         }
@@ -163,9 +170,13 @@ namespace GUI
             ch.setDaThiXong(true);
             ch.ketThucBaiThi();
             diem = ch.chamDiem();
-            kqt = new usrctrKetQuaThi(ch.getSoCauDung(), ch.getSoCauSai(), ch.getSoCauChuaLam(), ch.chamDiem());
+            kqt = new usrctrKetQuaThi(ch.getSoCauDung(), ch.getSoCauSai(), ch.getSoCauChuaLam(), ch.chamDiem(), thoiGianLamBai * 60 -( minute * 60 + second));
             kqt.Dock = DockStyle.Fill;
             layoutKetQua.Controls.Add(kqt);
+            if (dethiBLL_DAL.luuKetQua(maThiSinh, maKyThi, DateTime.Now, diem, thoiGianLamBai * 60 - (minute * 60 + second)))
+                MessageBox.Show("Nộp bài thành công");
+            else
+                MessageBox.Show("Nộp bài thất bại");
         }
 
      }

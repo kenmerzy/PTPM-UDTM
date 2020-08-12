@@ -16,14 +16,16 @@ namespace GUI
         TableLayoutPanel layoutThi;
         string tsc = null;
         int tglb = 0;
+        int maKyThi;
         frmMain ma;
+        int maThiSinh;
         string maMon ;
         string tenKyThi;
         public usrctrDeThi()
         {
             InitializeComponent();
         }
-        public usrctrDeThi(string tenKyThi, string moTa, string tongSoCau, string thoiGianLamBai, string thoiGianMoDe, TableLayoutPanel layoutT,string maMon,string hinhAnh)
+        public usrctrDeThi(int maKyThi,string tenKyThi, string moTa, string tongSoCau, string thoiGianLamBai, string thoiGianMoDe, TableLayoutPanel layoutT, string maMon, string hinhAnh,int maThiSinh)
         {
             InitializeComponent();
             lblMonThi.Text = tenKyThi;
@@ -36,13 +38,15 @@ namespace GUI
             tglb = int.Parse(thoiGianLamBai);  
             tsc = tongSoCau;
             this.tenKyThi = tenKyThi;
-            this.maMon = maMon;   
+            this.maMon = maMon;
+            this.maKyThi = maKyThi;
+            this.maThiSinh = maThiSinh;
         }
 
         private void lblMonThi_Click(object sender, EventArgs e)
         {
             layoutThi.Controls.Clear();
-            usrctrTrangThi th = new usrctrTrangThi(tsc,tglb,maMon,tenKyThi);
+            usrctrTrangThi th = new usrctrTrangThi(tsc,tglb,maMon,tenKyThi,maKyThi, maThiSinh);
             layoutThi.Controls.Add(th);
             th.Dock = DockStyle.Fill;
             layoutThi.SetColumnSpan(th, 2);

@@ -127,5 +127,24 @@ namespace BLL_DAL
             }
         }
 
+        public bool luuKetQua(int maThiSinh, int maKyThi, DateTime ngayThi, double diem,int thoiGianLamBai)
+        {
+            KetQua kq = new KetQua();
+            kq.MaThiSinh = maThiSinh;
+            kq.MaKyThi = maKyThi;
+            kq.NgayThi = ngayThi;
+            kq.Diem = diem;
+            kq.ThoiGianLamBai = thoiGianLamBai;
+            try
+            {
+                qldt.KetQuas.InsertOnSubmit(kq);
+                qldt.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }
