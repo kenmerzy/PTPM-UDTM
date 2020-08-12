@@ -31,7 +31,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.layoutDapAns = new System.Windows.Forms.TableLayoutPanel();
             this.rdBtnDapAnA = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.rdBtnDapAnC = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.rdBtnDapAnB = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
@@ -44,14 +44,14 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
+            this.layoutDapAns.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.flowDanhSachCauHoi, 0, 2);
@@ -59,10 +59,10 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.24691F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.75309F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 98F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(829, 405);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(829, 328);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -76,52 +76,52 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(823, 240);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(823, 190);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 1);
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.layoutDapAns, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.lblCauHoi, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.26728F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.73272F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(815, 232);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(815, 182);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
-            // tableLayoutPanel4
+            // layoutDapAns
             // 
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.rdBtnDapAnA, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.rdBtnDapAnC, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.rdBtnDapAnB, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.rdBtnDapAnD, 1, 1);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 63);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(809, 166);
-            this.tableLayoutPanel4.TabIndex = 0;
+            this.layoutDapAns.ColumnCount = 2;
+            this.layoutDapAns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.layoutDapAns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.layoutDapAns.Controls.Add(this.rdBtnDapAnA, 0, 0);
+            this.layoutDapAns.Controls.Add(this.rdBtnDapAnC, 0, 1);
+            this.layoutDapAns.Controls.Add(this.rdBtnDapAnB, 1, 0);
+            this.layoutDapAns.Controls.Add(this.rdBtnDapAnD, 1, 1);
+            this.layoutDapAns.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutDapAns.Location = new System.Drawing.Point(3, 66);
+            this.layoutDapAns.Name = "layoutDapAns";
+            this.layoutDapAns.RowCount = 2;
+            this.layoutDapAns.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.layoutDapAns.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.layoutDapAns.Size = new System.Drawing.Size(809, 113);
+            this.layoutDapAns.TabIndex = 0;
             // 
             // rdBtnDapAnA
             // 
             this.rdBtnDapAnA.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.rdBtnDapAnA.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rdBtnDapAnA.Location = new System.Drawing.Point(25, 29);
+            this.rdBtnDapAnA.Location = new System.Drawing.Point(25, 15);
             this.rdBtnDapAnA.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
             this.rdBtnDapAnA.Name = "rdBtnDapAnA";
-            this.rdBtnDapAnA.Size = new System.Drawing.Size(41, 24);
+            this.rdBtnDapAnA.Size = new System.Drawing.Size(42, 25);
             this.rdBtnDapAnA.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
-            this.rdBtnDapAnA.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdBtnDapAnA.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdBtnDapAnA.TabIndex = 0;
             this.rdBtnDapAnA.Values.Text = "A.";
             this.rdBtnDapAnA.CheckedChanged += new System.EventHandler(this.rdBtnDapAnA_CheckedChanged);
@@ -130,12 +130,12 @@
             // 
             this.rdBtnDapAnC.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.rdBtnDapAnC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rdBtnDapAnC.Location = new System.Drawing.Point(25, 112);
+            this.rdBtnDapAnC.Location = new System.Drawing.Point(25, 72);
             this.rdBtnDapAnC.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
             this.rdBtnDapAnC.Name = "rdBtnDapAnC";
-            this.rdBtnDapAnC.Size = new System.Drawing.Size(42, 24);
+            this.rdBtnDapAnC.Size = new System.Drawing.Size(43, 25);
             this.rdBtnDapAnC.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
-            this.rdBtnDapAnC.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdBtnDapAnC.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdBtnDapAnC.TabIndex = 1;
             this.rdBtnDapAnC.Values.Text = "C.";
             this.rdBtnDapAnC.CheckedChanged += new System.EventHandler(this.rdBtnDapAnA_CheckedChanged);
@@ -144,12 +144,12 @@
             // 
             this.rdBtnDapAnB.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.rdBtnDapAnB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rdBtnDapAnB.Location = new System.Drawing.Point(429, 29);
+            this.rdBtnDapAnB.Location = new System.Drawing.Point(429, 15);
             this.rdBtnDapAnB.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
             this.rdBtnDapAnB.Name = "rdBtnDapAnB";
-            this.rdBtnDapAnB.Size = new System.Drawing.Size(45, 24);
+            this.rdBtnDapAnB.Size = new System.Drawing.Size(47, 25);
             this.rdBtnDapAnB.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
-            this.rdBtnDapAnB.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdBtnDapAnB.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdBtnDapAnB.TabIndex = 2;
             this.rdBtnDapAnB.Values.Text = " B.";
             this.rdBtnDapAnB.CheckedChanged += new System.EventHandler(this.rdBtnDapAnA_CheckedChanged);
@@ -158,12 +158,12 @@
             // 
             this.rdBtnDapAnD.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.rdBtnDapAnD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rdBtnDapAnD.Location = new System.Drawing.Point(429, 112);
+            this.rdBtnDapAnD.Location = new System.Drawing.Point(429, 72);
             this.rdBtnDapAnD.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
             this.rdBtnDapAnD.Name = "rdBtnDapAnD";
-            this.rdBtnDapAnD.Size = new System.Drawing.Size(42, 24);
+            this.rdBtnDapAnD.Size = new System.Drawing.Size(43, 25);
             this.rdBtnDapAnD.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
-            this.rdBtnDapAnD.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdBtnDapAnD.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdBtnDapAnD.TabIndex = 3;
             this.rdBtnDapAnD.Values.Text = "D.";
             this.rdBtnDapAnD.CheckedChanged += new System.EventHandler(this.rdBtnDapAnA_CheckedChanged);
@@ -171,14 +171,14 @@
             // lblCauHoi
             // 
             this.lblCauHoi.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblCauHoi.Location = new System.Drawing.Point(10, 12);
+            this.lblCauHoi.Location = new System.Drawing.Point(10, 13);
             this.lblCauHoi.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.lblCauHoi.Name = "lblCauHoi";
-            this.lblCauHoi.Size = new System.Drawing.Size(165, 36);
+            this.lblCauHoi.Size = new System.Drawing.Size(111, 36);
             this.lblCauHoi.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
             this.lblCauHoi.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCauHoi.TabIndex = 1;
-            this.lblCauHoi.Values.Text = "Câu hỏi 19 :";
+            this.lblCauHoi.Values.Text = "Câu hỏi";
             // 
             // tableLayoutPanel5
             // 
@@ -188,21 +188,21 @@
             this.tableLayoutPanel5.Controls.Add(this.btnTruocDo, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.btnKeTiep, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 249);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 199);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(823, 54);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(823, 36);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // btnTruocDo
             // 
             this.btnTruocDo.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTruocDo.Location = new System.Drawing.Point(308, 9);
+            this.btnTruocDo.Location = new System.Drawing.Point(308, 3);
             this.btnTruocDo.Name = "btnTruocDo";
-            this.btnTruocDo.Size = new System.Drawing.Size(100, 36);
+            this.btnTruocDo.Size = new System.Drawing.Size(100, 30);
             this.btnTruocDo.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnTruocDo.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTruocDo.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTruocDo.TabIndex = 0;
             this.btnTruocDo.Values.Text = "Trước đó";
             this.btnTruocDo.Click += new System.EventHandler(this.btnTruocDo_Click);
@@ -210,21 +210,22 @@
             // btnKeTiep
             // 
             this.btnKeTiep.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnKeTiep.Location = new System.Drawing.Point(414, 9);
+            this.btnKeTiep.Location = new System.Drawing.Point(414, 3);
             this.btnKeTiep.Name = "btnKeTiep";
-            this.btnKeTiep.Size = new System.Drawing.Size(100, 36);
+            this.btnKeTiep.Size = new System.Drawing.Size(100, 30);
             this.btnKeTiep.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnKeTiep.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKeTiep.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKeTiep.TabIndex = 1;
             this.btnKeTiep.Values.Text = "Kế tiếp";
             this.btnKeTiep.Click += new System.EventHandler(this.btnKeTiep_Click);
             // 
             // flowDanhSachCauHoi
             // 
+            this.flowDanhSachCauHoi.AutoScroll = true;
             this.flowDanhSachCauHoi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowDanhSachCauHoi.Location = new System.Drawing.Point(3, 309);
+            this.flowDanhSachCauHoi.Location = new System.Drawing.Point(3, 241);
             this.flowDanhSachCauHoi.Name = "flowDanhSachCauHoi";
-            this.flowDanhSachCauHoi.Size = new System.Drawing.Size(823, 93);
+            this.flowDanhSachCauHoi.Size = new System.Drawing.Size(823, 84);
             this.flowDanhSachCauHoi.TabIndex = 2;
             // 
             // usrctrCauHoiVaDapAn
@@ -234,14 +235,14 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "usrctrCauHoiVaDapAn";
-            this.Size = new System.Drawing.Size(829, 405);
+            this.Size = new System.Drawing.Size(829, 328);
             this.Load += new System.EventHandler(this.usrctrCauHoiVaDapAn_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
+            this.layoutDapAns.ResumeLayout(false);
+            this.layoutDapAns.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -252,7 +253,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.TableLayoutPanel layoutDapAns;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton rdBtnDapAnA;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton rdBtnDapAnC;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton rdBtnDapAnB;

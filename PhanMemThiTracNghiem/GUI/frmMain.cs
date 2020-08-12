@@ -15,9 +15,7 @@ namespace GUI
     public partial class frmMain : Form
     {
         ThiSinh thiSinh;
-        Color defaultSearch_BackGround;
         DeThiBLL_DAL dethiBLL_DAL;
-
         public frmMain()
         {
             InitializeComponent();

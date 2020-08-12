@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.layoutRight = new System.Windows.Forms.TableLayoutPanel();
+            this.layoutCauHoiDapAn = new System.Windows.Forms.TableLayoutPanel();
+            this.layoutKetQua = new System.Windows.Forms.TableLayoutPanel();
             this.layoutLeft = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
@@ -54,8 +56,6 @@
             this.lblThoiGianConLai = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.lbltxtThoiGianConLai = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.countDown = new System.Windows.Forms.Timer(this.components);
-            this.layoutCauHoiDapAn = new System.Windows.Forms.TableLayoutPanel();
-            this.layoutKetQua = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.layoutRight.SuspendLayout();
             this.layoutLeft.SuspendLayout();
@@ -97,11 +97,34 @@
             this.layoutRight.Location = new System.Drawing.Point(303, 3);
             this.layoutRight.Name = "layoutRight";
             this.layoutRight.RowCount = 2;
-            this.layoutRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.layoutRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.layoutRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.layoutRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.layoutRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.layoutRight.Size = new System.Drawing.Size(678, 598);
             this.layoutRight.TabIndex = 4;
+            // 
+            // layoutCauHoiDapAn
+            // 
+            this.layoutCauHoiDapAn.ColumnCount = 1;
+            this.layoutCauHoiDapAn.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.layoutCauHoiDapAn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutCauHoiDapAn.Location = new System.Drawing.Point(4, 4);
+            this.layoutCauHoiDapAn.Name = "layoutCauHoiDapAn";
+            this.layoutCauHoiDapAn.RowCount = 1;
+            this.layoutCauHoiDapAn.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.layoutCauHoiDapAn.Size = new System.Drawing.Size(670, 291);
+            this.layoutCauHoiDapAn.TabIndex = 0;
+            // 
+            // layoutKetQua
+            // 
+            this.layoutKetQua.ColumnCount = 1;
+            this.layoutKetQua.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.layoutKetQua.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutKetQua.Location = new System.Drawing.Point(4, 302);
+            this.layoutKetQua.Name = "layoutKetQua";
+            this.layoutKetQua.RowCount = 1;
+            this.layoutKetQua.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.layoutKetQua.Size = new System.Drawing.Size(670, 292);
+            this.layoutKetQua.TabIndex = 0;
             // 
             // layoutLeft
             // 
@@ -213,6 +236,7 @@
             this.btnNopBai.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNopBai.TabIndex = 0;
             this.btnNopBai.Values.Text = "Nộp bài";
+            this.btnNopBai.Click += new System.EventHandler(this.btnNopBai_Click);
             // 
             // btnThoat
             // 
@@ -335,7 +359,7 @@
             this.btnLuuDeThi.Size = new System.Drawing.Size(131, 58);
             this.btnLuuDeThi.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuuDeThi.TabIndex = 1;
-            this.btnLuuDeThi.Values.Text = "Lưu đề thi";
+            this.btnLuuDeThi.Values.Text = "Trở về trang chủ";
             // 
             // btnBatDauLamBai
             // 
@@ -400,32 +424,8 @@
             // 
             // countDown
             // 
-            this.countDown.Interval = 50;
+            this.countDown.Interval = 1000;
             this.countDown.Tick += new System.EventHandler(this.countDown_Tick);
-            // 
-            // layoutCauHoiDapAn
-            // 
-            this.layoutCauHoiDapAn.ColumnCount = 1;
-            this.layoutCauHoiDapAn.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.layoutCauHoiDapAn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutCauHoiDapAn.Location = new System.Drawing.Point(4, 4);
-            this.layoutCauHoiDapAn.Name = "layoutCauHoiDapAn";
-            this.layoutCauHoiDapAn.RowCount = 1;
-            this.layoutCauHoiDapAn.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.layoutCauHoiDapAn.Size = new System.Drawing.Size(670, 351);
-            this.layoutCauHoiDapAn.TabIndex = 0;
-            // 
-            // layoutKetQua
-            // 
-            this.layoutKetQua.ColumnCount = 1;
-            this.layoutKetQua.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.layoutKetQua.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutKetQua.Location = new System.Drawing.Point(4, 362);
-            this.layoutKetQua.Name = "layoutKetQua";
-            this.layoutKetQua.RowCount = 1;
-            this.layoutKetQua.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.layoutKetQua.Size = new System.Drawing.Size(670, 232);
-            this.layoutKetQua.TabIndex = 0;
             // 
             // usrctrTrangThi
             // 

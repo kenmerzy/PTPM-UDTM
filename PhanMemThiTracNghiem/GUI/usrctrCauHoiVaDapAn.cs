@@ -19,8 +19,11 @@ namespace GUI
         List<DapAn> listDapAnChon;
         List<int> lstIntChon;
         List<int> lstViTriRadioButtonChon;
+
         int tongSoCau;
         int cauHoiHienTai;
+        bool daThiXong;
+
         public usrctrCauHoiVaDapAn()
         {
             InitializeComponent();
@@ -42,6 +45,7 @@ namespace GUI
             cauHoiHienTai = 0;
             listDapAnChon = new List<DapAn>();
             listDapAnChon =  createDapAnDaChon(tongSoCau);
+            daThiXong = false;
         }
 
         
@@ -76,7 +80,6 @@ namespace GUI
             }
 
         }
-
         private List<DapAn> createDapAnDaChon(int tongSoCau)
         {
             List <DapAn>listDAC = new List<DapAn>();
@@ -129,43 +132,55 @@ namespace GUI
                     break;
             }
         }
-
-
-         private void loadCauHoi(CauHoi cauHoi, int position)
+        private void loadCauHoi(CauHoi cauHoi, int position)
         {
                 lblCauHoi.Text = "Câu " +(position + 1).ToString() + ": " + cauHoi.NoiDung;
         }
-
-         private void loadDapAn(List<DapAn> listDapAn)
+        private void loadDapAn(List<DapAn> listDapAn)
          {
              rdBtnDapAnA.Text = "A. "+ listDapAn[0].NoiDung;
              rdBtnDapAnB.Text = "B. " + listDapAn[1].NoiDung;
              rdBtnDapAnC.Text = "C. " + listDapAn[2].NoiDung;
              rdBtnDapAnD.Text = "D. " + listDapAn[3].NoiDung;
 
-             rdBtnDapAnA.Tag = getTag(listDapAn[0]);
-             rdBtnDapAnB.Tag = getTag(listDapAn[1]);
-             rdBtnDapAnC.Tag = getTag(listDapAn[2]);
-             rdBtnDapAnD.Tag = getTag(listDapAn[3]);
+             rdBtnDapAnA.Tag = setTag(listDapAn[0]);
+             rdBtnDapAnB.Tag = setTag(listDapAn[1]);
+             rdBtnDapAnC.Tag = setTag(listDapAn[2]);
+             rdBtnDapAnD.Tag = setTag(listDapAn[3]);
 
          }
-         private string getTag(DapAn da)
+        private string setTag(DapAn da)
          {
              if (da.DungSai == true)
                  return "True";
              return "False";
          }
-         private void disableAllRadioButton()
+        private void disableAllRadioButton()
          {
-             rdBtnDapAnA.AutoCheck = false;
-             rdBtnDapAnB.AutoCheck = false;
-             rdBtnDapAnC.AutoCheck = false;
-             rdBtnDapAnD.AutoCheck = false;
+             if (daThiXong)
+             {
+                 rdBtnDapAnA.AutoCheck = false;
+                 rdBtnDapAnB.AutoCheck = false;
+                 rdBtnDapAnC.AutoCheck = false;
+                 rdBtnDapAnD.AutoCheck = false;
 
-             rdBtnDapAnA.Cursor = Cursors.No;
-             rdBtnDapAnB.Cursor = Cursors.No;
-             rdBtnDapAnC.Cursor = Cursors.No;
-             rdBtnDapAnD.Cursor = Cursors.No;
+                 rdBtnDapAnA.Cursor = Cursors.No;
+                 rdBtnDapAnB.Cursor = Cursors.No;
+                 rdBtnDapAnC.Cursor = Cursors.No;
+                 rdBtnDapAnD.Cursor = Cursors.No;
+             }
+             else
+             {
+                 rdBtnDapAnA.AutoCheck = true;
+                 rdBtnDapAnB.AutoCheck = true;
+                 rdBtnDapAnC.AutoCheck = true;
+                 rdBtnDapAnD.AutoCheck = true;
+
+                 rdBtnDapAnA.Cursor = Cursors.Default;
+                 rdBtnDapAnB.Cursor = Cursors.Default;
+                 rdBtnDapAnC.Cursor = Cursors.Default;
+                 rdBtnDapAnD.Cursor = Cursors.Default;
+             }
 
          }
         private void loadCacButtonCau(int soButton)
@@ -188,6 +203,7 @@ namespace GUI
             loadCHvaDA(lstCH, lstDA, cauHoiHienTai, lstIntChon[cauHoiHienTai]);
             checkDapAn(lstViTriRadioButtonChon[cauHoiHienTai]);
             checkPreAndNextButton();
+            toMauDapAn();
         }
 
          private void checkPreAndNextButton()
@@ -234,6 +250,7 @@ namespace GUI
              loadCHvaDA(lstCH, lstDA, cauHoiHienTai, lstIntChon[cauHoiHienTai]);
              checkPreAndNextButton();
              checkDapAn(lstViTriRadioButtonChon[cauHoiHienTai]);
+             toMauDapAn();
          }
 
          private void btnKeTiep_Click(object sender, EventArgs e)
@@ -242,6 +259,7 @@ namespace GUI
              loadCHvaDA(lstCH, lstDA, cauHoiHienTai, lstIntChon[cauHoiHienTai]);
              checkPreAndNextButton();
              checkDapAn(lstViTriRadioButtonChon[cauHoiHienTai]);
+             toMauDapAn();
          }
 
          private void rdBtnDapAnA_CheckedChanged(object sender, EventArgs e)
@@ -250,6 +268,7 @@ namespace GUI
              if (rd.Checked)
              {
                  listDapAnChon[cauHoiHienTai].NoiDung = rd.Text.Trim();
+                 listDapAnChon[cauHoiHienTai].DungSai = Convert.ToBoolean(rd.Tag);
                 
                  switch (rd.Name.ToString())
                  {
@@ -276,5 +295,89 @@ namespace GUI
                  }
              }
          }
+
+         public int getSoCauDung()
+         {
+             int soCauDung =0;
+             for (int i = 0; i < listDapAnChon.Count; i++)
+             {
+                 if (listDapAnChon[i].DungSai == true)
+                     soCauDung++;
+             }
+             return soCauDung;
+         }
+         public int getSoCauSai()
+         {
+             int soCauSai = 0;
+             for (int i = 0; i < listDapAnChon.Count; i++)
+             {
+                 if (listDapAnChon[i].DungSai == false)
+                     soCauSai++;
+             }
+             return soCauSai;
+         }
+         public int getSoCauChuaLam()
+         {
+             int soCauChuaLam = 0;
+             for (int i = 0; i < listDapAnChon.Count; i++)
+             {
+                 if (listDapAnChon[i].DungSai == null)
+                     soCauChuaLam++;
+             }
+             return soCauChuaLam;
+         }
+         public double chamDiem()
+         {
+             return (getSoCauDung()*10) / ((double)tongSoCau);
+         }
+         public void setDaThiXong(bool value)
+         {
+             daThiXong = value;
+         }
+
+         public void ketThucBaiThi()
+         {
+             disableAllRadioButton();
+         }
+
+         
+        private void toMauDapAn()
+        {
+            if(daThiXong)
+            {
+                bool isRed ;
+                    if (lstViTriRadioButtonChon[cauHoiHienTai] != 0) // Có chọn đáp án
+                    {
+                        
+                        foreach (KryptonRadioButton rd in layoutDapAns.Controls)
+                        {
+                            isRed = false;
+                            if (rd.Checked)
+                            {
+                                rd.StateNormal.ShortText.Color1 = Color.Red;
+                                isRed = true; // Đã đỏ rồi thì k đen
+                            }
+                            if (rd.Tag.Equals("True"))
+                                rd.StateNormal.ShortText.Color1 = Color.Green;
+                            else
+                            {
+                                if(!isRed)
+                                    rd.StateNormal.ShortText.Color1 = Color.Black;
+                            }
+                        }
+                    }
+            
+                else // Chưa chọn đáp án
+                {
+                    foreach (KryptonRadioButton rd in layoutDapAns.Controls)
+                    {
+                        if(rd.Tag.Equals("True"))
+                              rd.StateNormal.ShortText.Color1 = Color.Green;
+                        else
+                            rd.StateNormal.ShortText.Color1 = Color.Black;
+                    }
+                }
+          }
+        }
     }
 }

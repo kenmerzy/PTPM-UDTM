@@ -12,6 +12,7 @@ namespace GUI
 {
     public partial class usrctrTrangThi : UserControl
     {
+        double diem;
         int minute ;
         int second ;
         string mnl,scl,maMon,tenKyThi;
@@ -22,6 +23,7 @@ namespace GUI
         List<DapAn> lstDapAnDung;
         usrctrCauHoiVaDapAn ch;
         usrctlHuongDanThi hdt;
+        usrctrKetQuaThi kqt;
         DeThiBLL_DAL dethiBLL_DAL;
         
         public usrctrTrangThi()
@@ -83,6 +85,9 @@ namespace GUI
             if (minute < 0)
             {
                 lbltxtThoiGianConLai.Text = "00:00";
+                ch.ketThucBaiThi();
+                kqt = new usrctrKetQuaThi(ch.getSoCauDung(), ch.getSoCauSai(), ch.getSoCauChuaLam(), ch.chamDiem());
+                btnNopBai.Visible = false;
                 countDown.Enabled = false;
             }
           
@@ -106,6 +111,7 @@ namespace GUI
        
         private void btnBatDauLamBai_Click_1(object sender, EventArgs e)
         {
+            btnNopBai.Visible = true;
             getCauHoiDapAn(maMon);
             getAllDapAnDung(maMon);
             countDown.Enabled = true;
@@ -115,11 +121,14 @@ namespace GUI
    
             ch.Dock = DockStyle.Fill;
             lblTenKyThi.Text = tenKyThi;
+            lbltxtThoiGianConLai.Text = minute.ToString() + ":00";
             layoutCauHoiDapAn.Controls.Add(ch);
          
             layoutTop.Visible = true;
             layoutNopBai.Visible = true;
             layoutBatDauLamBai.Visible = false;
+
+            ch.setDaThiXong(false);
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -143,7 +152,20 @@ namespace GUI
                 hdt.Dock = DockStyle.Fill;
                 layoutCauHoiDapAn.Controls.Add(hdt);
                 lbltxtThoiGianConLai.StateNormal.ShortText.Color1 = Color.Black;
+                layoutKetQua.Controls.Clear();
             }
+        }
+
+        private void btnNopBai_Click(object sender, EventArgs e)
+        {
+            countDown.Enabled = false;
+            btnNopBai.Visible = false;
+            ch.setDaThiXong(true);
+            ch.ketThucBaiThi();
+            diem = ch.chamDiem();
+            kqt = new usrctrKetQuaThi(ch.getSoCauDung(), ch.getSoCauSai(), ch.getSoCauChuaLam(), ch.chamDiem());
+            kqt.Dock = DockStyle.Fill;
+            layoutKetQua.Controls.Add(kqt);
         }
 
      }
