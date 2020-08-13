@@ -98,6 +98,8 @@
             this.lblMonThi.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMonThi.TabIndex = 5;
             this.lblMonThi.Values.Text = "Tên bộ đề";
+            this.lblMonThi.MouseLeave += new System.EventHandler(this.lblMonThi_MouseLeave);
+            this.lblMonThi.MouseHover += new System.EventHandler(this.lblMonThi_MouseHover);
             // 
             // tableLayoutPanel1
             // 
@@ -128,6 +130,7 @@
             this.pictureHinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureHinhAnh.TabIndex = 0;
             this.pictureHinhAnh.TabStop = false;
+            this.pictureHinhAnh.Click += new System.EventHandler(this.lblMonThi_Click);
             // 
             // usrctrItemsDeThiMoi
             // 

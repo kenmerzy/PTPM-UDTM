@@ -45,7 +45,7 @@ namespace GUI
             lblSoCauDung.Text = "SỐ CÂU ĐÚNG: " + soCauDung.ToString();
             lblSoCauSai.Text = "SỐ CÂU SAI: " + soCauSai.ToString();
             lblSoCauChuaLam.Text = "SỐ CÂU CHƯA LÀM: " + soCauChuaLam.ToString();
-            lbltxtDiem.Text = diem.ToString();
+            lbltxtDiem.Text = diem.ToString("n1");
         }
 
     }

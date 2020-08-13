@@ -49,7 +49,7 @@ namespace GUI
             flowLayoutRight.Controls.Add(xh);
             flowLayoutRight.SetFlowBreak(xh, true);
 
-            usrctrDeThiMoi dtm = new usrctrDeThiMoi();
+            usrctrDeThiMoi dtm = new usrctrDeThiMoi(layout_Thi, thiSinh, us);
             dtm.Dock = DockStyle.Top;
             flowLayoutRight.Controls.Add(dtm);
             flowLayoutRight.SetFlowBreak(dtm, true);
