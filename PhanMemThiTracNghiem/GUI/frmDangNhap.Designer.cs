@@ -32,29 +32,29 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.txtMatKhau = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.txtTenDangNhap = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnThoat = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnDangNhap = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.lblDangKy = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnThoat = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnThoat)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonPanel1
@@ -117,6 +117,16 @@
             this.txtMatKhau.UseSystemPasswordChar = true;
             this.txtMatKhau.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMatKhau_KeyDown);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox3.Image = global::GUI.Properties.Resources.icons8_privacy_24;
+            this.pictureBox3.Location = new System.Drawing.Point(54, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(28, 28);
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 3;
@@ -144,6 +154,16 @@
             this.txtTenDangNhap.TabIndex = 2;
             this.txtTenDangNhap.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMatKhau_KeyDown);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox2.Image = global::GUI.Properties.Resources.user;
+            this.pictureBox2.Location = new System.Drawing.Point(52, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 28);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
@@ -159,6 +179,31 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(427, 132);
             this.tableLayoutPanel2.TabIndex = 5;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::GUI.Properties.Resources.icons8_choice_80;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(161, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
+            this.pictureBox1.Size = new System.Drawing.Size(104, 126);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThoat.Image = global::GUI.Properties.Resources.icons8_close_window_24__2_;
+            this.btnThoat.Location = new System.Drawing.Point(389, 10);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 10, 10, 3);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(28, 28);
+            this.btnThoat.TabIndex = 5;
+            this.btnThoat.TabStop = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -209,51 +254,6 @@
             this.lblDangKy.Values.Text = "Bạn chưa có tài khoản? Đăng ký tại đây";
             this.lblDangKy.Click += new System.EventHandler(this.lblDangKy_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox3.Image = global::GUI.Properties.Resources.icons8_privacy_24;
-            this.pictureBox3.Location = new System.Drawing.Point(54, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(28, 28);
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox2.Image = global::GUI.Properties.Resources.user;
-            this.pictureBox2.Location = new System.Drawing.Point(52, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 28);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::GUI.Properties.Resources.icons8_choice_80;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(161, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.pictureBox1.Size = new System.Drawing.Size(104, 126);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThoat.Image = global::GUI.Properties.Resources.icons8_close_window_24__2_;
-            this.btnThoat.Location = new System.Drawing.Point(389, 10);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 10, 10, 3);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(28, 28);
-            this.btnThoat.TabIndex = 5;
-            this.btnThoat.TabStop = false;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
-            // 
             // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -264,21 +264,22 @@
             this.Name = "frmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDangNhap_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.flowLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnThoat)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

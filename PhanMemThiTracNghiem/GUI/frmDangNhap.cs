@@ -23,7 +23,7 @@ namespace GUI
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
         }
 
         private void lblDangKy_Click(object sender, EventArgs e)
@@ -91,6 +91,24 @@ namespace GUI
             {
                 btnDangNhap_Click(this, new EventArgs());
             }
+        }
+
+        private void frmDangNhap_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Bạn chắc chắn muốn thoát ?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (dialog == DialogResult.Yes)
+            {
+                e.Cancel = false;
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
+        private void Cancel_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
 

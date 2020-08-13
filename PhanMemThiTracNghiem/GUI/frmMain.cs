@@ -102,7 +102,22 @@ namespace GUI
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-                Application.Exit();
+            DialogResult dialog = MessageBox.Show("Bạn chắc chắn muốn thoát ?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (dialog == DialogResult.Yes)
+            {
+                e.Cancel = false;
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
+        private void Cancel_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+  
     }
 }

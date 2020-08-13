@@ -59,17 +59,17 @@ namespace GUI
             else
             {
                 if (!kiemTraHoTen(txtHoTen.Text))
-                    lblLoiHoTen.Text = "Họ tên chỉ được chứa chữ cái";
+                    lblLoiHoTen.Visible = true;
                 else
-                    lblLoiHoTen.Text = "";
+                    lblLoiHoTen.Visible = false;
                 if (isEmail(txtEmail.Text) == false)
-                    lblLoiEmail.Text = "Email chưa đúng định dạng. Ví dụ khanh@gmail.com";
+                    lblLoiEmail.Visible = true;
                 else
-                    lblLoiEmail.Text = "";
+                    lblLoiEmail.Visible = false;
                 if (txtSDT.Text.Length != 10)
-                    lblLoiSoDienThoai.Text = "Số điện thoại phải đủ 10 số !!!";
+                    lblLoiSoDienThoai.Visible = true;
                 else
-                    lblLoiSoDienThoai.Text = "";
+                    lblLoiSoDienThoai.Visible = false;
                 if (!kiemTraMatKhau(txtMatKhau.Text))
                 {
                     if (txtMatKhau.Text.Length < 6)
@@ -82,13 +82,16 @@ namespace GUI
                 else
                     lblLoiMatKhau.Text = "Mật khẩu không chứa các kí tự đặc biệt !!!";
                 if (dethi.kiemTraTonTaiTenTaiKhoan(txtTenTaiKhoan.Text))
-                    lblLoiTenTaiKhoan.Text = "Tên tài khoản đã tồn tại !!!";
+                    lblLoiTenTaiKhoan.Visible = true;
                 else
-                    lblLoiTenTaiKhoan.Text = "";
+                    lblLoiTenTaiKhoan.Visible = false; ;
                 if (!kiemTraNhapLaiMatKhau(txtXacNhanMatKhau.Text))
-                    lblLoiXacNhanMatKhau.Text = "Mật khẩu nhập lại không đúng. Vui lòng nhập lại !!!";
+                    lblLoiXacNhanMatKhau.Visible = true;
                 else
-                    lblLoiXacNhanMatKhau.Text = "";
+                    lblLoiXacNhanMatKhau.Visible = false;
+
+                if (lblLoiHoTen.Visible == true || lblLoiEmail.Visible == true || lblLoiSoDienThoai.Visible == true || lblLoiTenTaiKhoan.Visible == true || lblLoiXacNhanMatKhau.Visible == true || lblLoiMatKhau.Text.Length > 1)
+                    return false;
             }
             return true;
         }
@@ -144,7 +147,7 @@ namespace GUI
                 int kq = dethi.luuThongTinDangKy(txtHoTen.Text, txtTenTaiKhoan.Text, txtMatKhau.Text, txtEmail.Text, txtSDT.Text, Convert.ToDateTime(dateTimePickerNgaySinh.Value.ToString()),txtDiaChi.Text.Trim(),getGioiTinh());
                 if (kq == 1)
                 {
-                    MessageBox.Show("Đăng ký thành công <3", "Thông báo", MessageBoxButtons.OK);
+                    MessageBox.Show("Đăng ký thành công !", "Thông báo", MessageBoxButtons.OK);
                     frmDangNhap dangnhap = new frmDangNhap();
                     this.Close();
                 }

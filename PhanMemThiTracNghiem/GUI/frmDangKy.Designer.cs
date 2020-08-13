@@ -37,9 +37,6 @@
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.txtHoTen = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lblLoiHoTen = new System.Windows.Forms.Label();
-            this.lblLoiMatKhau = new System.Windows.Forms.Label();
-            this.lblLoiXacNhanMatKhau = new System.Windows.Forms.Label();
-            this.lblLoiSoDienThoai = new System.Windows.Forms.Label();
             this.lblLoiTenTaiKhoan = new System.Windows.Forms.Label();
             this.txtXacNhanMatKhau = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtMatKhau = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -47,7 +44,6 @@
             this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.txtTenTaiKhoan = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.lblLoiEmail = new System.Windows.Forms.Label();
             this.dateTimePickerNgaySinh = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             this.kryptonLabel7 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -60,6 +56,10 @@
             this.rdNu = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.rdNam = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.txtDiaChi = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.lblLoiMatKhau = new System.Windows.Forms.Label();
+            this.lblLoiXacNhanMatKhau = new System.Windows.Forms.Label();
+            this.lblLoiSoDienThoai = new System.Windows.Forms.Label();
+            this.lblLoiEmail = new System.Windows.Forms.Label();
             this.lblQuayVeDangNhap = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
@@ -146,7 +146,6 @@
             this.tableLayoutPanel3.Controls.Add(this.kryptonLabel1, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.txtHoTen, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.lblLoiHoTen, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.lblLoiTenTaiKhoan, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.txtXacNhanMatKhau, 1, 8);
             this.tableLayoutPanel3.Controls.Add(this.txtMatKhau, 1, 7);
             this.tableLayoutPanel3.Controls.Add(this.kryptonLabel4, 0, 8);
@@ -167,6 +166,7 @@
             this.tableLayoutPanel3.Controls.Add(this.lblLoiXacNhanMatKhau, 2, 8);
             this.tableLayoutPanel3.Controls.Add(this.lblLoiSoDienThoai, 2, 4);
             this.tableLayoutPanel3.Controls.Add(this.lblLoiEmail, 2, 3);
+            this.tableLayoutPanel3.Controls.Add(this.lblLoiTenTaiKhoan, 2, 6);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 123);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -206,48 +206,20 @@
             this.lblLoiHoTen.Location = new System.Drawing.Point(426, 7);
             this.lblLoiHoTen.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
             this.lblLoiHoTen.Name = "lblLoiHoTen";
-            this.lblLoiHoTen.Size = new System.Drawing.Size(0, 17);
+            this.lblLoiHoTen.Size = new System.Drawing.Size(142, 34);
             this.lblLoiHoTen.TabIndex = 7;
+            this.lblLoiHoTen.Text = "Họ tên chỉ được chứa chữ cái";
             this.lblLoiHoTen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblLoiMatKhau
-            // 
-            this.lblLoiMatKhau.AutoSize = true;
-            this.lblLoiMatKhau.Location = new System.Drawing.Point(426, 319);
-            this.lblLoiMatKhau.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
-            this.lblLoiMatKhau.Name = "lblLoiMatKhau";
-            this.lblLoiMatKhau.Size = new System.Drawing.Size(0, 17);
-            this.lblLoiMatKhau.TabIndex = 7;
-            this.lblLoiMatKhau.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblLoiXacNhanMatKhau
-            // 
-            this.lblLoiXacNhanMatKhau.AutoSize = true;
-            this.lblLoiXacNhanMatKhau.Location = new System.Drawing.Point(426, 363);
-            this.lblLoiXacNhanMatKhau.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
-            this.lblLoiXacNhanMatKhau.Name = "lblLoiXacNhanMatKhau";
-            this.lblLoiXacNhanMatKhau.Size = new System.Drawing.Size(0, 17);
-            this.lblLoiXacNhanMatKhau.TabIndex = 7;
-            this.lblLoiXacNhanMatKhau.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblLoiSoDienThoai
-            // 
-            this.lblLoiSoDienThoai.AutoSize = true;
-            this.lblLoiSoDienThoai.Location = new System.Drawing.Point(426, 187);
-            this.lblLoiSoDienThoai.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
-            this.lblLoiSoDienThoai.Name = "lblLoiSoDienThoai";
-            this.lblLoiSoDienThoai.Size = new System.Drawing.Size(0, 17);
-            this.lblLoiSoDienThoai.TabIndex = 7;
-            this.lblLoiSoDienThoai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblLoiTenTaiKhoan
             // 
             this.lblLoiTenTaiKhoan.AutoSize = true;
-            this.lblLoiTenTaiKhoan.Location = new System.Drawing.Point(426, 55);
+            this.lblLoiTenTaiKhoan.Location = new System.Drawing.Point(426, 275);
             this.lblLoiTenTaiKhoan.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
             this.lblLoiTenTaiKhoan.Name = "lblLoiTenTaiKhoan";
-            this.lblLoiTenTaiKhoan.Size = new System.Drawing.Size(0, 17);
+            this.lblLoiTenTaiKhoan.Size = new System.Drawing.Size(139, 34);
             this.lblLoiTenTaiKhoan.TabIndex = 7;
+            this.lblLoiTenTaiKhoan.Text = "Tên tài khoản đã tồn tại !!!";
             this.lblLoiTenTaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtXacNhanMatKhau
@@ -304,16 +276,6 @@
             this.kryptonLabel2.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel2.TabIndex = 0;
             this.kryptonLabel2.Values.Text = "Tên tài khoản";
-            // 
-            // lblLoiEmail
-            // 
-            this.lblLoiEmail.AutoSize = true;
-            this.lblLoiEmail.Location = new System.Drawing.Point(426, 143);
-            this.lblLoiEmail.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
-            this.lblLoiEmail.Name = "lblLoiEmail";
-            this.lblLoiEmail.Size = new System.Drawing.Size(0, 17);
-            this.lblLoiEmail.TabIndex = 7;
-            this.lblLoiEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dateTimePickerNgaySinh
             // 
@@ -430,6 +392,50 @@
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(215, 24);
             this.txtDiaChi.TabIndex = 6;
+            // 
+            // lblLoiMatKhau
+            // 
+            this.lblLoiMatKhau.AutoSize = true;
+            this.lblLoiMatKhau.Location = new System.Drawing.Point(426, 319);
+            this.lblLoiMatKhau.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
+            this.lblLoiMatKhau.Name = "lblLoiMatKhau";
+            this.lblLoiMatKhau.Size = new System.Drawing.Size(144, 34);
+            this.lblLoiMatKhau.TabIndex = 7;
+            this.lblLoiMatKhau.Text = "Mật khẩu không được ngắn hơn 6 kí tự !!!";
+            this.lblLoiMatKhau.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLoiXacNhanMatKhau
+            // 
+            this.lblLoiXacNhanMatKhau.AutoSize = true;
+            this.lblLoiXacNhanMatKhau.Location = new System.Drawing.Point(426, 363);
+            this.lblLoiXacNhanMatKhau.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
+            this.lblLoiXacNhanMatKhau.Name = "lblLoiXacNhanMatKhau";
+            this.lblLoiXacNhanMatKhau.Size = new System.Drawing.Size(142, 42);
+            this.lblLoiXacNhanMatKhau.TabIndex = 7;
+            this.lblLoiXacNhanMatKhau.Text = "Mật khẩu nhập lại không đúng. Vui lòng nhập lại !!!";
+            this.lblLoiXacNhanMatKhau.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLoiSoDienThoai
+            // 
+            this.lblLoiSoDienThoai.AutoSize = true;
+            this.lblLoiSoDienThoai.Location = new System.Drawing.Point(426, 187);
+            this.lblLoiSoDienThoai.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
+            this.lblLoiSoDienThoai.Name = "lblLoiSoDienThoai";
+            this.lblLoiSoDienThoai.Size = new System.Drawing.Size(142, 34);
+            this.lblLoiSoDienThoai.TabIndex = 7;
+            this.lblLoiSoDienThoai.Text = "Số điện thoại phải đủ 10 số !!!";
+            this.lblLoiSoDienThoai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLoiEmail
+            // 
+            this.lblLoiEmail.AutoSize = true;
+            this.lblLoiEmail.Location = new System.Drawing.Point(426, 143);
+            this.lblLoiEmail.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
+            this.lblLoiEmail.Name = "lblLoiEmail";
+            this.lblLoiEmail.Size = new System.Drawing.Size(144, 37);
+            this.lblLoiEmail.TabIndex = 7;
+            this.lblLoiEmail.Text = "Email chưa đúng định dạng. Ví dụ khanh@gmail.com";
+            this.lblLoiEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblQuayVeDangNhap
             // 
