@@ -425,7 +425,7 @@
             // 
             // countDown
             // 
-            this.countDown.Interval = 30;
+            this.countDown.Interval = 1000;
             this.countDown.Tick += new System.EventHandler(this.countDown_Tick);
             // 
             // usrctrTrangThi

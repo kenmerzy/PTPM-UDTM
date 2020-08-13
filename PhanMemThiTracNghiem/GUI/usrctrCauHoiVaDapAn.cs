@@ -272,6 +272,11 @@ namespace GUI
              {
                  listDapAnChon[cauHoiHienTai].NoiDung = rd.Text.Trim();
                  listDapAnChon[cauHoiHienTai].DungSai = Convert.ToBoolean(rd.Tag);
+                 if (checkColor())
+                 {
+                     lstButtonChuyenCau[cauHoiHienTai].StateNormal.Back.Color1 = Color.Wheat;
+                     lstButtonChuyenCau[cauHoiHienTai].StateNormal.Back.Color2 = Color.Wheat;
+                 }
                 
                  switch (rd.Name.ToString())
                  {
@@ -297,8 +302,16 @@ namespace GUI
                          }
                  }
              }
+             
          }
-
+         private bool checkColor()
+         {
+             Color color;
+             color = lstButtonChuyenCau[cauHoiHienTai].StateNormal.Back.Color1;
+             if (color == Color.LightGray || color == Color.SpringGreen || color == Color.Red)
+                 return false;
+             return true;
+         }
          public int getSoCauDung()
          {
              int soCauDung =0;
