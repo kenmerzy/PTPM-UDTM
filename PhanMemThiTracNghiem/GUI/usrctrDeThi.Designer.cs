@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(usrctrDeThi));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureHinhAnh = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -73,7 +72,7 @@
             // 
             this.pictureHinhAnh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureHinhAnh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureHinhAnh.Image = ((System.Drawing.Image)(resources.GetObject("pictureHinhAnh.Image")));
+            this.pictureHinhAnh.Image = global::GUI.Properties.Resources.Toan;
             this.pictureHinhAnh.Location = new System.Drawing.Point(5, 5);
             this.pictureHinhAnh.Name = "pictureHinhAnh";
             this.pictureHinhAnh.Size = new System.Drawing.Size(210, 168);

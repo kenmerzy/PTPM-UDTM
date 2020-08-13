@@ -80,6 +80,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="usrctrDeThiMoi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -192,14 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="usrctlHuongDanThi.resx">
       <DependentUpon>usrctlHuongDanThi.cs</DependentUpon>
     </EmbeddedResource>
@@ -376,19 +376,19 @@
     <None Include="Resources\LichSu1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\NguVan.jpg" />
+    <None Include="Resources\silver_medal.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\silver_medal.png" />
+    <None Include="Resources\VatLy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NguVan.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SinhHoc.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Toan.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\VatLy1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

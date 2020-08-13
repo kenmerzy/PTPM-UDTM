@@ -15,6 +15,7 @@ namespace GUI
     public partial class frmMain : Form
     {
         ThiSinh thiSinh;
+        usrctrSearch us;
         DeThiBLL_DAL dethiBLL_DAL;
         public frmMain()
         {
@@ -32,9 +33,9 @@ namespace GUI
         private void frmMain_Load(object sender, EventArgs e)
         {
 
-            loadDeThi();
+           
 
-            usrctrSearch us = new usrctrSearch(this);
+            us = new usrctrSearch(this);
             us.Dock = DockStyle.Top;
             tableLayoutPanel4.Controls.Add(us);
             
@@ -57,6 +58,8 @@ namespace GUI
             httt.Dock = DockStyle.Top;
             flowLayoutRight.Controls.Add(httt);
             flowLayoutRight.SetFlowBreak(httt, true);
+
+            loadDeThi();
         }
 
         public void loadDeThi()
@@ -68,19 +71,22 @@ namespace GUI
                 for (int i = 0; i < kt.Count; i++)
                 {
                     usrctrDeThi dt = new usrctrDeThi(kt[i].MaKyThi,kt[i].TenKyThi, kt[i].MoTa, kt[i].TongSoCau.ToString()
-                    , kt[i].ThoiGianLamBai.ToString(), kt[i].ThoiGianMoDe.ToString(),layout_Thi,kt[i].MaMon.ToString(),kt[i].HinhAnh.ToString(),thiSinh.MaThiSinh);
+                    , kt[i].ThoiGianLamBai.ToString(), kt[i].ThoiGianMoDe.ToString(),layout_Thi,kt[i].MaMon.ToString(),kt[i].HinhAnh.ToString(),thiSinh.MaThiSinh,us);
                     dt.Dock = DockStyle.Top; 
                     flowLayoutLeft.Controls.Add(dt);
                     flowLayoutLeft.SetFlowBreak(dt, true);
+
                 }
             }
             catch
             {
                 MessageBox.Show("Load đề thi Fail");
             }
+
         }
         public void loadDeThiTheoTen(string ten)
         {
+
             flowLayoutLeft.Controls.Clear();
             try
             {
@@ -88,10 +94,11 @@ namespace GUI
                 for (int i = 0; i < kt.Count; i++)
                 {
                     usrctrDeThi dt = new usrctrDeThi(kt[i].MaKyThi,kt[i].TenKyThi, kt[i].MoTa, kt[i].TongSoCau.ToString()
-                    , kt[i].ThoiGianLamBai.ToString(), kt[i].ThoiGianMoDe.ToString(), layout_Thi, kt[i].MaMon.ToString(), kt[i].HinhAnh.ToString(),thiSinh.MaThiSinh);
+                    , kt[i].ThoiGianLamBai.ToString(), kt[i].ThoiGianMoDe.ToString(), layout_Thi, kt[i].MaMon.ToString(), kt[i].HinhAnh.ToString(),thiSinh.MaThiSinh,us);
                     dt.Dock = DockStyle.Top;
                     flowLayoutLeft.Controls.Add(dt);
                     flowLayoutLeft.SetFlowBreak(dt, true);
+
                 }
             }
             catch

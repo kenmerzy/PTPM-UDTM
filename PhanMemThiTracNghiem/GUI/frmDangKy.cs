@@ -51,10 +51,10 @@ namespace GUI
                 return (false);
         }
 
-        public bool kiemTraDangKy()
+        public int kiemTraDangKy()
         {
             if (!kiemTraRong())
-                return false;
+                return 0;
                 
             else
             {
@@ -91,9 +91,9 @@ namespace GUI
                     lblLoiXacNhanMatKhau.Visible = false;
 
                 if (lblLoiHoTen.Visible == true || lblLoiEmail.Visible == true || lblLoiSoDienThoai.Visible == true || lblLoiTenTaiKhoan.Visible == true || lblLoiXacNhanMatKhau.Visible == true || lblLoiMatKhau.Text.Length > 1)
-                    return false;
+                    return -1;
             }
-            return true;
+            return 1;
         }
 
         public bool kiemTraRong()
@@ -142,7 +142,7 @@ namespace GUI
 
         private void btnDangKy_Click(object sender, EventArgs e)
         {
-            if (kiemTraDangKy())
+            if (kiemTraDangKy() == 1)
             {
                 int kq = dethi.luuThongTinDangKy(txtHoTen.Text, txtTenTaiKhoan.Text, txtMatKhau.Text, txtEmail.Text, txtSDT.Text, Convert.ToDateTime(dateTimePickerNgaySinh.Value.ToString()),txtDiaChi.Text.Trim(),getGioiTinh());
                 if (kq == 1)
@@ -154,9 +154,13 @@ namespace GUI
                 else
                     MessageBox.Show("Đăng ký không thành công !!!", "Thông báo", MessageBoxButtons.OK);
             }
-            else
+            else if (kiemTraDangKy() == 0)
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Thông tin đăng ký chưa hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

@@ -19,6 +19,7 @@ namespace GUI
         List<DapAn> listDapAnChon;
         List<int> lstIntChon;
         List<int> lstViTriRadioButtonChon;
+        List<KryptonButton> lstButtonChuyenCau;
 
         int tongSoCau;
         int cauHoiHienTai;
@@ -46,6 +47,7 @@ namespace GUI
             listDapAnChon = new List<DapAn>();
             listDapAnChon =  createDapAnDaChon(tongSoCau);
             daThiXong = false;
+            lstButtonChuyenCau = new List<KryptonButton>();
         }
 
         
@@ -192,6 +194,7 @@ namespace GUI
                 btn.Values.Text = "Câu " + (i + 1).ToString();
                 btn.Tag = i.ToString();
                 flowDanhSachCauHoi.Controls.Add(btn);
+                lstButtonChuyenCau.Add(btn);
                 btn.Click += btn_Click;
             }
         }
@@ -338,9 +341,35 @@ namespace GUI
          public void ketThucBaiThi()
          {
              disableAllRadioButton();
+             toMauDapAn();
+             toMauButtonChuyenCau();
          }
 
-         
+         private void toMauButtonChuyenCau()
+         {
+             if (daThiXong)
+             {
+                 for (int i = 0; i < tongSoCau; i++)
+                 {
+                     if (listDapAnChon[i].DungSai == true)
+                     {
+                         lstButtonChuyenCau[i].StateNormal.Back.Color1 = Color.SpringGreen;
+                         lstButtonChuyenCau[i].StateNormal.Back.Color2 = Color.SpringGreen;
+                     }
+                     else if (listDapAnChon[i].DungSai == false)
+                     {
+                         lstButtonChuyenCau[i].StateNormal.Back.Color1 = Color.Red;
+                         lstButtonChuyenCau[i].StateNormal.Back.Color2 = Color.Red;
+                     }
+                     else
+                     {
+                         lstButtonChuyenCau[i].StateNormal.Back.Color1 = Color.LightGray;
+                         lstButtonChuyenCau[i].StateNormal.Back.Color2 = Color.LightGray;
+
+                     }
+                 }
+             }
+         }
         private void toMauDapAn()
         {
             if(daThiXong)
@@ -358,7 +387,7 @@ namespace GUI
                                 isRed = true; // Đã đỏ rồi thì k đen
                             }
                             if (rd.Tag.Equals("True"))
-                                rd.StateNormal.ShortText.Color1 = Color.Green;
+                                rd.StateNormal.ShortText.Color1 = Color.SpringGreen;
                             else
                             {
                                 if(!isRed)
@@ -372,7 +401,7 @@ namespace GUI
                     foreach (KryptonRadioButton rd in layoutDapAns.Controls)
                     {
                         if(rd.Tag.Equals("True"))
-                              rd.StateNormal.ShortText.Color1 = Color.Green;
+                            rd.StateNormal.ShortText.Color1 = Color.SpringGreen;
                         else
                             rd.StateNormal.ShortText.Color1 = Color.Black;
                     }

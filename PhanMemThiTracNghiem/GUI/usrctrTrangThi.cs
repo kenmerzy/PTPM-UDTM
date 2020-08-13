@@ -26,12 +26,13 @@ namespace GUI
         usrctlHuongDanThi hdt;
         usrctrKetQuaThi kqt;
         DeThiBLL_DAL dethiBLL_DAL;
+        usrctrSearch us;
         
         public usrctrTrangThi()
         {
             InitializeComponent();
         }
-        public usrctrTrangThi(string soCau, int thoiGianLamBai,string maMon,string tenKyThi,int maKyThi,int maThiSinh)
+        public usrctrTrangThi(string soCau, int thoiGianLamBai,string maMon,string tenKyThi,int maKyThi,int maThiSinh, usrctrSearch us )
         {
             InitializeComponent();
             lbltxtSoCau.Text = soCau;
@@ -47,6 +48,8 @@ namespace GUI
             lbltxtThoiGianConLai.StateNormal.ShortText.Color1 = Color.Black;
             this.maKyThi = maKyThi;
             this.maThiSinh = maThiSinh;
+            this.us = us;
+            us.Visible = false;
         }
 
         private void getCauHoiDapAn(string maMon)
@@ -89,10 +92,14 @@ namespace GUI
             {
                 countDown.Enabled = false;
                 lbltxtThoiGianConLai.Text = "00:00";
+                ch.setDaThiXong(true);
                 ch.ketThucBaiThi();
-                kqt = new usrctrKetQuaThi(ch.getSoCauDung(), ch.getSoCauSai(), ch.getSoCauChuaLam(), ch.chamDiem(),thoiGianLamBai*60 - (minute*60+second));
+                diem = ch.chamDiem();
+                kqt = new usrctrKetQuaThi(ch.getSoCauDung(), ch.getSoCauSai(), ch.getSoCauChuaLam(), ch.chamDiem(), thoiGianLamBai * 60 - (minute * 60 + second +1));
+                kqt.Dock = DockStyle.Fill;
+                layoutKetQua.Controls.Add(kqt);
                 btnNopBai.Visible = false;
-                if (dethiBLL_DAL.luuKetQua(maThiSinh, maKyThi, DateTime.Now, diem, thoiGianLamBai * 60 - (minute * 60 + second)))
+                if (dethiBLL_DAL.luuKetQua(maThiSinh, maKyThi, DateTime.Now, diem, thoiGianLamBai * 60 - (minute * 60 + second+1)))
                     MessageBox.Show("Kết thúc giờ làm bài. Bài thi của bạn đã được lưu !");
                 else
                     MessageBox.Show("Nộp bài thất bại");
@@ -170,10 +177,10 @@ namespace GUI
             ch.setDaThiXong(true);
             ch.ketThucBaiThi();
             diem = ch.chamDiem();
-            kqt = new usrctrKetQuaThi(ch.getSoCauDung(), ch.getSoCauSai(), ch.getSoCauChuaLam(), ch.chamDiem(), thoiGianLamBai * 60 -( minute * 60 + second));
+            kqt = new usrctrKetQuaThi(ch.getSoCauDung(), ch.getSoCauSai(), ch.getSoCauChuaLam(), ch.chamDiem(), thoiGianLamBai * 60 -( minute * 60 + second +1));
             kqt.Dock = DockStyle.Fill;
             layoutKetQua.Controls.Add(kqt);
-            if (dethiBLL_DAL.luuKetQua(maThiSinh, maKyThi, DateTime.Now, diem, thoiGianLamBai * 60 - (minute * 60 + second)))
+            if (dethiBLL_DAL.luuKetQua(maThiSinh, maKyThi, DateTime.Now, diem, thoiGianLamBai * 60 - (minute * 60 + second+1)))
                 MessageBox.Show("Nộp bài thành công");
             else
                 MessageBox.Show("Nộp bài thất bại");

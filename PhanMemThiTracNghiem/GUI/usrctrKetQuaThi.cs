@@ -41,7 +41,7 @@ namespace GUI
                 scd = "0" + sc.ToString();
             else
                 scd =  sc.ToString();
-            lblThoiGianHoanThanh.Text = mn + ":" + scd;
+            lblThoiGianHoanThanh.Text = "THỜI GIAN LÀM BÀI: " +  mn + ":" + scd;
             lblSoCauDung.Text = "SỐ CÂU ĐÚNG: " + soCauDung.ToString();
             lblSoCauSai.Text = "SỐ CÂU SAI: " + soCauSai.ToString();
             lblSoCauChuaLam.Text = "SỐ CÂU CHƯA LÀM: " + soCauChuaLam.ToString();
